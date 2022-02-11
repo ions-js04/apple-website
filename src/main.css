@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+/* Navbars */
+
+#static-nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+}
+
+#sticky-nav {
+    position: sticky;
+    top: 0; /*when reaches top 0 (touches border), turns to fixed positioning)*/
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 18vw;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7);  
+    backdrop-filter: blur(10px);
+    border-top: 0.1px solid #d1d1d1;
+    border-bottom: 0.1px solid #d1d1d1;
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) { /*support query: declaration only takes effect depending on a browser's support*/
+    #sticky-nav {
+      backdrop-filter: blur(20px);
+    }
+}
+
+#static-nav img {
+    margin-right: 2vw;
+}
+
+#static-nav li,
+#sticky-nav li {
+    display: inline-block;
+}
+
+#static-nav li a,
+#sticky-nav li a {
+    color: #A29696;
+    margin: 0 1vw;
+    font-size: 0.7em;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#static-nav li a:hover {
+    color: #d1bdbd;
+}
+
+#sticky-nav li a:hover {
+    color: #06c;
+}
+
+#iphone-13-pro {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-gap: 0.5vw;
+    grid-template-areas: 
+    'featured featured featured featured'
+    'phones laptops watch tablets'
+    'testimonial testimonial testimonial testimonial'
+    'events events discounts discounts';}
+
+.box {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(182, 180, 180);
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.box-1 {grid-area: featured;}
+.box-2 {grid-area: phones;}
+.box-3 {grid-area: laptops;}
+.box-4 {grid-area: watch;}
+.box-5 {grid-area: tablets;}
+.box-6 {grid-area: testimonial;}
+.box-7 {grid-area: events;}
+.box-8 {grid-area: discounts;}
+
+
+/* Footer */
+footer {
+    padding: 5vh 0;
+    background-color: rgb(182, 180, 180);
+}
+
+footer a {
+    text-decoration: none;
+    background-color: #F5F5F7;
+}
+
+footer h3 {
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
