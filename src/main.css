@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: medium;
 }
 
@@ -15,7 +15,8 @@ body {
     background-color: black;
     display: flex;
     justify-content: center;
-    padding: 1vw;
+    align-items: center;
+    padding: 0.6vw 1vw 1vw;
 }
 
 #sticky-nav {
@@ -40,6 +41,8 @@ body {
 
 #static-nav img {
     margin-right: 2vw;
+    margin-top: 0.5vw;
+    align-self: center;
 }
 
 #static-nav li,
@@ -70,7 +73,13 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     text-decoration: none;
+}
 
+#sticky-nav #button-buy {
+    color: #FFFF;
+    background-color: #0071e3;
+    border-radius: 2vw;
+    padding: 0.3vw 1vw;
 }
 
 /* Grid */
@@ -104,28 +113,45 @@ body {
 /* Footer */
 footer {
     margin-top: 0.5vw;
-    padding: 5vh 0;
-    background-color: rgb(182, 180, 180);
-}
-
-footer a {
-    text-decoration: none;
     background-color: #F5F5F7;
-}
-
-footer h3 {
-    font-weight: bold;
-    margin-bottom: 2vh;
+    padding-bottom: 5vw;
 }
 
 .horizontal-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 70vw;
+    padding: 5vh 0;
+    margin: 0 auto 3vh;
+    border-bottom: 0.1px solid #d1d1d1;
 }
 
 .vertical-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+}
+
+footer p {
+    color: #1D1D1F;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-top: 3vh;
+    margin-bottom: 1.5vh;
+}
+
+footer a {
+    color: #424245;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin-bottom: 1.5vh;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer small { /* copyright statement */
+    margin-left: 14vw;
 }
