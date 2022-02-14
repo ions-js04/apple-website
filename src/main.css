@@ -82,15 +82,15 @@ body {
     padding: 0.3vw 1vw;
 }
 
-/* Grid */
+/* Home Page Grid */
 
 .grid {
     display: grid;
     grid-gap: 0.5vw;
     grid-template-areas: 
     'featured featured featured featured'
-    'phones laptops watch tablets'
-    'testimonial testimonial testimonial testimonial'
+    'phones laptops watches tablets'
+    'testimonials testimonials testimonials testimonials'
     'events events discounts discounts';}
 
 .box {
@@ -100,14 +100,14 @@ body {
     padding: 1vw;
 }
 
-.box-1 {grid-area: featured;}
-.box-2 {grid-area: phones;}
-.box-3 {grid-area: laptops;}
-.box-4 {grid-area: watch;}
-.box-5 {grid-area: tablets;}
-.box-6 {grid-area: testimonial;}
-.box-7 {grid-area: events;}
-.box-8 {grid-area: discounts;}
+.featured {grid-area: featured;}
+.phones {grid-area: phones;}
+.laptops {grid-area: laptops;}
+.watches {grid-area: watches;}
+.tablets {grid-area: tablets;}
+.testimonials {grid-area: testimonials;}
+.events {grid-area: events;}
+.discounts {grid-area: discounts;}
 
 
 /* Footer */
@@ -121,7 +121,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 70vw;
+    width: 60vw;
     padding: 5vh 0;
     margin: 0 auto 3vh;
     border-bottom: 0.1px solid #d1d1d1;
