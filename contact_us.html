@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="img/logo.svg"/>
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="src/main.css" type="text/css" />
+    <link rel="stylesheet" href="src/contact_us.css" type="text/css" />
+</head>
+<body>
+    <nav id="static-nav">
+        <a href="index.html"><img src="img/logo.svg" width="15" alt="logo"/></a>
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="macbook.html">Macbook</a></li>
+            <li><a href="iphone.html">iPhone</a></li>
+            <li><a href="ipad.html">iPad</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="airpod.html">AirPods</a></li>
+            <li><a href="tv.html">TV</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
+        <a href="index.html" id="apple-title">Apple</a>
+        <ul>
+            <li><a href="products.html">Overview</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html">Models</a></li>
+            <li><a href="products.html" id="button-buy">Shop</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Have something to ask? Go ahead</h1>
+
+        <div class="grid">
+            <div class="box form">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" required autocomplete="name" placeholder="Enter First Name"/> <!--gets to select recent inputs (autocomplete), specified as a required field-->
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Last Name</label>
+                        <input type="text" name="name" required autocomplete="name" placeholder="Enter Last Name"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" required autocomplete="email" placeholder="Enter Email Address"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" required autocomplete="tel" placeholder="Enter Phone Number"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Country</label>
+                        <input type="text" name="country" required autocomplete="name" placeholder="Enter Country"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea type="textarea" name="textarea" placeholder="Type your message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button> <!--(type="submit", (default: browser outputs validation message)-->
+                </form>
+            </div>
+
+            <div class="box faq">
+                
+            </div>
+
+            <div class="box contact">
+                <h2>Contact Information</h2>
+                <div class="row">
+                    <img src="img/email.svg" alt="email"/>
+                    <a href="mailto:apple@support.com">apple@support.com</a>
+                </div>
+                <div class="row">
+                    <img src="img/telephone.svg" alt="email"/>
+                    <p></p>
+                    <a href="callto:+1800806419">1800-80-6419</a>
+                </div>
+                <div class="row">
+                    <img src="img/location.svg" alt="email"/>
+                    <a href="https://goo.gl/maps/z5rBDv6VNRNfCVeQ9">
+                        Apple <br>
+                        Apple Malaysia Sdn Bhd <br>
+                        Level 11 <br>
+                        Menara CIMB,
+                        Jalan Stesen Sentral 2, <br>
+                        Kuala Lumpur Sentral, <br>
+                        50470 Kuala Lumpur
+                    </a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.842265982054!2d101.68436891426285!3d3.1363358541071085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49c0d72639f5%3A0x16f1a5d86af1c42e!2sApple%20Malaysia%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1645548916387!5m2!1sen!2smy" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>    
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="horizontal-container">
+            <div class="vertical-container">
+                <p>Products</p>
+                <a href="macbook.html">Macbook</a>
+                <a href="iphone.html">iPhone</a>
+                <a href="ipad.html">iPad</a>
+                <a href="watch.html">Watch</a>
+                <a href="airpod.html">AirPods</a>
+                <a href="tv.html">TV</a>  
+
+                <p>Product Info</p>
+                <a href="products.html">Check Price</a>
+                <a href="products.html">Discounts</a>
+                <a href="products.html">Check Tech Specs</a>    
+            </div>
+            <div class="vertical-container">
+                <p>Social Media</p>
+                <a href="https://www.facebook.com/apple/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/apple/" target="_blank">Instagram</a>
+                <a href="https://mobile.twitter.com/apple?lang=en" target="_blank">Twitter</a>
+
+                <p>Events</p>
+                <a href="events.html">Latest Events</a>
+            </div>
+
+            <div class="vertical-container">
+                <p>About</p>
+                <a href="about_us.html">About Us</a>
+                <a href="education.html">Apple for Education</a>
+                <a href="healthcare.html">Apple for Healthcare</a>
+                <a href="business.html">Apple for Business</a>
+                <a href="testimonials.html">Testimonials</a>
+            </div>
+            <div class="vertical-container">
+                <p>Support</p>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="contact_us.html">FAQs</a>
+            </div>
+        </div>
+        <p id="copyright">Copyright © 2022 Apple Inc. All rights reserved.</p>
+    </footer>
+</body>
+
+<script src="src/main.js"></script>
+
+</html>

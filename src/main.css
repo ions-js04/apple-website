@@ -68,7 +68,7 @@ body {
     color: #06c;
 }
 
-#iphone-13-pro {
+#apple-title {
     color: black;
     font-size: 1.2em;
     font-weight: 600;
@@ -91,7 +91,8 @@ body {
     'featured featured featured featured'
     'phones laptops watches tablets'
     'testimonials testimonials testimonials testimonials'
-    'events events discounts discounts';}
+    'events events discounts discounts';
+}
 
 .box {
     width: 100%;
@@ -152,6 +153,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer small { /* copyright statement */
-    margin-left: 14vw;
+#copyright{ /* copyright statement */
+    text-align: center;
+    font-weight: 400;
 }
