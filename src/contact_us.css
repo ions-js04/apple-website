@@ -1,8 +1,13 @@
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /* Title */
 
 h1 {
     font-weight: 300;
-    padding: 4vh 3vw;
+    margin: 2vh 0 5vh;
 }
 
 /* Contact Us Page Grid */
@@ -17,6 +22,7 @@ h1 {
 .box {
     height: 100%;
     background-color: #FFFF;
+    padding: 1vw;
 }
 
 .form {
@@ -28,6 +34,8 @@ h1 {
 .faq {
     grid-area: faq; 
     width: 56vw;
+    background-color: #EDE6E6;
+    padding: 1vw 3vw;
 }
 
 .contact {
@@ -52,7 +60,7 @@ label {
 }
 
 input {
-    height: 6vh;
+    height: 6vh; /* width is automatically set to 100% of its container (which is the 'form' grid box*/
 }
 
 input, textarea {
@@ -100,6 +108,44 @@ button:hover {
 }
 
 /* FAQs */
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* 100% of its container (which is the 'faq' grid box */
+    cursor: pointer;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 1vw;
+    transition: all 0.2s;
+
+}
+
+table td:hover, .question-container.expanded {
+    background-color: #d6cece;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    user-select: none; /* prevents user from highlighting the question*/
+}
+
+.dropdown-arrow {
+    width: 1vw;
+}
+
+.dropdown-text {
+    display: block;
+    margin-top: 1vw;
+    animation: fade-in 0.5s ease;
+
+}
+
+.dropdown-text.hidden {
+    display: none;
+}
 
 /* Contact Information */
 
