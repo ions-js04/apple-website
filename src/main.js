@@ -3,7 +3,6 @@ var navTitle = document.querySelector("#nav-title");
 navTitle.innerHTML = document.title;
 
 // Contact us page FAQs dropdown
-
 function dropdown(ID) {
     var questionContainer = document.querySelector("#" + ID); // '#ID' (e.g ID = 'question-1', it would then be '#question-1')
     var question = questionContainer.querySelector(".question");
@@ -21,12 +20,6 @@ function dropdown(ID) {
         dropdownText.classList.add("hidden");
         dropdownArrow.src = "img/arrow-down.svg";
     }
-
-    // dropdown animation
-    // var numOfChar= dropdownText.innerHTML.length; // mumber of characters in dropdown texts
-    // for (let i=0; i < numOfChar; i+=10) {
-    //     dropdownText.style.maxHeight += i + "px";
-    // };
 }
 
 // Carousel

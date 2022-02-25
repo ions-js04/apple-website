@@ -43,12 +43,12 @@ body {
     margin-right: 2vw;
     margin-top: 0.5vw;
     align-self: center;
-    transition: filter 0.5s 0.2s ease-in-out;
+    transition: filter 0.3s;
 
 }
 
 #static-nav img:hover {
-    filter: brightness(100);
+    filter: brightness(80);
 }
 
 #static-nav li,
@@ -96,8 +96,9 @@ body {
     grid-template-areas: 
     'featured featured featured featured'
     'phones laptops watches tablets'
-    'testimonials testimonials testimonials testimonials'
-    'events events discounts discounts';
+    'reviews reviews reviews reviews'
+    'events events healthcare healthcare'
+    'education education business business';
 }
 
 .box {
@@ -112,9 +113,11 @@ body {
 .laptops {grid-area: laptops;}
 .watches {grid-area: watches;}
 .tablets {grid-area: tablets;}
-.testimonials {grid-area: testimonials;}
+.reviews {grid-area: reviews;}
 .events {grid-area: events;}
-.discounts {grid-area: discounts;}
+.healthcare {grid-area: healthcare;}
+.education {grid-area: education;}
+.business {grid-area: business;}
 
 
 /* Footer */
