@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple</title>
+    <title>Contact Us</title>
 
     <!--Favicon-->
     <link rel="icon" href="img/logo.svg"/>
@@ -31,7 +31,7 @@
     </nav>
 
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
-        <a href="index.html" id="apple-title">Apple</a>
+        <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
         <ul>
             <li><a href="products.html">Overview</a></li>
             <li><a href="products.html">Products</a></li>
@@ -82,73 +82,85 @@
                     <tr class="question-container" id="question-1" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How do I track my orders?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Once your order has been placed, you will receive an acknowledgement email to confirm with the details of your order such as 
+                                shipping and delivery fees for every item include. You will be notified of the order's estimated delivery date and its tracking number. 
+                                Once your ordered items are ready for shipping, you will be notified via a notification email.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shipping_delivery#track" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-2" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How long should I expect my orders to arrive after purchase?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Once your order has been handed to the carrier and is ready for shipping, you will be notified via an email of the shipment 
+                                details containing the estimated delivery date, this will be determined by the distance from the warehouse to the given address. 
+                                Delivery may take up to 3 working days after the shipping of the order.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shipping_delivery#when" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-3" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                What should I do if the delivery has arrived when I'm not at home?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Every recevied delivery will require a signature, if our carrier noticed that no one is at home, they will leave a card with
+                                a number so that you can contact them a schedule a new delivery date or update your delivery informations.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shipping_delivery#date" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-4" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How much is the delivery fee?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Delivery fees are paid by Apple Store. So it would be free of charge.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shipping_delivery#charged" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
-
-                    <tr class="question-container" id="question-5" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
+                    <tr class="question-container" id="question-5" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                What should I do if my delivery is damaged or missing?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                If anything has happened to your delivery upon receival or you suspect that it has went missing due to overdue delivery, 
+                                kindly contact us and we will notify the respective carrier to resolve the issue as quickly as possible. 
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shipping_delivery#missing" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
-                    <tr class="question-container" id="question-6" onclick="dropdown(this.id)">
+                    <tr class="question-container" id="question-6" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                What is Apple ID?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Apple ID is your apple account. The settings saved on your Apple Device is associated with your Apple ID, the same settings
+                                will be applied too if the same Apple ID is logged on different Apple Devices. 
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/your_account" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
@@ -156,24 +168,27 @@
                     <tr class="question-container" id="question-7" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                What are the benefits of an Apple ID?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                By having your own Apple ID, you get to personalize and customize your experience while using Apple Devices and Services
+                                such as our Apple Online Store. You can check your account status, apple gift card balance, place online orders and many more.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/your_account#benefits" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-8" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How to reset my Apple ID password?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                You can recover or reset your password easily using our iForgot tool.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/your_account#account" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
@@ -181,24 +196,28 @@
                     <tr class="question-container" id="question-9" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                Can I have more than one Apple ID?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Yes, although it is not recommended to do so as you would not have a centralize experience. For example, 
+                                you cannot view your full Apple Store order history in one place.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/your_account#morethanone" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-10" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                Are my credit card details stored inside Apple Store safe?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Apple Store rests on very robust security architecture and its servers are constantly closely monitored to prevent 
+                                any security breaches or information leak. Our security architecture utilizes the highest level of security standards. So be assured.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/payments#ccsecurity" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
@@ -206,24 +225,30 @@
                     <tr class="question-container" id="question-11" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                Why is my credit card payment declined and not processed?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                There may be a few reasons as to why your credit card company have declined the process.
+                                You may have reached your credit limit, you may have entered wrong credit information, verification may be
+                                required etc.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/payments#declined" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-12" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How do I change my billing address?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                You may contact your respective credit card company to update the registered billing address.
+                                However, you will not be able to change your billing address once you have placed your order, so kindly check before 
+                                submitting.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/payments#changeaddress" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
@@ -231,24 +256,26 @@
                     <tr class="question-container" id="question-13" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How can I make sure my Apple Product bought from a store is genuine?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                You can find Apple Authorized Resellers and Apple Stores near you to determine if the store you bought from sells genuine Apple products.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shopping_experience#find" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-14" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                What is an Apple e-coupon?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Apple store e-coupons are digital discound vouchers occasionally given to customers subscribed to Apple Store's eNews.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shopping_experience#redeem" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
@@ -256,24 +283,28 @@
                     <tr class="question-container" id="question-15" onclick="dropdown(this.id)"> <!-- passes element id as argument (target this question container)-->
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                How to redeem an e-coupon?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Enter the given code located on the "Verify Your Order" page during online orders to redeem and use them. 
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/shopping_experience#redeem" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
                     <tr class="question-container" id="question-16" onclick="dropdown(this.id)">
                         <td>
                             <div class="question">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.?
+                                Why have I not received my order acknowledgement email?
                                 <img class="dropdown-arrow" src="img/arrow-down.svg" alt="dropdown-arrow"/>
                             </div>
                             <p class="hidden dropdown-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat molestias asperiores perferendis, ea ab minus alias enim porro assumenda. Suscipit, maxime cupiditate reprehenderit corrupti nobis maiores totam laborum facilis. Iure.
-                                Nulla quidem veritatis quod corporis in, enim odio cupiditate excepturi aspernatur! Ratione velit consequuntur illum modi dolorem perspiciatis, non ut ipsam aperiam ab ducimus, aut laboriosam vel enim excepturi eum.
+                                Kindly ensure that the submitted email address is correct during your online orders.
+                                Try checking if the email is in the spam folder. To change your email address, head to our
+                                Self Service site.
+                                <br><br>
+                                <a href="https://www.apple.com/my/shop/help/informed#order_notification" class="more-info" target="_blank">More info</a>
                             </p>
                         </td>
                     </tr>
@@ -283,16 +314,16 @@
 
             <div class="box contact">
                 <h2>Contact Information</h2>
-                <div class="row">
+                <div class="info">
                     <img src="img/email.svg" alt="email"/>
                     <a href="mailto:apple@support.com">apple@support.com</a>
                 </div>
-                <div class="row">
+                <div class="info">
                     <img src="img/telephone.svg" alt="email"/>
                     <p></p>
                     <a href="callto:+1800806419">1800-80-6419</a>
                 </div>
-                <div class="row">
+                <div class="info">
                     <img src="img/location.svg" alt="email"/>
                     <a href="https://goo.gl/maps/z5rBDv6VNRNfCVeQ9">
                         Apple <br>
@@ -304,12 +335,9 @@
                         50470 Kuala Lumpur
                     </a>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.842265982054!2d101.68436891426285!3d3.1363358541071085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49c0d72639f5%3A0x16f1a5d86af1c42e!2sApple%20Malaysia%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1645548916387!5m2!1sen!2smy" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.36915314237!2d101.686558!3d3.13633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16f1a5d86af1c42e!2sApple%20Malaysia%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1645790641700!5m2!1sen!2smy"></iframe>
             </div>    
         </div>
-
-
-
     </main>
     <footer>
         <div class="horizontal-container">

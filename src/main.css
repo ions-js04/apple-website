@@ -43,6 +43,12 @@ body {
     margin-right: 2vw;
     margin-top: 0.5vw;
     align-self: center;
+    transition: filter 0.5s 0.2s ease-in-out;
+
+}
+
+#static-nav img:hover {
+    filter: brightness(100);
 }
 
 #static-nav li,
@@ -68,7 +74,7 @@ body {
     color: #06c;
 }
 
-#apple-title {
+#nav-title {
     color: black;
     font-size: 1.2em;
     font-weight: 600;
