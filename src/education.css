@@ -1,18 +1,2 @@
 /* nav bar */
 
-body #sticky-nav {
-    
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0.7vw 27vw;
-}
-
-
-#sticky-nav li a {
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#sticky-nav li a:hover {
-    color: rgb(196, 196, 196);
-}
