@@ -21,6 +21,7 @@ body {
 
 #sticky-nav {
     position: sticky;
+    z-index: 10; /* put it at most top layer, prevents other positioned elements from overlapping sticky nav */
     top: 0; /*when reaches top 0 (touches border), turns to fixed positioning)*/
     display: flex;
     justify-content: space-between;

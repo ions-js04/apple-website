@@ -29,6 +29,7 @@ main {
 .review-box:before {
     content: "";
     position: absolute; /* position must be absolute (remove from doc flow) for pseudo-element to appear */
+    z-index: -1; /* prevents it overlapping reviewer-info */
     top: 80vh;
     height: 30vh;
     width: 40vw;
@@ -49,7 +50,6 @@ main {
     padding: 0 5vw;
 
     position: relative;
-    z-index: -1;
     top: 7vh;
     left: 1.5vw;
     opacity: 0;
@@ -73,12 +73,6 @@ main {
 
 .review-box:hover .reviewer-info {
     color: rgb(255, 255, 255);
-}
-
-.avatar,
-.name,
-.title {
-    position: relative;
 }
 
 .avatar {
