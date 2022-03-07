@@ -24,6 +24,7 @@ main {
     padding: 2vw;
     overflow: hidden; /* locks pseudo-element inside parent container*/
     position: relative; /* common combo for overlays: relative positioning for parent + absolute positioning for child */
+    flex: 1; /* makes sure all review boxes in a row has same width ratio (which is 1:1:1), prevents from expanding/shrinking width based on text length  */
 }
 
 .review-box:before {
