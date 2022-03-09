@@ -1,0 +1,40 @@
+["macbook","iphone","ipad","watch","airpods","tv"]
+[]
+
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook"]
+
+["macbook","x","ipad","watch","airpods","tv"] // will remove 'macbook' from filterReviews (wouldn't be filtered since still active)
+["macbook","iphone"]
+
+["x","iphone","ipad","watch","airpods","tv"] // 2 buttons sel, unsel mackbook btn... for loop can't check for it
+["macbook","iphone","macbook"] // filter duplicates
+
+// find duplicate (that's the one selected again, from active state back to normal)
+
+===================== tryit editor
+
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Get every element in the array that has a value of 18 or more:</p>
+
+<p id="demo"></p>
+
+<script>
+const ages = ["macbook","iphone","macbook","airpods","watch"];
+
+document.getElementById("demo").innerHTML = ages.filter(filterFunc);
+
+function filterFunc(value, self, index) {
+	return self.indexOf(value) === index;
+}
+
+
+</script>
+
+</body>
+</html>

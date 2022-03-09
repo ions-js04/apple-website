@@ -22,11 +22,11 @@ function dropdown(ID) {
     }
 }
 
-var currentSelected = []; // keep track which btn is currently selected (as to not hide other elements too while more than btn is being selected)
 // Reviews Page Filter Elements Shown
+var currentSelected = []; // keep track which btn is currently selected (as to not hide other elements too while more than btn is being selected)
 function filter(ID) {
     var filterBtn = document.querySelector("#" + ID);
-    var allClasses = ["macbook","X","ipad","watch","airpods","tv"];
+    var allClasses = ["macbook","iphone","ipad","watch","airpods","tv"];
     var filterReviews = []; // elements to filter (remove)
     var elementsToFilter, elementsToRetrieve;
 
@@ -43,8 +43,15 @@ function filter(ID) {
     if (filterBtn.classList.contains("selected")) { // if button is selected
         filterBtn.classList.remove("selected"); // change btn bg color
 
-        for (var a of filterReviews) {
-            for (var b of currentSelected) {
+        // find and remore duplicates in currentSelected array (the duplicated classes are the buttosn clicked twice: selected, then de     select)
+        currentSelected.filter((value, index) => this.indexOf(value) !== index); // returning self.indexOf(value) !== index (filter loops through every element inside array)
+        // can use 'this' keyword, if no then use array put as argument too)
+
+
+
+        // check whether any elements in filterReviews are also in currentSelected (to remove them from filter list, prevent currently selected choices from being hidden away)
+        for (var a of currentSelected) {
+            for (var b of filterReviews) {
                 if (a == b) {
                     var index = filterReviews.indexOf(b); // get index of element inside filterReviews array
                     filterReviews.splice(index,1); // splice(startIndex, amountToDel), deleting the class from filterReviews array
@@ -60,7 +67,6 @@ function filter(ID) {
             }
         }
     } else {
-        // hide elements
         filterBtn.classList.add("selected");
 
         // check whether any elements in filterReviews are also in currentSelected (to remove them from filter list, prevent currently selected choices from being hidden away)
@@ -73,10 +79,11 @@ function filter(ID) {
             }
         }
 
+        // hide elements (those inside of filterReviews)
         for (var className of filterReviews) {
             elementsToFilter = document.getElementsByClassName(className); // getElementsByClassName selects ALL elements (NOTE: returns in NodeList) with matched class name; cannot use query selector as it only selects the first matched element only (not ALL)
-            for (var i=0; i < elementsToFilter.length; i++) { // need to use this for loop, as getElementsByClassName returns a nodeList, so need to access every retrieved matched element using index (e.g there are 10 elements with class 'macbook'. so the elementsToFilter at that certain loop is 10)
-                elementsToFilter[i].classList.add("hidden"); // shown elements inside of filterReviews
+            for (var i=0; i < elementsToFilter.length; i++) { // need to use for loop to access each element with matched class (as getElementsByClassName returns a nodeList, so need to access every retrieved matched element using index (e.g there are 10 elements with class 'macbook'. so the elementsToFilter at that certain loop is 10)
+                elementsToFilter[i].classList.add("hidden"); // hiding elements included in filterReviews
             }
         }        
     }
