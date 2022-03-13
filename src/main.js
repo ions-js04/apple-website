@@ -40,7 +40,7 @@ function filter(ID) {
     }
 
     // hide or review elements
-    if (filterBtn.classList.contains("selected")) { // if button is selected
+    if (filterBtn.classList.contains("selected")) { // if btn selected
         filterBtn.classList.remove("selected"); // change btn bg color
 
         // FILTERING currentSelected array, find and remore duplicates in currentSelected array (the duplicated classes are the buttons clicked twice: selected, then de     select)
@@ -104,7 +104,7 @@ function filter(ID) {
                 }
             }
         }
-    } else {
+    } else { // if btn unselected
         filterBtn.classList.add("selected");
 
         // check whether any elements in filterReviews are also in currentSelected (to remove them from filter list, prevent currently selected choices from being hidden away)
