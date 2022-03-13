@@ -1,2 +1,91 @@
-/* nav bar */
+/*grd for entire body within main*/
 
+.grid-edu {
+    display: grid;
+    grid-gap: 0.5vw;
+    grid-template-areas:
+    'picture-intro picture-intro picture-intro'
+    'intro intro intro' 
+    'head-intro head-intro head-intro' 
+    'sub-intro1 sub-intro2 sub-intro3' 
+    'head-mac head-mac head-mac' 
+    'picture-mac picture-mac picture-mac'
+    'intro-mac intro-mac intro-mac' 
+    'sub-mac1 sub-mac2 sub-mac3'
+    'glass-mac glass-mac glass-mac';
+}
+
+
+/* declare the area in grid*/
+
+.picture-intro {
+    grid-area: picture-intro;
+    width: 100%;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.head-intro {
+    grid-area: head-intro;
+}
+
+.sub-intro1 {
+    grid-area: sub-intro1;
+}
+.sub-intro2 {
+    grid-area: sub-intro2;
+}
+.sub-intro3 {
+    grid-area: sub-intro3;
+}
+
+.head-mac {
+    grid-area: head-mac;
+}
+
+.picture-mac {
+    grid-area: picture-mac;
+    width: 100%;
+}
+
+
+.intro-mac {
+    grid-area: intro-mac;
+}
+
+.sub-mac1 {
+    grid-area: sub-mac1;
+}
+.sub-mac2 {
+    grid-area: sub-mac2;
+}
+.sub-mac3 {
+    grid-area: sub-mac3;
+}
+
+.glass-mac {
+    grid-area: glass-mac;
+    max-width: 70%;
+    max-height: 85%;
+    margin: auto;
+    background-image: linear-gradient(125deg, cyan, blue);
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+
+/* make content gap are 1vm*/
+
+main {
+    padding: 1vm;
+}
+
+
+/* h1*/
+
+.head h1 {
+    background-color: #000000;
+    color: #f0f0f0;
+}
