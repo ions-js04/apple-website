@@ -1,3 +1,12 @@
+=== FIltering (review.html) ===
+case 1:
+
+
+filterReviews
+currentSelected
+duplicates
+
+
 ["macbook","iphone","ipad","watch","airpods","tv"]
 []
 
@@ -9,32 +18,25 @@
 
 ["x","iphone","ipad","watch","airpods","tv"] // 2 buttons sel, unsel mackbook btn... for loop can't check for it
 ["macbook","iphone","macbook"] // filter duplicates
-
+["macbook"]
 // find duplicate (that's the one selected again, from active state back to normal)
 
-===================== tryit editor
+________________________________________________________________________________________
 
-<html>
-<body>
+case 2:
 
-<h1>JavaScript Arrays</h1>
-<h2>The filter() Method</h2>
+["macbook","iphone","ipad","watch","airpods","tv"]
+[]
 
-<p>Get every element in the array that has a value of 18 or more:</p>
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook"]
 
-<p id="demo"></p>
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook","macbook"]
 
-<script>
-const ages = ["macbook","iphone","macbook","airpods","watch"];
+-- resolve duplicate (now nothing selected, need to retrieve back all elements)
+["macbook","iphone","ipad","watch","airpods","tv"]
+[]
 
-document.getElementById("demo").innerHTML = ages.filter(filterFunc);
-
-function filterFunc(value, self, index) {
-	return self.indexOf(value) === index;
-}
-
-
-</script>
-
-</body>
-</html>
+["macbook","x","ipad","watch","airpods","tv"] // will remove 'macbook' from filterReviews (wouldn't be filtered since still active)
+["iphone"]
