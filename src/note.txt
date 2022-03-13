@@ -1,7 +1,6 @@
 === FIltering (review.html) ===
 case 1:
 
-
 filterReviews
 currentSelected
 duplicates
@@ -10,7 +9,7 @@ duplicates
 ["macbook","iphone","ipad","watch","airpods","tv"]
 []
 
-["x","iphone","ipad","watch","airpods","tv"]
+["x","iphone","ipad","watch","airpods","tv"] // 'x' means selected (for display only in this note.txt)
 ["macbook"]
 
 ["macbook","x","ipad","watch","airpods","tv"] // will remove 'macbook' from filterReviews (wouldn't be filtered since still active)
@@ -27,16 +26,31 @@ case 2:
 
 ["macbook","iphone","ipad","watch","airpods","tv"]
 []
+[]
 
 ["x","iphone","ipad","watch","airpods","tv"]
 ["macbook"]
+[]
 
 ["x","iphone","ipad","watch","airpods","tv"]
 ["macbook","macbook"]
+[]
 
 -- resolve duplicate (now nothing selected, need to retrieve back all elements)
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook","macbook"]
+["macbook"]
+
 ["macbook","iphone","ipad","watch","airpods","tv"]
+[]
 []
 
 ["macbook","x","ipad","watch","airpods","tv"] // will remove 'macbook' from filterReviews (wouldn't be filtered since still active)
 ["iphone"]
+[]
+
+
+
+
+
+
