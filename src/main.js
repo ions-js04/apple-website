@@ -14,7 +14,7 @@ function dropdown(ID) {
         question.classList.add("bold");
         dropdownText.classList.remove("hidden");
         dropdownArrow.src = "img/arrow-up.svg"
-    } else {
+    } else {   
         questionContainer.classList.remove("expanded");
         question.classList.remove("bold");
         dropdownText.classList.add("hidden");
