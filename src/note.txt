@@ -1,0 +1,56 @@
+=== FIltering (review.html) ===
+case 1:
+
+filterReviews
+currentSelected
+duplicates
+
+
+["macbook","iphone","ipad","watch","airpods","tv"]
+[]
+
+["x","iphone","ipad","watch","airpods","tv"] // 'x' means selected (for display only in this note.txt)
+["macbook"]
+
+["macbook","x","ipad","watch","airpods","tv"] // will remove 'macbook' from filterReviews (wouldn't be filtered since still active)
+["macbook","iphone"]
+
+["x","iphone","ipad","watch","airpods","tv"] // 2 buttons sel, unsel mackbook btn... for loop can't check for it
+["macbook","iphone","macbook"] // filter duplicates
+["macbook"]
+// find duplicate (that's the one selected again, from active state back to normal)
+
+________________________________________________________________________________________
+
+case 2:
+
+["macbook","iphone","ipad","watch","airpods","tv"]
+[]
+[]
+
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook"]
+[]
+
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook","macbook"]
+[]
+
+-- resolve duplicate (now nothing selected, need to retrieve back all elements)
+["x","iphone","ipad","watch","airpods","tv"]
+["macbook","macbook"]
+["macbook"]
+
+["macbook","iphone","ipad","watch","airpods","tv"]
+[]
+[]
+
+["macbook","x","ipad","watch","airpods","tv"] // will remove 'macbook' from filterReviews (wouldn't be filtered since still active)
+["iphone"]
+[]
+
+
+
+
+
+

@@ -1,11 +1,34 @@
 h1 {
     font-weight: 300;
-    margin: 3vh 0;
+    margin: 1vh 0;
     text-align: center;
 }
 
 main {
-    padding: 2vw;
+    padding: 1vw;
+}
+
+#filter-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 4vh 0;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 0.3px solid #d1d1d1;
+    padding: 0.5vw 0.7vw;
+    border-radius: 0.5vw;
+    margin: 0 0.5vw;
+    transition: all 0.5s;
+}
+
+.filter-btn:hover { 
+    background-color: #d1d1d13f;
+}
+
+.filter-btn.selected {
+    background-color: #d1d1d1;
 }
 
 #review-container {
@@ -16,21 +39,21 @@ main {
 .review-rows {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5vh;
-
+    margin-bottom: 2vw;
 }
 
 .review-box {
-    padding: 2vw;
+    padding: 1.5vw;
     overflow: hidden; /* locks pseudo-element inside parent container*/
     position: relative; /* common combo for overlays: relative positioning for parent + absolute positioning for child */
+    flex: 1; /* makes sure all review boxes in a row has same width ratio (which is 1:1:1), prevents from expanding/shrinking width based on text length  */
 }
 
 .review-box:before {
     content: "";
     position: absolute; /* position must be absolute (remove from doc flow) for pseudo-element to appear */
     z-index: -1; /* prevents it overlapping reviewer-info */
-    top: 80vh;
+    top: 70vh;
     height: 30vh;
     width: 40vw;
     background-color: rgb(0, 0, 0);
@@ -38,19 +61,22 @@ main {
 }
 
 .review-box:hover:before {
-    /* transform: translateY(-30%); */
-    top: 60vh;
+    top: 50vh;
+}
+
+.review-box.hidden {
+    display: none;
 }
 
 .review-text {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2vw;
     font-weight: 700;
-    height: 60vh;
+    height: 50vh;
     padding: 0 5vw;
 
     position: relative;
-    top: 7vh;
+    top: 3vh;
     left: 1.5vw;
     opacity: 0;
     transition: all 0.7s ease-in;
@@ -58,7 +84,7 @@ main {
 
 .review-box:hover .review-text {
     opacity: 1;
-    top: 4vh;
+    top: 0vh;
 }
 
 .reviewer-info {
