@@ -2,44 +2,134 @@
 
 .grid-edu {
     display: grid;
-    grid-gap: 0.5vw;
-    grid-template-areas:
-    'picture-intro picture-intro picture-intro'
-    'intro intro intro' 
-    'head-intro head-intro head-intro' 
-    'sub-intro1 sub-intro2 sub-intro3' 
-    'head-mac head-mac head-mac' 
-    'picture-mac picture-mac picture-mac'
-    'intro-mac intro-mac intro-mac' 
-    'sub-mac1 sub-mac2 sub-mac3'
-    'glass-mac glass-mac glass-mac';
+    grid-template-areas: 'picture-intro picture-intro picture-intro' 'intro intro intro' 'head-intro head-intro head-intro' 'sub-intro1 sub-intro2 sub-intro3' 'head-mac head-mac head-mac' 'picture-mac picture-mac picture-mac' 'intro-mac intro-mac intro-mac' 'sub-mac1 sub-mac2 sub-mac3' 'glass-mac glass-mac glass-mac';
+    grid-gap: 0.1vw;
+    background-color: aliceblue;
 }
 
 
-/* declare the area in grid*/
+/* grid-edu part for all attribute*/
 
-.picture-intro {
+.grid-edu * {
+    text-align: center;
+}
+
+
+/*grid-edu h1 size*/
+
+.grid-edu h1 {
+    font-size: 5vw;
+}
+
+
+/*paragraph size*/
+
+.grid-edu p {
+    font-size: 3vw;
+}
+
+
+/*sub size*/
+
+.grid-edu sub {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+
+/*box represent as the whole webpage layout*/
+
+.box {
+    height: 100%;
+    background-color: aliceblue;
+}
+
+
+/* declare the area in grid for first row*/
+
+.picture-intro,
+.picture-intro img {
     grid-area: picture-intro;
     width: 100%;
+    height: 100%;
 }
+
+
+/*intro part for picture only (second row)*/
 
 .intro {
     grid-area: intro;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #f0f0f0;
+    padding: 7% 15% 7% 15%;
 }
+
+
+/*third row*/
 
 .head-intro {
     grid-area: head-intro;
+    padding: 7% 15% 7% 15%;
+    background-color: aliceblue;
 }
+
+
+/*fourth row first column*/
 
 .sub-intro1 {
     grid-area: sub-intro1;
+    position: relative;
+    left: -3vw;
+    opacity: 0;
+    padding: 7% 15% 7% 15%;
 }
+
+.sub-intro1:hover {
+    left: 0vw;
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+
+/*fourth row second column*/
+
 .sub-intro2 {
     grid-area: sub-intro2;
+    position: relative;
+    background-color: aliceblue;
+    padding: 7% 15% 7% 15%;
+    top: -3vh;
+    opacity: 0;
 }
+
+.sub-intro2:hover {
+    background-color: aliceblue;
+    top: 0vh;
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+
+/*fourth row third column*/
+
 .sub-intro3 {
     grid-area: sub-intro3;
+    position: relative;
+    padding: 7% 15% 7% 15%;
+    background-color: aliceblue;
+    right: -3vw;
+    opacity: 0;
 }
+
+.sub-intro3:hover {
+    background-color: aliceblue;
+    right: 0vw;
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+
+/*fifth row*/
 
 .head-mac {
     grid-area: head-mac;
@@ -50,7 +140,6 @@
     width: 100%;
 }
 
-
 .intro-mac {
     grid-area: intro-mac;
 }
@@ -58,9 +147,11 @@
 .sub-mac1 {
     grid-area: sub-mac1;
 }
+
 .sub-mac2 {
     grid-area: sub-mac2;
 }
+
 .sub-mac3 {
     grid-area: sub-mac3;
 }
@@ -76,16 +167,16 @@
 }
 
 
-/* make content gap are 1vm*/
-
-main {
-    padding: 1vm;
-}
-
-
 /* h1*/
 
 .head h1 {
     background-color: #000000;
     color: #f0f0f0;
+}
+
+
+/* footer part*/
+
+footer {
+    background-color: white;
 }
