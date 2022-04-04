@@ -3,8 +3,8 @@
 .grid-edu {
     display: grid;
     grid-template-areas: 'picture-intro picture-intro picture-intro' 'intro intro intro' 'head-intro head-intro head-intro' 'sub-intro1 sub-intro2 sub-intro3' 'head-mac head-mac head-mac' 'picture-mac picture-mac picture-mac' 'intro-mac intro-mac intro-mac' 'sub-mac1 sub-mac2 sub-mac3' 'glass-mac glass-mac glass-mac';
-    grid-gap: 0.1vw;
-    background-color: aliceblue;
+    grid-gap: 0vw;
+    background-color: rgba(255, 182, 193, 1);
 }
 
 
@@ -41,7 +41,7 @@
 
 .box {
     height: 100%;
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -69,7 +69,7 @@
 }
 
 
-/*third row*/
+/*third row (Apple and education part)*/
 
 .head-intro {
     grid-area: head-intro;
@@ -78,94 +78,157 @@
 }
 
 
-/*fourth row first column*/
+/*fourth row first column and third column (Performance and Productivity)*/
 
 .sub-intro1 {
     grid-area: sub-intro1;
-    position: relative;
-    left: -3vw;
-    opacity: 0;
     padding: 7% 15% 7% 15%;
+    background-color: rgba(240, 248, 255, 1);
 }
 
-.sub-intro1:hover {
-    left: 0vw;
+
+/* sub intro 1 and 3 sub text part*/
+
+.sub-intro1 sub,
+.sub-intro3 sub {
+    position: relative;
+    /*applied to make the the position to parents*/
+    bottom: -3vh;
+    /* make sure it can move upward of 3vh*/
+    opacity: 0;
+    /*totally transparent*/
+}
+
+
+/*hover then the text will appear within 0.7sec*/
+
+.sub-intro1:hover sub,
+.sub-intro3:hover sub {
+    bottom: 0vh;
     opacity: 1;
-    transition: all 1s linear;
+    transition: all 0.7s linear;
 }
 
 
-/*fourth row second column*/
+/*fourth row second column (second sub intro (Light part)) applied same as sub intro 1 */
 
 .sub-intro2 {
     grid-area: sub-intro2;
-    position: relative;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 1);
     padding: 7% 15% 7% 15%;
+}
+
+.sub-intro2 sub {
+    position: relative;
     top: -3vh;
     opacity: 0;
 }
 
-.sub-intro2:hover {
-    background-color: aliceblue;
+.sub-intro2:hover sub {
     top: 0vh;
     opacity: 1;
-    transition: all 1s linear;
+    transition: all 0.7s linear;
 }
 
 
-/*fourth row third column*/
+/*fourth row third column (productivity part) padding all same*/
 
 .sub-intro3 {
     grid-area: sub-intro3;
-    position: relative;
     padding: 7% 15% 7% 15%;
-    background-color: aliceblue;
-    right: -3vw;
-    opacity: 0;
-}
-
-.sub-intro3:hover {
-    background-color: aliceblue;
-    right: 0vw;
-    opacity: 1;
-    transition: all 1s linear;
+    background-color: rgba(240, 248, 255, 1);
 }
 
 
-/*fifth row*/
+/*fifth row (mac product part) some intro and picture*/
 
 .head-mac {
     grid-area: head-mac;
+    background-color: rgba(255, 182, 193, 0.7);
+    padding: 7% 15% 7% 15%;
 }
 
 .picture-mac {
     grid-area: picture-mac;
-    width: 100%;
+    background-color: rgba(255, 182, 193, 0.7);
+}
+
+.picture-mac h1 {
+    color: rgb(71, 0, 0);
+}
+
+.picture-mac img {
+    width: 70%;
+    height: 100%;
 }
 
 .intro-mac {
     grid-area: intro-mac;
+    padding: 7% 15% 7% 15%;
+    background-color: rgba(255, 182, 193, 0.7);
+}
+
+
+/*all sub mac have same background color and padding*/
+
+.sub-mac1,
+.sub-mac2,
+.sub-mac3 {
+    background-color: rgba(255, 182, 193, 0.7);
+    padding: 7% 15% 7% 15%;
 }
 
 .sub-mac1 {
     grid-area: sub-mac1;
 }
 
+.sub-mac1 sub,
+.sub-mac3 sub {
+    position: relative;
+    top: -3vh;
+    opacity: 0;
+}
+
+
+/*all same as sub intro part*/
+
+.sub-mac1:hover sub,
+.sub-mac3:hover sub {
+    top: 0vh;
+    opacity: 1;
+    transition: all 0.7s linear;
+}
+
 .sub-mac2 {
     grid-area: sub-mac2;
+}
+
+.sub-mac2 sub {
+    position: relative;
+    bottom: -3vh;
+    opacity: 0;
+}
+
+.sub-mac2:hover sub {
+    bottom: 0vh;
+    opacity: 1;
+    transition: all 0.7s linear;
 }
 
 .sub-mac3 {
     grid-area: sub-mac3;
 }
 
+
+/*get some comments from some students in official website*/
+
 .glass-mac {
     grid-area: glass-mac;
+    padding: 7% 15% 7% 15%;
+    margin: auto;
+    background: linear-gradient(125deg, cyan, blue);
     max-width: 70%;
     max-height: 85%;
-    margin: auto;
-    background-image: linear-gradient(125deg, cyan, blue);
     border-radius: 25px;
     opacity: 0.5;
 }
@@ -182,5 +245,5 @@
 /* footer part*/
 
 footer {
-    background-color: white;
+    background-color: rgba(255, 182, 193, 0.5);
 }
