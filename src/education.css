@@ -99,6 +99,28 @@
     /*totally transparent*/
 }
 
+.sub-intro1 p,
+.sub-intro2 p,
+.sub-intro3 p,
+.sub-mac1 p,
+.sub-mac2 p,
+.sub-mac3 p {
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+    top: 5vh;
+}
+
+.sub-intro1:hover p,
+.sub-intro2:hover p,
+.sub-intro3:hover p,
+.sub-mac1:hover p,
+.sub-mac2:hover p,
+.sub-mac3:hover p {
+    opacity: 0;
+}
+
 
 /*hover then the text will appear within 0.7sec*/
 
