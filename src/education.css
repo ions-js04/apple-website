@@ -99,6 +99,9 @@
     /*totally transparent*/
 }
 
+
+/*appeared More details text, it will disappear when it hover*/
+
 .sub-intro1 p,
 .sub-intro2 p,
 .sub-intro3 p,
@@ -111,6 +114,9 @@
     color: blue;
     top: 5vh;
 }
+
+
+/*More details text disappear*/
 
 .sub-intro1:hover p,
 .sub-intro2:hover p,
