@@ -1,1 +1,114 @@
 /*Macbook CSS*/
+main {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: black;
+}
+
+.animation {
+    width: 1366px;
+    height: 768px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 1366px;
+    height: 768px;
+    display: flex;
+}
+
+.slides input {
+    display: none;  
+}
+
+.boxslide {
+    width: 100%;
+    transition: 2s;
+}
+.boxslide img {
+    width: 1366px;
+    height: 768px;
+}
+
+.man-anim {
+    position: absolute;
+    width: 1366px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+}
+
+.man-btn {
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.man-btn:not(last-child){
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.man-btn:hover {
+    background-color: bisque;
+}
+
+#btn1:checked ~ .first{
+    margin-left: 0;
+}
+
+#btn2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#btn3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#btn4:checked ~ .first{
+    margin-left: -300%;
+}
+
+.auto-anim {
+    position: absolute;
+    display: flex;
+    margin-top: 743px;
+    width: 1366px;
+    justify-content: center;
+}
+
+.auto-anim div {
+   border: 1px solid white;
+   padding: 6px;
+   border-radius: 10px;
+   transition: 0.5s; 
+}
+
+.auto-anim div:not(last-child) {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#btn1:checked ~ .auto-anim .auto-btn1 {
+    background: white;
+}
+
+#btn2:checked ~ .auto-anim .auto-btn2 {
+    background: white;
+}
+
+#btn3:checked ~ .auto-anim .auto-btn3 {
+    background: white;
+}
+
+#btn4:checked ~ .auto-anim .auto-btn4 {
+    background: white;
+}
