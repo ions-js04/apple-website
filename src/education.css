@@ -18,21 +18,21 @@
 /*grid-edu h1 size*/
 
 .grid-edu h1 {
-    font-size: 5vw;
+    font-size: 55px;
 }
 
 
 /*paragraph size*/
 
 .grid-edu p {
-    font-size: 1.5vw;
+    font-size: 25px;
 }
 
 
 /*sub size*/
 
 .grid-edu sub {
-    font-size: 1.5vw;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -66,6 +66,7 @@
 
 .intro p {
     padding: 7% 18% 7% 18%;
+    line-height: 2em;
 }
 
 
@@ -111,7 +112,7 @@
     position: relative;
     font-weight: bold;
     font-style: italic;
-    color: blue;
+    color: rgba(0, 0, 255, 0.74);
     top: 5vh;
 }
 
@@ -181,19 +182,21 @@
     background-color: rgba(255, 182, 193, 0.7);
 }
 
-.picture-mac h1 {
-    color: rgb(71, 0, 0);
-}
-
 .picture-mac img {
     width: 70%;
+    padding: 0;
     height: 100%;
 }
 
 .intro-mac {
     grid-area: intro-mac;
     padding: 7% 15% 7% 15%;
+    line-height: 2em;
     background-color: rgba(255, 182, 193, 0.7);
+}
+
+.intro-mac h1 {
+    color: rgba(180, 94, 94, 0.637);
 }
 
 
@@ -201,9 +204,13 @@
 
 .sub-mac1,
 .sub-mac2,
-.sub-mac3 {
+.sub-mac3,
+.sub-mac1 p,
+.sub-mac2 p,
+.sub-mac3 p {
     background-color: rgba(255, 182, 193, 0.7);
     padding: 7% 15% 7% 15%;
+    color: #d40000;
 }
 
 .sub-mac1 {
@@ -252,13 +259,25 @@
 
 .glass-mac {
     grid-area: glass-mac;
-    padding: 7% 15% 7% 15%;
     margin: auto;
-    background: linear-gradient(125deg, cyan, blue);
+    padding: 7% 15% 7% 15%;
+    background: linear-gradient(135deg, rgb(201, 75, 75), rgb(236, 174, 174));
     max-width: 70%;
     max-height: 85%;
     border-radius: 25px;
     opacity: 0.5;
+}
+
+.glass-mac blockquote {
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 5% 10% 5% 10%;
+    color: #4b0101;
+}
+
+.glass-mac cite {
+    font-size: 21px;
+    color: #910505;
 }
 
 
@@ -273,5 +292,5 @@
 /* footer part*/
 
 footer {
-    background-color: rgba(255, 182, 193, 0.5);
+    background-color: rgba(255, 190, 200, 0.719);
 }
