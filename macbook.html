@@ -82,7 +82,7 @@
                     <label for="btn4" class="man-btn"></label>
                 </div>
             </div>
-
+            <!--Script for automating the animate-->
             <script type="text/JavaScript">
                 var pointer = 1;
                 setInterval(function(){
@@ -94,9 +94,10 @@
                 }, 4500)
             </script>
         </div>
+        <!--Set CSS Grid for adding content onto website-->
        <div class="box">
             <div class="gridbox">
-                <img src="img/macbook14.png" alt="Macbook Pro 14 Inch" id="imgrel" usemap="imgmap">
+                <img src="img/macbook14.png" alt="Macbook Pro 14 Inch" id="imgmap" usemap="#imgmap">
                     <div class="textbox">
                         <h1 style="font-size: 70;">
                             Click on Macbook<br>
@@ -104,13 +105,43 @@
                             more information.
                         </h1>
                         <p>
-                            Designed by Apple. The latest Flagship brings incredible performance and power to the table. <br>
+                            Designed by Apple. The latest Flagship brings incredible performance and power to the table. <br> <br>
                             Unsurpassable by rivals and peers alike.  
                         </p>
                     </div>
+                <!--Image Map for Modal Boxes-->
                 <map name="imgmap">
-                    <area shape="" coords="" href="" alt="">
+                    <area shape="poly" coords="0,0,60,270,735,270,790,0" href="#macScreen" alt="Macbook Screen" title="Macbook Pro Screen">
+                    <area shape="rect" coords="100,310,690,555" href="#macKeyboard" alt="Macbook Keyboard" title="Macbook Pro Keyboard">
+                    <area shape="rect" coords="260,568,538,738" href="#macTouch" alt="Macbook Touch Pad" title="Macbook Touch Pad">
+                    <area shape="rect" coords="61,322,94,550" href="#macSpeaker1" alt="Macbook Speaker Left" title="Macbook Pro Speaker (L)">
+                    <area shape="rect" coords="700,322,735,550" href="#macSpeaker2" alt="Macbook Speaker Right" title="Mackbook Pro Speaker (R)">
                 </map>
+                <!--Popup Box-->
+                <div id="macScreen" class="popup">
+                    <p>Currently just testing the waters</p>
+                    <a href="#" class="close">&times;</a>
+                </div>
+                <div id="macKeyboard" class="popup">
+                    <p>Testing water 2</p>
+                    <a href="#" class="close">&times;</a>
+                </div>
+                <div id="macTouch" class="popup">
+                    <p>Testing water 3</p>
+                    <a href="#" class="close">&times;</a>
+                </div>
+                <div id="macSpeaker1" class="popup">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Culpa architecto commodi natus explicabo eaque, dolorem dolorum aut magnam est, <br>
+                    sit delectus labore obcaecati. Totam harum ullam nihil recusandae delectus placeat!</p>
+                    <a href="#" class="close">&times;</a>
+                </div>
+                <div id="macSpeaker2" class="popup">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Culpa architecto commodi natus explicabo eaque, dolorem dolorum aut magnam est, <br>
+                        sit delectus labore obcaecati. Totam harum ullam nihil recusandae delectus placeat!</p>
+                    <a href="#" class="close">&times;</a>
+                </div>
             </div>
         </div>
     </main>
