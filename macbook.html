@@ -31,7 +31,7 @@
     </nav>
 
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
-        <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
+        <p id="nav-title">Macbook</p> <!-- Nav title will be inserted based on document title -->
         <ul>
             <li><a href="products.html">Overview</a></li>
             <li><a href="products.html">Products</a></li>
@@ -41,57 +41,78 @@
     </nav>
 
     <main>
-        <!--Image Carousel-->
-        <div class="animation">
+        <div class="container">
 
-            <div class="slides">
+            <!--Image Carousel-->
+            <div class="animation">
 
-                <input type="radio" name="btn" id="btn1">
-                <input type="radio" name="btn" id="btn2">
-                <input type="radio" name="btn" id="btn3">
-                <input type="radio" name="btn" id="btn4">
-                <!--Display Images-->
-                <div class="boxslide first">
-                    <img src="img/Macbook1.jpg" alt="Macbook" width="1366px" height="768px">
-                </div>
-                <div class="boxslide">
-                    <img src="img/macbookbg3.jpg" alt="Macbook" width="1366px" height="768px">
-                </div>
-                <div class="boxslide">
-                    <img src="img/macbookcompact.jpg" alt="Macbook" width="1366px" height="768px">
-                </div>
-                <div class="boxslide">
-                    <img src="img/macbookpower.jpg" alt="Macbook" width="1366px" height="768px">
-                </div>
-                <!--Animate Automation-->
-                <div class="auto-anim">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+                <div class="slides">
 
+                    <input type="radio" name="btn" id="btn1">
+                    <input type="radio" name="btn" id="btn2">
+                    <input type="radio" name="btn" id="btn3">
+                    <input type="radio" name="btn" id="btn4">
+                    <!--Display Images-->
+                    <div class="boxslide first">
+                        <img src="img/Macbook1.png" alt="Macbook" width="1400px" height="770px">
+                    </div>
+                    <div class="boxslide">
+                        <img src="img/macbookbg3.jpg" alt="Macbook" width="1400px" height="770px">
+                    </div>
+                    <div class="boxslide">
+                        <img src="img/macbookcompact.jpg" alt="Macbook" width="1400px" height="770px">
+                    </div>
+                    <div class="boxslide">
+                        <img src="img/macbookpower.jpg" alt="Macbook" width="1400px" height="770px">
+                    </div>
+                    <!--Animate Automation-->
+                    <div class="auto-anim">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+                <!--Animate Manually-->
+                <div class="man-anim">
+                    <label for="btn1" class="man-btn"></label>
+                    <label for="btn2" class="man-btn"></label>
+                    <label for="btn3" class="man-btn"></label>
+                    <label for="btn4" class="man-btn"></label>
+                </div>
             </div>
-            <!--Animate Manually-->
-            <div class="man-anim">
-                <label for="btn1" class="man-btn"></label>
-                <label for="btn2" class="man-btn"></label>
-                <label for="btn3" class="man-btn"></label>
-                <label for="btn4" class="man-btn"></label>
+
+            <script type="text/JavaScript">
+                var pointer = 1;
+                setInterval(function(){
+                    document.getElementById('btn' + pointer).checked = true;
+                    pointer ++;
+                    if (pointer > 4){
+                        pointer = 1;
+                    }
+                }, 4500)
+            </script>
+        </div>
+       <div class="box">
+            <div class="gridbox">
+                <img src="img/macbook14.png" alt="Macbook Pro 14 Inch" id="imgrel" usemap="imgmap">
+                    <div class="textbox">
+                        <h1 style="font-size: 70;">
+                            Click on Macbook<br>
+                            parts to reveal <br>
+                            more information.
+                        </h1>
+                        <p>
+                            Designed by Apple. The latest Flagship brings incredible performance and power to the table. <br>
+                            Unsurpassable by rivals and peers alike.  
+                        </p>
+                    </div>
+                <map name="imgmap">
+                    <area shape="" coords="" href="" alt="">
+                </map>
             </div>
         </div>
-
-        <script type="text/JavaScript">
-            var pointer = 1;
-            setInterval(function(){
-                document.getElementById('btn' + pointer).checked = true;
-                pointer ++;
-                if (pointer > 4){
-                    pointer = 1;
-                }
-            }, 4000)
-        </script>
-
     </main>
 
     <footer>

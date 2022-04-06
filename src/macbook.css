@@ -1,5 +1,4 @@
-/*Macbook CSS*/
-main {
+.container {
     display: flex;
     justify-content: center;
     width: auto;
@@ -11,15 +10,15 @@ main {
 }
 
 .animation {
-    width: 1366px;
-    height: 768px;
+    width: 1400px;
+    height: 770px;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .slides {
-    width: 1366px;
-    height: 768px;
+    width: 1400px;
+    height: 770px;
     display: flex;
 }
 
@@ -32,13 +31,13 @@ main {
     transition: 2s;
 }
 .boxslide img {
-    width: 1366px;
-    height: 768px;
+    width: 1400px;
+    height: 770px;
 }
 
 .man-anim {
     position: absolute;
-    width: 1366px;
+    width: 1400px;
     margin-top: -25px;
     display: flex;
     justify-content: center;
@@ -80,8 +79,8 @@ main {
 .auto-anim {
     position: absolute;
     display: flex;
-    margin-top: 743px;
-    width: 1366px;
+    margin-top: 745px;
+    width: 1400px;
     justify-content: center;
 }
 
@@ -111,4 +110,36 @@ main {
 
 #btn4:checked ~ .auto-anim .auto-btn4 {
     background: white;
+}
+
+.box {
+    display: grid;
+    row-gap: 5px;
+    grid-template-rows: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 5px;
+    height: auto;
+}
+
+.gridbox {
+    background: (0, 0, 0, 0.7);
+    height: auto;
+    padding: 25px;
+}
+
+.textbox {
+    float: right;
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+
+.textbox > p {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#imgmap {
+    max-width: 95%;
+    max-height: 95%;
 }
