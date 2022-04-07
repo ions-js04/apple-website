@@ -144,23 +144,21 @@
 }
 
 .popup {
+    margin-left: 10px;
     padding: 30px;
     background-color: rgb(255, 255, 255);
-    color: black;
-    font-weight: 100;
-    font-size: 18px;
     position: absolute;
-    display: inline-flex;
+    display: inline-block;
     opacity: 0;
     transform: scale(0);
     transition: opacity 300ms, transform 300ms;
     border-radius: 10px;
-    text-align:justify;
 }
 
 .popup > .close {
     cursor: pointer;
     position: absolute;
+    font-size: 26px;
     right: 0px;
     top: 0px;
     color: black;
@@ -174,4 +172,18 @@
 .popup:target {
     opacity: 1;
     transform: scale(1);
+}
+
+.modaltext {
+    margin: 20px;
+    color: black;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 18px;
+    text-align:justify;
+}
+
+.imagebox {
+    margin-top: 20px;
+    text-align: center;
 }
