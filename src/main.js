@@ -10,15 +10,10 @@ function dropdown(ID) {
     var dropdownArrow = questionContainer.querySelector(".dropdown-arrow");
 
     if (dropdownText.classList.contains("hidden")) { // checks if element contains class 'hidden'
-        questionContainer.classList.add("expanded");
-        question.classList.add("bold");
-        dropdownText.classList.remove("hidden");
-        dropdownArrow.src = "img/arrow-up.svg"
-    } else {   
         questionContainer.classList.add("expanded"); // change bg color of dropdown box
         question.classList.add("bold"); // make question bold when selected
         dropdownText.classList.remove("hidden"); // make dropdown text appear
-        dropdownArrow.src = "img/arrow-up.svg" // change down arrow to up arrow
+        dropdownArrow.src = "img/arrow-up.svg"; // change down arrow to up arrow
     } else {
         questionContainer.classList.remove("expanded");
         question.classList.remove("bold");
