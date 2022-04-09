@@ -41,6 +41,7 @@
 
 .box {
     height: 100%;
+    padding: 0%;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -83,7 +84,7 @@
 
 .sub-intro1 {
     grid-area: sub-intro1;
-    padding: 7% 15% 7% 15%;
+    padding: 7% 20% 7% 20%;
     background-color: rgba(240, 248, 255, 1);
 }
 
@@ -144,7 +145,7 @@
 .sub-intro2 {
     grid-area: sub-intro2;
     background-color: rgba(240, 248, 255, 1);
-    padding: 7% 15% 7% 15%;
+    padding: 7% 20% 7% 20%;
 }
 
 .sub-intro2 sub {
@@ -164,7 +165,7 @@
 
 .sub-intro3 {
     grid-area: sub-intro3;
-    padding: 7% 15% 7% 15%;
+    padding: 7% 20% 7% 20%;
     background-color: rgba(240, 248, 255, 1);
 }
 
@@ -186,6 +187,15 @@
     width: 70%;
     padding: 0;
     height: 100%;
+}
+
+.photo {
+    opacity: 0;
+    transition: opacity 0.7s ease-in;
+}
+
+.photo.appear {
+    opacity: 1;
 }
 
 .intro-mac {
@@ -217,15 +227,15 @@
     grid-area: sub-mac1;
 }
 
+
+/*all same as sub intro part*/
+
 .sub-mac1 sub,
 .sub-mac3 sub {
     position: relative;
     top: -3vh;
     opacity: 0;
 }
-
-
-/*all same as sub intro part*/
 
 .sub-mac1:hover sub,
 .sub-mac3:hover sub {
@@ -265,19 +275,20 @@
     max-width: 70%;
     max-height: 85%;
     border-radius: 25px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .glass-mac blockquote {
     font-size: 35px;
     font-weight: bolder;
-    padding: 5% 10% 5% 10%;
-    color: #4b0101;
+    padding: 0% 10% 5% 10%;
+    color: #4b0000;
 }
 
 .glass-mac cite {
     font-size: 21px;
-    color: #910505;
+    font-weight: 500;
+    color: #660202;
 }
 
 
