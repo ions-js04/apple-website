@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     width: auto;
-    height: auto;
+    height: 770px;
     margin: 0;
     padding: 0;
     align-items: center;
-    background-color: black;
+    background-image: url(../img/backgroundmac.gif);
 }
 
 .animation {
@@ -119,6 +119,7 @@
     background-color: rgba(0, 0, 0, 0.95);
     padding: 5px;
     height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .gridbox {
@@ -154,6 +155,7 @@
     transform: scale(0);
     transition: opacity 300ms, transform 300ms;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .popup > .close {
@@ -187,4 +189,109 @@
 .imagebox {
     margin-top: 20px;
     text-align: center;
+}
+
+.tablebox {
+    /*align-self: center;*/
+    /*text-align: center;*/
+    margin: 5px;
+    /*background: rgba(255,255, 255, 0.8);*/
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+table {
+    background: #c0c0c0;
+    border-collapse: separate;
+    box-shadow: inset 0 1 px whitesmoke;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+    width: 800px;
+    border-radius: 10px;
+}
+
+th {
+    background:rgba(255, 255, 255, 0.6), linear-gradient(#777,#444);
+    border-left: 1px solid #6C7A86;
+    border-right: 1px solid #71706E;
+    border-top: 1px solid #6C7A86;
+    border-bottom: 1px solid #71706E;
+    box-shadow: inset 0 1 px #A5A5A5;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 black;
+    border-radius: 10px;
+}
+
+th::after {
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.1));
+    content: '';
+    display: block;
+    height: 25%;
+    left: 0;
+    margin: 2px 0 0 0;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+th:first-child {
+    border-left: 1px  #71706E;
+    box-shadow: inset 1px 1px 0 #A5A5A5;
+}
+
+th:last-child {
+    box-shadow: inset -1px 1px 0 #A5A5A5; 
+}
+
+td {
+    border-left: 1px solid #6C7A86;
+    border-right: 1px solid #71706E;
+    border-top: 1px solid #6C7A86;
+    border-bottom: 1px solid #71706E;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+    border-radius: 10px;
+}
+
+tr:first-child {
+    background: #716c6c;
+}
+
+tr:nth-child(odd) td {
+    background: whitesmoke;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #6C7A86;
+}
+
+td:last-child {
+	border-right: 1px solid #DFE6DA;
+	box-shadow: inset -1px 0 0 #A5A5A5;
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 whitesmoke; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 whitesmoke;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 whitesmoke;
+}
+
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 5px #A5A5A5;
+}
+
+tbody:hover tr:hover td {
+    color: black;
+    text-shadow: 0 1px 0 white;
 }
