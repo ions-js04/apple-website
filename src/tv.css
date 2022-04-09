@@ -1,4 +1,5 @@
 main div {
+    scroll-behavior: smooth;
     border-width: 0.2vw;
     border-style: solid;
     border-color: lightgrey;
@@ -19,6 +20,7 @@ main div {
     position: relative;
     top: 5vw;
     left: 25vw;
+    transition: opacity 0.5s;
 }
 
 .TV header { 
@@ -36,6 +38,15 @@ main div {
     font-size: 2.5vw;
     position: absolute;
     top: 33vw;
+}
+
+.blank {
+    position: relative;
+    top: 5vw;
+    height: 9vw;
+    background-color: white;
+    background-position: center;
+    transition: 0.1s;
 }
 
 .Info {
