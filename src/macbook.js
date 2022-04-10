@@ -1,4 +1,3 @@
-
 //Set automation for image carousel
 var pointer = 1;
 setInterval(function(){

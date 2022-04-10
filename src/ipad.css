@@ -1,1 +1,394 @@
 /*iPad CSS*/
+.container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 770px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-image: url(../img/backgroundmac.gif);
+}
+
+.animation {
+    width: 150vh;
+    height: 770px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 150vh;
+    height: 770px;
+    display: flex;
+}
+
+.slides input {
+    display: none;  
+}
+
+.boxslide {
+    width: 100%;
+    transition: 2s;
+}
+.boxslide img {
+    width: 150vh;
+    height: 770px;
+}
+
+.man-anim {
+    position: absolute;
+    width: 150vh;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+}
+
+.man-btn {
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.man-btn:not(last-child){
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.man-btn:hover {
+    background-color: bisque;
+}
+
+#btn1:checked ~ .first{
+    margin-left: 0;
+}
+
+#btn2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#btn3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#btn4:checked ~ .first{
+    margin-left: -300%;
+}
+
+.auto-anim {
+    position: absolute;
+    display: flex;
+    margin-top: 745px;
+    width: 150vh;
+    justify-content: center;
+}
+
+.auto-anim div {
+   border: 1px solid white;
+   padding: 6px;
+   border-radius: 10px;
+   transition: 0.5s; 
+}
+
+.auto-anim div:not(last-child) {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#btn1:checked ~ .auto-anim .auto-btn1 {
+    background: white;
+}
+
+#btn2:checked ~ .auto-anim .auto-btn2 {
+    background: white;
+}
+
+#btn3:checked ~ .auto-anim .auto-btn3 {
+    background: white;
+}
+
+#btn4:checked ~ .auto-anim .auto-btn4 {
+    background: white;
+}
+
+.box {
+    display: grid;
+    row-gap: 5px;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 5px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.boxitem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gridbox {
+    background: (0, 0, 0, 0.7);
+    height: auto;
+    padding: 25px;
+}
+
+.textbox {
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+
+.textbox > p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#imgmap {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+.popup {
+    padding: 30px;
+    background-color: #CAF1DE;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 300ms, transform 300ms;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.popup > .close {
+    cursor: pointer;
+    position: absolute;
+    font-size: 26px;
+    right: 0px;
+    top: 0px;
+    color: black;
+    padding: 5px, 10px;
+}
+
+.popup > .close:hover {
+    color: aqua;
+}
+
+.popup:target {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modaltext {
+    margin: 20px;
+    color: black;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 18px;
+    text-align:justify;
+}
+
+.imagebox {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tablebox {
+    margin: 5px;
+    border-radius: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    padding: 10px;
+}
+
+table {
+    background: #CBE4F9;
+    border-collapse: separate;
+    box-shadow: inset 0 1 px whitesmoke;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+    width: 800px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+th {
+    background:rgba(255, 255, 255, 0.6), linear-gradient(#CBE4F9,#CDF5F6);
+    border: 1px solid gray;
+    box-shadow: inset 0 1 px #A5A5A5;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 black;
+    border-radius: 10px;
+}
+
+th::after {
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.1));
+    content: '';
+    display: block;
+    height: 25%;
+    left: 0;
+    margin: 2px 0 0 0;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+th:first-child {
+    border-left: 1px  #F9D8D6;
+    box-shadow: inset 1px 1px 0 #A5A5A5;
+}
+
+th:last-child {
+    box-shadow: inset -1px 1px 0 #A5A5A5; 
+}
+
+td {
+    border: 1px solid black;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+    border-radius: 10px;
+}
+
+tr:first-child {
+    background: #F9D8D6;
+}
+
+tr:nth-child(odd) td {
+    background: #EFF9DA;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #CDF5F6;
+}
+
+td:last-child {
+	border-right: 1px solid black;
+	box-shadow: inset -1px 0 0 #A5A5A5;
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 whitesmoke; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 whitesmoke;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 whitesmoke;
+}
+
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 5px #A5A5A5;
+}
+
+tbody:hover tr:hover td {
+    color: black;
+    text-shadow: 0 1px 0 white;
+}
+
+.box2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 22px;
+    background-image: url(../img/backgroundipad2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    height: auto;
+}
+
+.modelbox {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.modelcontain {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1000px;
+    transform-style: preserve-3d;
+}
+
+.modelcontain .model {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 0;
+    perspective: 1000px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.modelcontain .model .modelimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}
+
+.modelcontain .model:hover .modelimg {
+    transform: rotateX(-90deg);
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.modelcontain .model .modelimg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+}
+
+.modelcontain .model .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: rotateX(90deg);
+    opacity: 0;
+    color: black;
+    border-radius: 10px;
+}
+
+.modelcontain .model:hover .content {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.content div {
+    line-height: 35px;
+}

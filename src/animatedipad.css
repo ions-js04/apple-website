@@ -1,0 +1,97 @@
+.animbox{
+    height: 90vh;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation: animipad 25s ease-in-out infinite;
+    background-size: cover;
+    border-bottom: 3px solid black;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+/* The shell above the background image */
+.shell {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+}
+
+/* Position of text in animbox */
+.titletext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 110vh;
+    height: auto;
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.titletext .btnjmp {
+    padding: 2px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: auto;
+}
+
+.titletext .btnjmp a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.titletext .btnjmp a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.titletext .btnjmp a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.titletext .btnjmp a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.titletext .btnjmp:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+/* The rotation of background image in header */
+@keyframes animipad {
+    0%,100% {
+        background-image: url(../img/ipadpro6.jpg);
+    }
+    20% {
+        background-image: url(../img/ipadpro2.jpg);
+    }
+    40% {
+        background-image: url(../img/ipadpro3.jpg);
+    }
+    60% {
+        background-image: url(../img/ipadpro4.jpg)
+    }
+    80% {
+        background-image: url(../img/ipadpro5.jpg)
+    }
+}
