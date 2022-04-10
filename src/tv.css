@@ -1,11 +1,5 @@
 main div {
     scroll-behavior: smooth;
-    border-width: 0.2vw;
-    border-style: solid;
-    border-color: lightgrey;
-    border-left: hidden;
-    border-top: hidden;
-    border-right: hidden;
 }
 
 .TV {
@@ -40,38 +34,32 @@ main div {
     top: 33vw;
 }
 
-.blank {
-    position: relative;
-    top: 5vw;
-    height: 9vw;
-    background-color: white;
-    background-position: center;
-    transition: 0.1s;
-}
-
 .Info {
+    height: 40vw;
     color: aliceblue;
     background-color: rgb(26, 26, 26);
-    padding-top: 2.5vw;
+    padding-top: 0vw;
     padding-bottom: 2vw;
+    transition: opacity 0.1s;
+    border-color: rgb(26, 26, 26);
 }
 
 .Info img {
-    filter: blur(5px);
+    filter: blur(2px);
     width: 100%;
     opacity: 50%;
     position: relative;
     top: 0vw;
 }
 
-.Info header{
+.Info header {
     filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.884));
     padding-left: 10vw;
     font-size: 5vw;
     font-weight: 500;
     font-style: bold;
     position: absolute;
-    top: 69.5vw;
+    top: 63.5vw;
 }
 
 .Info p{
@@ -81,5 +69,102 @@ main div {
     font-weight: 150; 
     font-size: 2vw;
     position: absolute;
-    top: 76.5vw;
+    top: 70.5vw;
 }
+
+.fav_shows {
+    padding-bottom: 2vw;
+    background-color: rgb(26, 26, 26);
+    border-color: rgb(26, 26, 26);
+}
+
+.fav_shows header {
+    color: rgb(142, 247, 255);
+    text-align: center;
+    font-size: 9vw;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.fav_shows p {
+    padding-bottom: 7vw;
+    color: white;
+    text-align: center;
+    font-weight: 150; 
+    font-size: 2vw;
+}
+
+.shows_row {
+    background-color: rgb(26, 26, 26);
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 9px;
+}
+
+.shows {
+    height: 40vw;
+    overflow: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: lightgrey;
+    text-align: center;
+    font-size: 2vw;
+    display: table-cell;
+    border-radius: 10px;
+}
+.shows img { width: 100%; }
+.shows .front {
+    position: absolute;
+    left: 0vw;
+    transition: 0.7s;
+}
+.shows .hidden {
+    position: absolute;
+    right: 0vw;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.shows h1 {
+    color: aliceblue;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.884));
+    position: absolute;
+    bottom: -2vw;
+    left: 0.1vw;
+    opacity: 0;
+    transition: 0.7s;
+}
+#arc { left: 5.1vw }
+#sg { left: 0.6vw; }
+
+.shows:hover .front { opacity: 0; }
+.shows:hover .hidden { opacity: 1; }
+.shows:hover h1 {
+    position: absolute;
+    bottom: 1vw;
+    opacity: 1;
+}
+
+.gradient {
+    padding-top: 5vw;
+    height: 20vw;
+    background-image: linear-gradient(rgb(26, 26, 26), rgb(83, 83, 83), rgb(126, 126, 126), rgb(200, 200, 200), rgb(255, 255, 255));
+    text-align: center;
+    color: white;   
+    font-weight: 300; 
+    font-size: 2vw;
+}
+
+#enjoy {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    color: black;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.family img { width: 100%; }

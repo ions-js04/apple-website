@@ -1,0 +1,50 @@
+main div {
+    scroll-behavior: smooth;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-color: lightgrey;
+    border-left: hidden;
+    border-top: hidden;
+    border-right: hidden;
+}
+
+.Airpod{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    height: 47vw;
+}
+
+.Airpod img { 
+    width: 65%;
+    padding-left: 26vw;
+    position: relative;
+    top: 5vw;
+    left: 25vw;
+    transition: opacity 0.5s;
+}
+
+.Airpod header { 
+    padding-left: 9vw;
+    font-size: 9vw;
+    font-weight: 600;
+    font-style: bold;
+    position: absolute;
+    top: 18vw;
+}
+
+.Airpod p {
+    padding-left: 9vw;
+    font-weight: 150; 
+    font-size: 2.5vw;
+    position: absolute;
+    top: 33vw;
+}
+
+.blank {
+    position: relative;
+    top: 5vw;
+    height: 9vw;
+    background-color: white;
+    background-position: center;
+    transition: 0.1s;
+}
