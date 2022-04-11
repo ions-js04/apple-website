@@ -1,21 +1,14 @@
-const fade_in = document.querySelectorAll('.photo');
-const appearOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px -50px 0px"
-};
-const appearOnScroll = new IntersectionObserver(function(
-        entries, appearOnScroll) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('appear');
-                appearOnScroll.unobserve(entry.target);
-            }
-        })
-    },
-    appearOptions);
+window.addEventListener("scroll", appearWhenScroll);
 
-fade_in.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
+function appearWhenScroll() {
+
+    const image = document.querySelector(".picture-mac");
+    const position = image.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
+
+    if (screenPosition > position) {
+        image.classList.add('photo');
+    } else {
+        image.classList.remove('photo');
+    }
+}
