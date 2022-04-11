@@ -1,5 +1,3 @@
-
-
 const checkpointTV = 100; //set checkpoint for when scroll effect starts
 const endpointTV = 500; //set checkpoint for when scroll effect ends
 

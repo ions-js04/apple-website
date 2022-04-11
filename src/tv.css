@@ -69,6 +69,7 @@ html {
     position: absolute;
     top: 70.5vw;
 }
+.info_wrap { opacity: 0%; }
 
 .fav_shows {
     padding-bottom: 2vw;
