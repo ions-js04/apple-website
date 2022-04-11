@@ -11,6 +11,8 @@
     <!--CSS Files-->
     <link rel="stylesheet" href="src/main.css" type="text/css" />
     <link rel="stylesheet" href="src/macbook.css" type="text/css" />
+    <!--Script for automating the animate-->
+    <script type="text/JavaScript" src="src\macbook.js"></script>
 
 </head>
 <body>
@@ -82,21 +84,17 @@
                     <label for="btn4" class="man-btn"></label>
                 </div>
             </div>
-            <!--Script for automating the animate-->
-            <script type="text/JavaScript" src="src\macbook.js"></script>
         </div>
         <!--Set CSS Grid for adding content onto website-->
        <div class="box">
             <div class="gridbox">
                 <img src="img/macbook14.png" alt="Macbook Pro 14 Inch" id="imgmap" usemap="#imgmap">
                     <div class="textbox">
-                        <h1 style="font-size: 70;">
-                            Click on Macbook<br>
-                            parts to reveal <br>
-                            more information.
+                        <h1>
+                            Click on Macbook parts to reveal more information.
                         </h1>
                         <p>
-                            Designed by Apple. The latest Flagship brings incredible performance and power to the table. <br> <br>
+                            Designed by Apple. The latest Macbook Pro brings incredible performance and power to the table. <br> <br>
                             The most powerful MacBook Pro ever is here. 
                         </p>
                     </div>
@@ -197,8 +195,8 @@
                     </div>
                     <a href="#123" class="close">&times;</a>
                 </div>
-            <div class="gridbox">
-                <h1 style="color:white; margin: 20px; text-align: center;">Macbook Pro 2022 Specifications</h1>
+            <div class="gridbox" style="background: rgb(255, 255, 255); border-radius: 50px; margin-top: 50px;">
+                <h1 style="color: black; margin-top: 10px;margin-bottom: 20px; text-align: center; font-size: 45px;">Macbook Pro 2022 Specifications</h1>
                 <div class="tablebox">
                     <table>
                         <thead>
@@ -211,33 +209,138 @@
                             <tr>
                                 <td><strong>Chip</strong></td>
                                 <td><strong>Apple M1 Pro Chip</strong><br>8-core CPU with 6 performance cores<br>
-                                and 2 efficiency cores<br> 14-core GPU<br> 16-core Neural Engine<br> 200GB/s memory bandwidth</td>
+                                    and 2 efficiency cores<br> 14-core GPU<br> 16-core Neural Engine<br> 200GB/s memory bandwidth
+                                </td>
                             </tr>
                             <tr>
                                 <td><Strong>Display</Strong></td>
-                                <td><strong>Liquid Retina XDR display</strong><br>14.2-inch (diagonal) Liquid Retina XDR display;<br>
-                                3024x1964 native resolution at 254 pixels per inch<br><strong>XDR (Extreme Dynamic Range)</strong><br>
-                                1,000,000 : 1 contrast ration<br>XDR brightness: 1,000 nits sustained full-screen<br><strong>Colour</strong>
-                                <br>1 billion colours<br>Wide colour (P3)<br><strong>Refresh Rates</strong><br>120Hz</td>
+                                <td><strong>Liquid Retina XDR display</strong><br>14.2-inch (diagonal) Liquid Retina XDR display<br>
+                                    3024x1964 native resolution at 254 pixels per inch<br><strong>XDR (Extreme Dynamic Range)</strong><br>
+                                    1,000,000 : 1 contrast ration<br>XDR brightness: 1,000 nits sustained full-screen<br><strong>Colour</strong>
+                                    <br>1 billion colours<br>Wide colour (P3)<br><strong>Refresh Rates</strong><br>120Hz
+                                </td>
                             </tr>
                             <tr>
                                 <td><strong>Memory</strong></td>
                                 <td><strong>16GB</strong><br>16GB unified memory<br><strong>Configurable to:</strong><br>
-                                32GB or 64GB</td>
+                                    32GB or 64GB
+                                </td>
                             </tr>
                             <tr>
                                 <td><strong>Battery and Power</strong></td>
                                 <td>70-watt-hour lithium-polymer battery<br>67W USB-C Power Adapter<br>USB-C to MagSafe 3 Cable<br>
-                                Fast-charge capable with 96W USB-C Power Adapter<br>Up to 11 hours wireless web</td>
+                                    Fast-charge capable with 96W USB-C Power Adapter<br>Up to 11 hours wireless web browsing
+                                </td>
                             </tr>
                             <tr>
                                 <td><strong>Storage</strong></td>
                                 <td><strong>512GB</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;<strong>1TB</strong><br>512GB SSD &nbsp;&nbsp;
-                                &nbsp;&nbsp;1TB SSD<br></td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>1TB</strong><br>512GB SSD &nbsp;&nbsp;
+                                    &nbsp;&nbsp;1TB SSD<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Charging and Expansion</strong></td>
+                                <td><strong>SDXC card slot</strong><br><strong>HDMI port</strong><br><strong>3.5mm headphone jack</strong>
+                                    <br><strong>MagSafe 3 port</strong><br><strong>3 Thunderbolt-4 (USB-C) Ports</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Display Support</strong></td>
+                                <td><strong>Simultaneously supports full native resolution on the built-in display at 1 billion colours 
+                                    and:</strong><br>Up to two external displays with up to 6K resolution at 60Hz at over a billion colours
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Keyboard and Trackpad</strong></td>
+                                <td><strong>Backlit Magic Keyboard with:</strong><br>78 (US) or 79 (ISO) keys including 12 full-height function 
+                                    keys and 4 arrow keys in an inverted-T arrangement<br>Touch ID<br>Ambient light sensor<br>Force Touch trackpad
+                                    for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, 
+                                    pressure-sensitive drawing and Multi-Touch gestures
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wireless</strong></td>
+                                <td><strong>Wi-Fi</strong><br>802.11ax Wi-Fi 6 wireless networking<br>IEEE 802.11a/b/g/n/ac compatible<br><strong>Bluetooth</strong>
+                                <br>Bluetooth 5.0 wireless technology
+                            </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Camera</strong></td>
+                                <td><strong>1080p FaceTime HD Camera</strong><br>Advanced image sinal processor with computational video</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Audio</strong></td>
+                                <td style="text-align: justify; font-size: 18px;">
+                                    <ul>
+                                        <li>High-fidelity, six-speaker sound system with force-cancelling woofers</li>
+                                        <li>Wide stereo sound</li>
+                                        <li>Support for spatial audio when playing music or video with Dolby Atmos on built-in speakers</li>
+                                        <li>Spatial audio with dynamic head tracking when using AirPods, Airpods Pro, and AirPods Max</li>
+                                        <li>Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming</li>
+                                        <li>3.5mm headphone jack with advanced support for high-impedance headphones</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Size and Weight</strong></td>
+                                <td><strong>Height:</strong> 1.55cm<br><strong>Width:</strong> 31.26cm<br><strong>Depth:</strong> 22.12cm<br><strong>Weight:</strong> 1.60kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Price</strong></td>
+                                <td>RM 8,799</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <h1 style="color: white; text-align: center; margin: 10px; text-shadow: 1px 1px gray;">Check Out Our Other Models</h1>
+            <div class="modelbox">
+                <div class="modelcontain">
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: white;">Macbook Air M1 2020</h1>
+                            <img src="img/macbookair.png" alt="Macbook Air M1 2020">
+                        </div>
+                        <div class="content" style="background: pink;">
+                            <div>
+                                <h1 style="font-size: 20px;">Macbook Air M1 2020</h1>
+                                <p style="text-align:center; font-size: 18px;">
+                                    From RM 4,399<br>13.3" Retina Display<br>Apple M1 chip (8-core)<br>8-core GPU<br>Up to 16GB Unified Memory<br>macOS Monterey<br>Up to 2TB storage<br>Wi-Fi 6<br>18-Hr Battery Life
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: white;">Macbook Air Retina 2020</h1>
+                            <img src="img/macbookretina.png" alt="Mackbook Air Retina 2020">
+                        </div>
+                        <div class="content" style="background: skyblue;">
+                            <div>
+                                <h1 style="font-size: 20px;">Macbook Air Retina 2020</h1>
+                                <p style="text-align:center; font-size: 18px;">
+                                    From RM 3,499<br>13.3" Retina Display<br>Intel Core i7 Processor (4-core)<br>Intel Iris Plus Graphics GPU<br>Up to 16GB Unified Memory<br>macOS Monterey<br>Up to 2TB storage<br>Wi-Fi 6<br>12-Hr Battery Life
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: white;">Macbook Pro 16-inch 2021</h1>
+                            <img src="img/macbook16.png" alt="Macbook Pro 2021">
+                        </div>
+                        <div class="content" style="background: palevioletred;">
+                            <div>
+                                <h1 style="font-size: 20px;">Macbook Pro 16-inch 2021</h1>
+                                <p style="text-align:center; font-size: 18px;">
+                                    From RM 10,799<br>16.2" Liquid Retina XDR display<br>Apple M1 Max chip (10-core)<br>32-core GPU<br>Up to 64GB Unified Memory<br>macOS Monterey<br>Up to 8TB storage<br>Wi-Fi 6<br>21-Hr Battery Life
+                                </p>
+                            </div>
+                         </div>
+                    </div>
                 </div>
             </div>
         </div>

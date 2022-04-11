@@ -11,6 +11,9 @@
     <!--CSS Files-->
     <link rel="stylesheet" href="src/main.css" type="text/css" />
     <link rel="stylesheet" href="src/ipad.css" type="text/css" />
+    <link rel="stylesheet" href="src/animatedipad.css" type="text/css">
+    <!--Script for automating the animation-->
+    <script type="text/JavaScript" src="src/ipad.js"></script>
 
 </head>
 <body>
@@ -31,7 +34,7 @@
     </nav>
 
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
-        <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
+        <p id="nav-title">iPad</p> <!-- Nav title will be inserted based on document title -->
         <ul>
             <li><a href="products.html">Overview</a></li>
             <li><a href="products.html">Products</a></li>
@@ -41,7 +44,181 @@
     </nav>
 
     <main>
-        
+        <div class="container">
+
+            <!--Image Carousel-->
+            <div class="animation">
+
+                <div class="slides">
+
+                    <input type="radio" name="btn" id="btn1">
+                    <input type="radio" name="btn" id="btn2">
+                    <input type="radio" name="btn" id="btn3">
+                    <input type="radio" name="btn" id="btn4">
+                    <!--Display Images-->
+                    <div class="boxslide first">
+                        <img src="img/ipadproa1.jpg" alt="iPad Pro">
+                    </div>
+                    <div class="boxslide">
+                        <img src="img/ipadproa2.png" alt="iPad Pro">
+                    </div>
+                    <div class="boxslide">
+                        <img src="img/ipadproa3jpeg.jpeg" alt="iPad">
+                    </div>
+                    <div class="boxslide">
+                        <img src="img/ipadproa4.png" alt="Macbook">
+                    </div>
+                    <!--Animate Automation-->
+                    <div class="auto-anim">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+                <!--Animate Manually-->
+                <div class="man-anim">
+                    <label for="btn1" class="man-btn"></label>
+                    <label for="btn2" class="man-btn"></label>
+                    <label for="btn3" class="man-btn"></label>
+                    <label for="btn4" class="man-btn"></label>
+                </div>
+            </div>
+        </div>
+        <!--Set CSS Grid for adding content onto website-->
+        <div class="animbox">
+            <div class="shell">
+                <div class="titletext">
+                    <h1>Feel The Power of The Brand New iPad Pro.</h1>
+                    <h2>Thinner. Lighter. Faster.</h2>
+                    <div class="btnjmp">
+                        <a href="#iPadPro">Show Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="iPadPro" class="popup">
+            <div class="modaltext">
+                <p style="font-size: 24px; color:black; text-align: center;">The ultimate iPad experience. Now with breakthrough M1 performance, a breathtaking XDR display and fast wireless. Buckle up.</p>
+            </div>
+            <div class="imagebox">
+                <video width="100%" height="100%" controls style="border-radius: 10px;">
+                    <source src="img/ipadpro2022.mp4" type="video/mp4">
+                    <source src="img/ipadpro2022.ogg" type="video/ogg">
+                    Your browser does not support the video tag. Perhaps it is time to install Safari&copy;.
+                </video>
+            </div>
+            <a href="#123" class="close">&times;</a>
+        </div>
+        <div class="gridbox" style="background-image: url(img/backgroundipad.webp); background-size: cover;">
+            <h1 style="color: black; margin-top: 10px;margin-bottom: 20px; text-align: center; font-size: 45px;">iPad Pro 2021 Specifications</h1>
+            <div class="tablebox">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categories</th>
+                            <th>Descriptions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chip</strong></td>
+                            <td><strong>Apple M1 Chip</strong><br>10-core CPU<br>8-core GPU<br> 16-core Neural Engine
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Display</Strong></td>
+                            <td><strong>Liquid Retina XDR display</strong><br>11/12.9-inch Liquid Retina XDR display<br>2048 x 2732 pixels<br>
+                                <strong>XDR (Extreme Dynamic Range)</strong><br>1,000,000 : 1 contrast ration<br>XDR brightness: 1,000 nits sustained full-screen
+                                <br><strong>Colour</strong><br>1 billion colours<br>Wide colour (P3)<br><strong>Refresh Rates</strong><br>120Hz
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Memory</strong></td>
+                            <td><strong>8GB</strong><br><strong>Configurable to:</strong><br>16GB
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Battery and Power</strong></td>
+                            <td>40.88-watt-hour lithium-polymer battery<br>67W USB-C Power Adapter<br>USB-C 4 (Thunderbolt 4)<br>
+                                Fast-charge capable with 18W USB-C Power Adapter
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wireless</strong></td>
+                            <td><strong>5G capable</strong><br>Fast connection. iPad has always been uniquely portable with fast Wi-Fi and LTE options. 
+                                You can connect to the fastest wireless networks when you need to access files, collaborate with colleagues and back up data on the go.
+                                <strong>Bluetooth</strong><br>Bluetooth 5.0 wireless technology
+                        </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Camera</strong></td>
+                            <td><strong>Ultra Wide Camera with Centre Stage</strong><br>12MP Wide Camera, 10MP Ultra Wide Camera with 122-degree FOV</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Audio</strong></td>
+                            <td>
+                                Four speaker audio delivers theatre-like sound and support for Dolby Atmos
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price</strong></td>
+                            <td>RM 3,499</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="box2">
+            <h1 style="color: black; text-align: center; margin: 10px; text-shadow: 1px 1px gray;">Which other iPad is right for you?</h1>
+            <div class="modelbox">
+                <div class="modelcontain">
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: black;">iPad Air 2020</h1>
+                            <img src="img/ipadair.png" alt="iPad Air M1 2020">
+                        </div>
+                        <div class="content" style="background: pink;">
+                            <div>
+                                <h1 style="font-size: 20px; text-align: center;">iPad Air 2020</h1>
+                                <p style="text-align:center; font-size: 18px;">
+                                    From RM 2,699<br>10.9" Liquid Retina Display<br>Apple M1 chip (8-core)<br>4-core GPU<br>Up to 4GB Memory<br>iPadOS 14.1<br>Up to 256GB storage<br>Wi-Fi 6<br>10-Hr Battery Life
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: black;">iPad 2019</h1>
+                            <img src="img/ipad2019.png" alt="iPad 2019">
+                        </div>
+                        <div class="content" style="background: skyblue;">
+                            <div>
+                                <h1 style="font-size: 20px; text-align:center;">iPad 2019</h1>
+                                <p style="text-align:center; font-size: 18px;">
+                                    From RM 1,499<br>10.2" Retina Display<br>Apple A10 Fusion (4-core)<br>6-core GPU<br>Up to 3GB Memory<br>iPadOS 13.1<br>Up to 128GB storage<br>Wi-Fi 6<br>10-Hr Battery Life
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: black;">iPad Mini 2021</h1>
+                            <img src="img/ipadmini.png" alt="iPad Mini 2021">
+                        </div>
+                        <div class="content" style="background: palevioletred;">
+                            <div>
+                                <h1 style="font-size: 20px;">iPad Mini 2021</h1>
+                                <p style="text-align:center; font-size: 18px;">
+                                    From RM 2,299<br>8.3" Liquid Retina display<br>Apple A15 Bionic chip (10-core)<br>5-core GPU<br>Up to 4GB Unified Memory<br>iPadOS 15<br>Up to 256GB storage<br>Wi-Fi 6<br>10-Hr Battery Life
+                                </p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
