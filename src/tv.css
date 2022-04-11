@@ -69,7 +69,7 @@ html {
     position: absolute;
     top: 70.5vw;
 }
-.info_wrap { opacity: 0%; }
+.info_wrap { opacity: 0; }
 
 .fav_shows {
     padding-bottom: 2vw;
@@ -169,7 +169,7 @@ html {
     table-layout: fixed;
     width: 100%;
     display: table;
-    padding-bottom: 0.3vw;
+    padding-bottom: 0.5vw;
 }
 .selection {
     padding-top: 1vw;
@@ -177,12 +177,12 @@ html {
     height: 5vw;
     border-style: solid;
     border-color: lightgrey;
-    border-bottom: hidden;
     border-width: 0.1vw;
     text-align: center;
     display: table-cell;
+    transition: 0.7s;
 }
-
+.selection:hover { background-color: lightgrey; }
 .selection a {
     font-size: 2.5vw;
     font-style: italic;
