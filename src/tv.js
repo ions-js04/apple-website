@@ -1,9 +1,10 @@
+
+
 const checkpointTV = 100; //set checkpoint for when scroll effect starts
 const endpointTV = 500; //set checkpoint for when scroll effect ends
 
 const checkpointInfo = 550;
-const checkpointInfo2 = 750;
-const endpointInfo = 1200;
+const endpointInfo = 750;
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
@@ -25,16 +26,9 @@ window.addEventListener("scroll", () => {
     if (currentScroll < checkpointInfo) {
         opacityInfo = currentScroll / checkpointInfo;
     }
-    else if (currentScroll >= checkpointInfo && currentScroll < checkpointInfo2) {
+    else if (currentScroll >= checkpointInfo && currentScroll < endpointInfo) {
         opacityInfo = 1;
     }
-    else if (currentScroll >= checkpointInfo2) {
-        opacityInfo = 1 - currentScroll / endpointInfo;
-    }
-    else {
-        opacityInfo = 0;
-    }
-     //scroll fade out effect for .Info
     document.querySelector(".info_wrap").style.opacity = opacityInfo;
     document.querySelector(".TV").style.opacity = opacityTV;
 });
