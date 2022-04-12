@@ -11,6 +11,9 @@
     <!--CSS Files-->
     <link rel="stylesheet" href="src/main.css" type="text/css" />
     <link rel="stylesheet" href="src/iphone.css" type="text/css" />
+    <!--Script-->
+    <script type="text/JavaScript" src="src/iphone.js"></script>
+    <script type="text/JavaScript" src="src/iphoneanime.js"></script>
 
 </head>
 <body>
@@ -31,7 +34,7 @@
     </nav>
 
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
-        <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
+        <ddiv id="nav-title">iPhone</div> <!-- Nav title will be inserted based on document title -->
         <ul>
             <li><a href="products.html">Overview</a></li>
             <li><a href="products.html">Products</a></li>
@@ -39,15 +42,149 @@
             <li><a href="products.html" id="button-buy">Shop</a></li>
         </ul>
     </nav>
+    <header class="wrapper">
+        <div class="wrap"></div>
+        <div class="text">
+            <h1>iPhone 13 Pro</h1>
+            <p>Your new superpower.</p>
+            <p></p>
+        </div>
+    </header>
 
     <main>
-        
+        <div class="box1">
+            <h1 style="color: white; font-size: 4vw; text-align: center; text-shadow: 1px 10px 10px black;">What makes iPhone 13 Pro special?</h1>
+            <br><br><br>
+            <div class="container" style="align-content:center;">
+                <p>A dramatically more powerful camera system.<br><br><br><br></p>
+                <p>A display so responsive, every interaction feels new again.<br><br><br></p>
+                <p>The world's fastest smartphone chip.<br><br><br></p>
+                <p>Exceptional durability.<br><br><br></p>
+                <p>And a huge leap in battery life.<br><br><br><br><br></p>
+                <p>Let's Go Pro.<br></p>
+                <p style="font-size: 24px;">From RM4,899</p>
+                <a href="#iphonevid" style="text-decoration: none; color: white; font-size: 24px;">&#129146;Watch Video</a>
+            </div>
+        </div>
+        <div class="gridbox" style="background-image: url(img/iphonegif.gif); background-size: cover;">
+            <h1 style="color: white; margin-top: 10px;margin-bottom: 20px; text-align: center; font-size: 45px;">iPhone 13 Pro Specifications</h1>
+            <div class="tablebox">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categories</th>
+                            <th>Descriptions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chip</strong></td>
+                            <td><strong>Apple A15 Bionic</strong><br>6-core CPU<br>5-core GPU</td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Display</Strong></td>
+                            <td><strong>Super Retina XDR display</strong><br>6.1"-inch Super Retina XDR display<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Memory</strong></td>
+                            <td><strong>128GB 6GB RAM</strong><br><strong>Configurable to:</strong><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Battery and Power</strong></td>
+                            <td>3095mAh Lithium-Ion battery<br>23W USB-C Power Adapter<br>USB-C 4 (Thunderbolt 4)<br>256GB 6GB RAM<br>512GB 6GB RAM<br>
+                            1TB 6GB RAM<br>Fast-charge capable with 23W USB-C Power Adapter
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wireless</strong></td>
+                            <td><strong>5G capable</strong><br>Fast connection. iPhone has always been uniquely portable with fast Wi-Fi and LTE options. 
+                                You can connect to the fastest wireless networks when you need to access files, collaborate with colleagues and back up data on the go.<br>
+                                <strong>Bluetooth</strong><br>Bluetooth 5.0 wireless Technology</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Camera</strong></td>
+                            <td><strong>Quad Front Camera</strong><br>12MP f/1.5mm, 26mm(wide),<br>12MP f/2.8mm, 77mm(telephoto),<br>12MP f/1.8mm, 13mm, 120-degree Ultrawide,
+                            <br>TOF 3D LiDAR Scanner (depth)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Audio</strong></td>
+                            <td>
+                                Stereo speakers (No 3.5mm Jacks)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Price</strong></td>
+                            <td>RM 4,899</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="gridbox">
+            <div class="vidbox" id="iphonevid">
+                <video width="100%" height="100%" poster="img/placeholder.jpg" controls style="border-radius: 20px;">
+                    <source src="img/iphonevideo.mp4" type="video/mp4">
+                    Your browser does not support the video format. Perhaps it is time to install Safari&trade;.
+                </video>
+            </div>
+        </div>
+        <div class="box2">
+            <h1 style="color: black; text-align: center; margin: 10px; text-shadow: 1px 1px gray;">Looking for other iPhone Models?</h1>
+            <div class="modelbox">
+                <div class="modelcontain">
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: black;">iPhone 13 Pro Max</h1>
+                            <img src="img/iphonepromax.png" alt="iPhone 13 Pro Max">
+                        </div>
+                        <div class="content" style="background: pink;">
+                            <div>
+                                <h1 style="font-size: 20px; text-align: center;">iPhone 13 Pro Max</h1>
+                                <div style="text-align:center; font-size: 18px;">
+                                    From RM 5,799<br>6.7" Super Retina XDR Display<br>Apple A15 Bionic (6-core)<br>5-core GPU<br>Up to 6GB Memory<br>iOS 15<br>Up to 1TB storage<br>Wi-Fi 6<br>Li-Ion 4352mAh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: black;">iPhone 13</h1>
+                            <img src="img/iphone13.png" alt="iPhone 13">
+                        </div>
+                        <div class="content" style="background: skyblue;">
+                            <div>
+                                <h1 style="font-size: 20px; text-align:center;">iPhone 13</h1>
+                                <div style="text-align:center; font-size: 18px;">
+                                    From RM 3,599<br>6.1" Super Retina XDR Display<br>Apple A15 Bionic (6-core)<br>5-core GPU<br>Up to 6GB Memory<br>iOS 15<br>Up to 512GB storage<br>Wi-Fi 6<br>Li-Ion 3240mAh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model">
+                        <div class="modelimg">
+                            <h1 style="font-size: 20px; text-align: center; color: black;">iPhone 13 Mini</h1>
+                            <img src="img/iphonemini.png" alt="iPhone 13 Mini">
+                        </div>
+                        <div class="content" style="background: palevioletred;">
+                            <div>
+                                <h1 style="font-size: 20px; text-align: center;">iPhone 13 Mini</h1>
+                                <div style="text-align:center; font-size: 18px;">
+                                    From RM 3,399<br>5.4" Super Retina XDR display<br>Apple A15 Bionic chip (6-core)<br>5-core GPU<br>Up to 4GB Unified Memory<br>iOS 15<br>Up to 512GB storage<br>Wi-Fi 6<br>Li-Ion 2438mAh
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="horizontal-container">
             <div class="vertical-container">
-                <p>Products</p>
+                <div>Products</div>
                 <a href="macbook.html">Macbook</a>
                 <a href="iphone.html">iPhone</a>
                 <a href="ipad.html">iPad</a>
@@ -55,23 +192,23 @@
                 <a href="airpod.html">AirPods</a>
                 <a href="tv.html">TV</a>  
 
-                <p>Product Info</p>
+                <div>Product Info</div>
                 <a href="products.html">Check Price</a>
                 <a href="products.html">Discounts</a>
                 <a href="products.html">Check Tech Specs</a>    
             </div>
             <div class="vertical-container">
-                <p>Social Media</p>
+                <div>Social Media</div>
                 <a href="https://www.facebook.com/apple/" target="_blank">Facebook</a>
                 <a href="https://www.instagram.com/apple/" target="_blank">Instagram</a>
                 <a href="https://mobile.twitter.com/apple?lang=en" target="_blank">Twitter</a>
 
-                <p>Events</p>
+                <div>Events</div>
                 <a href="events.html">Latest Events</a>
             </div>
 
             <div class="vertical-container">
-                <p>About</p>
+                <div>About</div>
                 <a href="about_us.html">About Us</a>
                 <a href="education.html">Apple for Education</a>
                 <a href="healthcare.html">Apple for Healthcare</a>
@@ -79,7 +216,7 @@
                 <a href="reviews.html">Reviews</a>
             </div>
             <div class="vertical-container">
-                <p>Support</p>
+                <div>Support</div>
                 <a href="contact_us.html">Contact Us</a>
                 <a href="contact_us.html">FAQs</a>
             </div>

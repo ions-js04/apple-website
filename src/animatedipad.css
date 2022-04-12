@@ -7,8 +7,6 @@
     animation: animipad 25s ease-in-out infinite;
     background-size: cover;
     border-bottom: 3px solid black;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
 }
 
 /* The shell above the background image */
