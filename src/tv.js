@@ -3,8 +3,8 @@
 const checkpointTV = 100; //set checkpoint for when scroll effect starts
 const endpointTV = 500; //set checkpoint for when scroll effect ends
 
-const checkpointInfo = 550;
-const endpointInfo = 750;
+const checkpointInfo = 300;
+const endpointInfo = 1550;
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;

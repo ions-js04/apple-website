@@ -171,6 +171,9 @@ html {
     display: table;
     padding-bottom: 0.5vw;
 }
+.selection:hover {
+    transform: scale(1.05, 1.05);
+}
 .selection {
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -210,6 +213,15 @@ html {
     font-style: italic;
 }
 
-footer { background-color: rgb(26, 26, 26); }
-footer p {color: white;}
-footer a {color: rgb(177, 177, 177);}
+.end {
+    padding-top: 10vw;
+    height: 20vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer { background-color: white; }
