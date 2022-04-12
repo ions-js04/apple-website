@@ -1,4 +1,5 @@
 // Contact us page FAQs dropdown
+
 function dropdown(ID) {
     var questionContainer = document.querySelector("#" + ID); // '#ID' (e.g ID = 'question-1', it would then be '#question-1')
     var question = questionContainer.querySelector(".question");
@@ -16,4 +17,9 @@ function dropdown(ID) {
         dropdownText.classList.add("hidden");
         dropdownArrow.src = "img/arrow-down.svg";
     }
+}
+
+// Processing form data
+function processForm() {
+
 }
