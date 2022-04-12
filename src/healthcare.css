@@ -62,9 +62,10 @@
 .picture-intro p {
     color: whitesmoke;
     position: absolute;
-    text-align: center;
     top: 40vh;
-    left: 13vw;
+    bottom: 40vh;
+    left: 5vw;
+    right: 5vw;
     font-size: 5vw;
     font-weight: 700;
 }
@@ -74,14 +75,28 @@
 
 .intro {
     grid-area: intro;
-    background-color: rgba(0, 0, 0, 0.95);
-    color: #f0f0f0;
+    background-color: rgba(240, 202, 100, 0.95);
+    color: #683001;
     padding: 7% 15% 7% 15%;
 }
 
 .intro p {
     padding: 7% 18% 7% 18%;
     line-height: 2em;
+}
+
+.intro a {
+    color: #683001;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.intro a:visited {
+    color: #522601;
 }
 
 
