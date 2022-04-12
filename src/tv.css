@@ -1,4 +1,4 @@
-main div {
+html {
     scroll-behavior: smooth;
 }
 
@@ -21,7 +21,6 @@ main div {
     padding-left: 9vw;
     font-size: 9vw;
     font-weight: 600;
-    font-style: bold;
     position: absolute;
     top: 18vw;
 }
@@ -57,7 +56,6 @@ main div {
     padding-left: 10vw;
     font-size: 5vw;
     font-weight: 500;
-    font-style: bold;
     position: absolute;
     top: 63.5vw;
 }
@@ -71,6 +69,7 @@ main div {
     position: absolute;
     top: 70.5vw;
 }
+.info_wrap { opacity: 0; }
 
 .fav_shows {
     padding-bottom: 2vw;
@@ -83,7 +82,6 @@ main div {
     text-align: center;
     font-size: 9vw;
     font-weight: 500;
-    font-style: bold;
 }
 
 .fav_shows p {
@@ -152,8 +150,8 @@ main div {
     height: 20vw;
     background-image: linear-gradient(rgb(26, 26, 26), rgb(83, 83, 83), rgb(126, 126, 126), rgb(200, 200, 200), rgb(255, 255, 255));
     text-align: center;
-    color: white;   
-    font-weight: 300; 
+    color: white;
+    font-weight: 150; 
     font-size: 2vw;
 }
 
@@ -164,7 +162,66 @@ main div {
     text-align: center;
     font-size: 5vw;
     font-weight: 700;
-    font-style: bold;
 }
 
-.family img { width: 100%; }
+.selectwatch {
+    border-spacing: 0px;
+    table-layout: fixed;
+    width: 100%;
+    display: table;
+    padding-bottom: 0.5vw;
+}
+.selection:hover {
+    transform: scale(1.05, 1.05);
+}
+.selection {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    height: 5vw;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 0.1vw;
+    text-align: center;
+    display: table-cell;
+    transition: 0.7s;
+}
+.selection:hover { background-color: lightgrey; }
+.selection a {
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.watchwith { 
+    padding-bottom: 9vw;
+    background-color: rgb(26, 26, 26); 
+}
+.watchwith img { width: 100%; }
+.watchwith header {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 8vw;
+    font-weight: 500;
+    font-style: italic;
+}
+.watchwith p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.end {
+    padding-top: 10vw;
+    height: 20vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer { background-color: white; }

@@ -1,4 +1,4 @@
-/*grd for entire body within main*/
+/*grid for entire body within main*/
 
 .grid-edu {
     display: grid;
@@ -48,11 +48,25 @@
 
 /* declare the area in grid for first row*/
 
-.picture-intro,
-.picture-intro img {
+.picture-intro {
     grid-area: picture-intro;
+    position: relative;
+}
+
+.picture-intro img {
     width: 100%;
     height: 100%;
+    filter: brightness(0.6);
+}
+
+.picture-intro p {
+    color: whitesmoke;
+    position: absolute;
+    text-align: center;
+    top: 40vh;
+    left: 13vw;
+    font-size: 5vw;
+    font-weight: 700;
 }
 
 
@@ -181,6 +195,8 @@
 .picture-mac {
     grid-area: picture-mac;
     background-color: rgba(255, 182, 193, 0.7);
+    opacity: 0;
+    transition: all 1s ease-in;
 }
 
 .picture-mac img {
@@ -190,11 +206,6 @@
 }
 
 .photo {
-    opacity: 0;
-    transition: opacity 0.7s ease-in;
-}
-
-.photo.appear {
     opacity: 1;
 }
 
@@ -206,7 +217,7 @@
 }
 
 .intro-mac h1 {
-    color: rgba(180, 94, 94, 0.637);
+    color: rgba(128, 10, 10, 0.637);
 }
 
 
