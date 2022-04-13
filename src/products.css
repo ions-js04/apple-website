@@ -1,1 +1,53 @@
-body {color: #e69696ab;}
+h1 {
+    font-weight: 300;
+    margin: 1vh 0;
+    text-align: center;
+}
+
+main {
+    padding: 1vw;
+}
+
+#filter-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 4vh 0;
+}
+
+label { /* radio buttons label */
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.3px solid #d1d1d1;
+    border-radius: 0.5vw;
+    padding: 0.5vw 0.7vw;
+    margin: 0 0.5vw;
+    z-index: 0; /* layer it under its radio button */
+    transition: all 0.5s;
+}
+
+label:hover { 
+    background-color: #d1d1d13f;
+}
+
+input:checked  + label { /* selects the first label placed immediately after that selected input*/
+    background-color: #d1d1d1;
+}
+
+input {
+    opacity: 0; /* hide radio button discs */
+    z-index: 1; /* layer it above its label, to be selectable */
+}
+
+#review-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.review-box {
+    padding: 1.5vw;
+    margin-bottom: 2vw;
+    overflow: hidden; /* locks pseudo-element inside parent container*/
+    position: relative; /* common combo for overlays: relative positioning for parent + absolute positioning for child */
+    width: calc(100%/3); /* allocate a 3-col layout for each row */
+}
