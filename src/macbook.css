@@ -329,7 +329,7 @@ tbody:hover tr:hover td {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1000px;
+    width: 100%;
     transform-style: preserve-3d;
 }
 
