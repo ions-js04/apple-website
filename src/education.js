@@ -1,4 +1,5 @@
 window.addEventListener("scroll", appearWhenScroll);
+window.addEventListener("scroll", appearOnScroll);
 
 function appearWhenScroll() {
 
@@ -7,6 +8,7 @@ function appearWhenScroll() {
     const screenPosition = window.innerHeight;
 
     if (screenPosition > position) {
+
         image.classList.add('photo');
     } else {
         image.classList.remove('photo');
