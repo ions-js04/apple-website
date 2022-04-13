@@ -34,7 +34,7 @@
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
         <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
         <ul>
-            <li><a href="products.html">Overview</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="products.html" id="button-buy">Shop</a></li>
@@ -42,7 +42,39 @@
     </nav>
 
     <main>
-        
+        <h1>Explore</h1>
+
+        <div id="filter-btn-container">
+            <input type="radio" id="all" checked="checked" name="filter-btn" /> <!-- this radio btn checked by default -->
+            <label for="all" onclick="reset_filter()">All</label>
+
+            <input type="radio" id="macbook" name="filter-btn" />
+            <label for="macbook" onclick="filter('macbook')">Macbook</label>
+
+            <input type="radio" id="iphone" name="filter-btn"/>
+            <label for="iphone" onclick="filter('iphone')">Iphone</label>    
+
+            <input type="radio" id="ipad" name="filter-btn"/>
+            <label for="ipad" onclick="filter('ipad')">Ipad</label>    
+
+            <input type="radio" id="watch" name="filter-btn"/>
+            <label for="watch" onclick="filter('watch')">Watch</label>    
+
+            <input type="radio" id="airpods" name="filter-btn"/>
+            <label for="airpods" onclick="filter('airpods')">Airpods</label>
+
+            <input type="radio" id="tv" name="filter-btn"/>
+            <label for="tv" onclick="filter('tv')">TV</label>          
+        </div>
+
+        <div id="review-container">
+
+            <div class="review-box macbook">
+
+            </div>
+
+        </div>
+
     </main>
 
     <footer>
@@ -85,10 +117,14 @@
                 <a href="contact_us.html">FAQs</a>
             </div>
         </div>
-        <p id="copyright">Copyright © 2022 Apple Inc. All rights reserved.</p>
+        <div id="copyright">
+            <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+            <p>This website is an independent publication and has not been authorized, sponsored, or otherwise approved by Apple Inc. All rights reserved to Apple Inc.</p>
+        </div>    
     </footer>
 </body>
 
 <script src="src/main.js"></script>
+<script src="src/products.js"></script>
 
 </html>
