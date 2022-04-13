@@ -33,7 +33,7 @@
     padding: 8px;
 }
 
-.titletext .btnjmp {
+.btnjmp {
     padding: 2px;
     margin: 10px;
     margin-left: auto;
@@ -47,29 +47,29 @@
     height: auto;
 }
 
-.titletext .btnjmp a:link {
+.btnjmp a:link {
     text-decoration: none;
     color: white;
 }
 
-.titletext .btnjmp a:visited {
+.btnjmp a:visited {
     text-decoration: none;
     color: white;
 }
 
-.titletext .btnjmp a:active {
+.btnjmp a:active {
     text-decoration: none;
     color: white;
 }
 
-.titletext .btnjmp a:hover {
+.btnjmp a:hover {
     text-decoration: none;
     color: black;
     background-color: white;
     transition: 0.2s;
 }
 
-.titletext .btnjmp:hover {
+.btnjmp:hover {
     color: black;
     background-color: white;
     transition: 0.2s;

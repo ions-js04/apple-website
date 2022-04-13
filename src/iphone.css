@@ -1,4 +1,3 @@
-/*iPhone CSS*/
 .wrapper {
     position: relative;
     margin :0 auto;
@@ -55,7 +54,7 @@
     text-shadow: 5px 10px 10px black;
 }
 
-.text > p {
+.text div {
     font-size: 2vw;
     text-shadow: 3px 1px 1px black;
 }
@@ -101,7 +100,7 @@
     margin: 20px;
     margin-bottom: 50px;
     font-size: 3vw;
-    opacity: 0; 
+    opacity: 0;
     position: relative;
     bottom: -40px;
     transition: all 0.8s ease-out;
@@ -113,7 +112,11 @@
     bottom: 0;
 }
 
-.container a:hover {
+.box1 > .container > a {
+    color: white;
+}
+
+.box1 > .container > a:hover {
     color: aqua;
 }
 
@@ -308,4 +311,47 @@ tbody:hover td {
 tbody:hover tr:hover td {
     color: black;
     text-shadow: 0 1px 0 white;
+}
+
+.btnjmp {
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: auto;
+}
+
+.btnjmp a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.btnjmp:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s;
 }
