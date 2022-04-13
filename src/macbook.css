@@ -154,7 +154,6 @@
     position: relative;
 }
 
-
 .popup {
     margin-left: 10px;
     padding: 30px;
@@ -398,4 +397,47 @@ tbody:hover tr:hover td {
 
 .content div {
     line-height: 35px;
+}
+
+.btnjmp {
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: auto;
+}
+
+.btnjmp a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.btnjmp:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s;
 }
