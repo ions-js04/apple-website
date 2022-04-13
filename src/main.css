@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: medium;
@@ -107,7 +108,122 @@ body {
     height: 500px;
     background-color: rgb(182, 180, 180);
     padding: 1vw;
+   
+    
 }
+
+.box.phones,.box.laptops,.box.watches,.box.tablets{
+    position: relative;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.box.laptops{
+    background-color: rgb(222, 145, 145);
+}
+
+.box.laptops img{
+    width: 100%;
+    height: 400px;
+    padding-top: 20%;
+}
+
+.box.phones{
+    background-color: rgb(255, 252, 252);
+}
+
+.box.phones img{
+    width: 100%;
+    height: 430px;
+}
+
+.box.watches{
+    background-color: black;
+}
+
+.box.watches h2{
+    color:white;
+}
+
+.box.watches img{
+    width: 100%;
+    height:430px;
+}
+
+.box.tablets{
+    background-color: rgb(212, 170, 99);
+}
+.box.tablets img{
+    width: 100%;
+    height: 430px;
+    
+}
+
+.box.events {
+    background-color: black;
+    position: relative;
+}
+
+.box.events h2{
+    color: white;
+    text-align: center;
+
+}
+
+.box.events img{
+    width: 100%;
+    height:420px;
+}
+
+
+.box.healthcare{
+    background-color: rgb(130, 214, 214);
+    position: relative;
+}
+
+.box.healthcare h2{
+    text-align: center;
+}
+.box.healthcare img{
+    width:100%;
+    height:420px;
+}
+
+.box.education{
+    background-color: rgb(150, 201, 221);
+    position: relative;
+}
+
+.box.education img{
+    width:100%;
+    height:420px;
+}
+
+.box.education h2{
+    text-align: center;
+}
+
+.box.business{
+    background-color: rgba(140, 140, 254, 0.974);
+    position: relative;
+}
+
+.box.business img{
+    width:100%;
+    height:420px;
+}
+
+.box.business h2{
+    text-align: center;
+}
+
+
 
 .featured {grid-area: featured;}
 .phones {grid-area: phones;}
