@@ -280,5 +280,6 @@ footer a:hover {
 
 #copyright{ /* copyright statement */
     text-align: center;
+    font-size: 0.7em;
     font-weight: 400;
 }
