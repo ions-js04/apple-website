@@ -34,7 +34,7 @@
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
         <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
         <ul>
-            <li><a href="products.html">Overview</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="products.html" id="button-buy">Shop</a></li>
@@ -71,7 +71,7 @@
             <div id="durable" class="section">
                 <img src="img/durable.png" alt="Durable Icon">
                 <h1>High Durability</h1>
-                <p>Crack-resistant. Swimproof. Durable.</p>
+                <p>Most crack-resistant front crystal. Swimproof. Durable.</p>
             </div>
             <div id="fitness" class="section">
                 <img src="img/fitness.png" alt="Fitness Icon">
@@ -79,8 +79,83 @@
                 <p>Track your daily steps with our built-in steps tracker and heartbeat monitor.</p>
             </div>
         </div>
-        <div class="">
-
+        <div class="Products">
+            <h1>Which Apple Watch do you fancy?</h1>
+            <div class="product_row">
+                <div id="series-7" class="watches" onclick="showDivS7()">
+                    <img src="img/watch-series-7.jpg" alt="Apple Watch Series 7" width="100%">
+                    <h1>Apple Watch Series 7</h1>
+                </div>
+                <div id="SE" class="watches" onclick="showDivSE()">
+                    <img src="img/watch-se.jpg" alt="Apple Watch SE" width="100%"> 
+                    <h1>Apple Watch SE</h1>
+                    <div class="hidden_table">
+                    </div>
+                </div>
+                <div id="series-3" class="watches" onclick="showDivS3()">
+                    <img src="img/watch-series-3.jpg" alt="Apple Watch Series 3" width="100%">
+                    <h1>Apple Watch Series 3</h1>
+                    <div class="hidden_table">
+                    </div>
+                </div>
+            </div>
+            <div class="product_table">
+                <div id="se-7-table" class="hidden_table">
+                    <p>
+                        <br> - 45mm or 41mm <br>
+                        <br> - Swimproof <br>
+                        <br> - Most crack-resistant front crystal <br>
+                        <br> - Certified IP6X dust resistant <br>
+                        <br> - Always-On Retina display <br>
+                        &nbsp; Nearly 20% larger than SE 
+                        <br> &nbsp; More than 50% larger than Series 3 <br>
+                        <br> - High and low heart rate notifications <br>
+                        <br> - Irregular heart rhythm notification <br>
+                        <br> - Emergency SOS <br>
+                        <br> - International emergency calling <br>
+                        <br> - Fall detection <br>
+                        <br> - Cellular available <br>
+                    </p>
+                </div>
+                <div id="SE-table" class="hidden_table">
+                    <p>
+                        <br> - 44mm or 40mm <br>
+                        <br> - Swimproof <br>
+                        <br> - <br>
+                        <br> - <br>
+                        <br> - Retina display <br>
+                        &nbsp; Over 30% larger than Series 3 <br>
+                        <br>
+                        <br> - High and low heart rate notifications <br>
+                        <br> - Irregular heart rhythm notification<br>
+                        <br> - Emergency SOS <br>
+                        <br> - International emergency calling <br>
+                        <br> - Fall detection <br>
+                        <br> - Cellular available <br>
+                    </p>
+                </div>
+                <div id="se-3-table" class="hidden_table">
+                    <p>
+                        <br> - 42mm or 38mm <br>
+                        <br> - Swimproof <br>
+                        <br> - <br>
+                        <br> - <br>
+                        <br> - Retina display <br>
+                        <br>
+                        <br>
+                        <br> - High and low heart rate notifications <br>
+                        <br> - Irregular heart rhythm notification<br>
+                        <br> - Emergency SOS <br>
+                        <br> - <br>
+                        <br> - <br>
+                        <br> - <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <header>Get Apple Watch now.</header>
+            <div id="shop"><a href="products.html">Shop Now</a></div>
         </div>
     </main>
 
@@ -124,7 +199,10 @@
                 <a href="contact_us.html">FAQs</a>
             </div>
         </div>
-        <p id="copyright">Copyright © 2022 Apple Inc. All rights reserved.</p>
+        <div id="copyright">
+            <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+            <p>This website is an independent publication and has not been authorized, sponsored, or otherwise approved by Apple Inc. All rights reserved to Apple Inc.</p>
+        </div>
     </footer>
 </body>
 
