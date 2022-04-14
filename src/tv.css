@@ -1,5 +1,6 @@
 html { scroll-behavior: smooth; }
 
+/* .TV section */
 .TV {
     position: relative;
     top: 1vw;
@@ -38,6 +39,7 @@ html { scroll-behavior: smooth; }
     font-size: 2.5vw;
 }
 
+/* .Info section */
 .Info {
     position: relative;
     top: 0vw;
@@ -65,7 +67,7 @@ html { scroll-behavior: smooth; }
     top: 8vw;
 }
 
-.Info p{
+.Info p {
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.884));
     padding-top: 1.5vw;
     padding-left: 18.5vw;
@@ -76,6 +78,7 @@ html { scroll-behavior: smooth; }
 }
 .info_wrap { opacity: 0; }
 
+/* Popular Shows */
 .fav_shows {
     padding-bottom: 2vw;
     background-color: rgb(26, 26, 26);
