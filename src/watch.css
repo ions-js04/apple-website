@@ -3,18 +3,18 @@ html {
 }
 
 .Watch {
+    position: relative;
     padding-top: 1vw;
     padding-bottom: 1vw;
     height: 59vw;
 }
 
 .Watch img { 
-    width: 65%;
-    padding-left: 26vw;
-    position: relative;
-    top: 5vw;
-    left: 25vw;
-    transition: opacity 0.5s;
+    width: 40%;
+    position: absolute;
+    top: 8vw;
+    right: 5vw;
+    animation: slidedown 1s ease-out;
 }
 
 .Watch header { 
@@ -22,7 +22,8 @@ html {
     font-size: 7vw;
     font-weight: 600;
     position: absolute;
-    top: 18vw;
+    top: 15vw;
+    animation: slidetoright 1.2s ease-out;
 }
 
 .Watch p {
@@ -30,7 +31,18 @@ html {
     font-weight: 150; 
     font-size: 2.5vw;
     position: absolute;
-    top: 30vw;
+    top: 25vw;
+    animation: slidetoright 1.2s ease-out;
+}
+
+/* slide in effect */
+@keyframes slidedown {
+    from { transform: translateY(-200px); opacity: 0;}
+    to { transform: translateY(0px); opacity: 1;}
+}
+@keyframes slidetoright {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
 }
 
 .Info_rows {
@@ -45,11 +57,6 @@ html {
     position: relative;
     padding-left: 2vw;
     display: table-cell;
-    border-style: solid;
-    border-color: lightgrey;
-    border-width: 0.1vw;
-    border-top: hidden;
-    border-bottom: hidden;
     transition: 0.5s;
 }
 .Info_box img { 
@@ -143,3 +150,92 @@ html {
     top: 15vw;
     right: 5vw;
 }
+
+.Products {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.Products h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.product_row {
+    position: relative;
+    padding-left: 2.5vw;
+    padding-top: 6vw;
+    display: table;
+}
+.watches {
+    cursor: pointer;
+    transition: 0.5s;
+    display: table-cell;
+}
+.watches h1 {
+    text-align: center;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+/* hover blur effect */
+.product_row:hover .watches { filter: blur(5px); }
+#series-7:hover { transform: scale(1.05, 1.05); filter: blur(0px); }
+#SE:hover { transform: scale(1.05, 1.05); filter: blur(0px); }
+#series-3:hover { transform: scale(1.05, 1.05); filter: blur(0px); }
+
+/* show table when hover */
+.product_table {
+    padding-top: 0.1vw;
+    padding-left: 3vw;
+    border-spacing: 3vw;
+}
+.hidden_table {
+    width: fit-content;
+    display: table-cell;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 1.5vw;
+    opacity: 0;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: lightgrey;
+    border-radius: 15px;
+    padding: 0.5vw 1vw 2vw;
+}
+
+/* shop button */
+.end {
+    padding-top: 1vw;
+    height: 20vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
+}
+.end header {
+    padding-bottom: 2vw;
+}
+#shop {
+    margin: auto;
+    width: fit-content;
+    background-color: #0071e3;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: white;
+    border-radius: 2vw;
+    padding: 0.1vw 1vw 0.5vw;
+    transition: 0.3s;
+}
+#shop a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+#shop:hover { border-color: black; background-color: white; }
+#shop:hover a { color: black; }
+footer { background-color: white; }
