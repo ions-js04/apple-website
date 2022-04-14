@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +13,9 @@
     <link rel="stylesheet" href="src/main.css" type="text/css" />
     <link rel="stylesheet" href="src/ipad.css" type="text/css" />
     <link rel="stylesheet" href="src/animatedipad.css" type="text/css">
-    <!--Script for website-->
-    <script type="text/JavaScript" src="src/ipad.js"></script>
+    <!--Script-->
+    <script src="src/main.js"></script>
+    <script src="src/ipad.js"></script>
 
 </head>
 <body>
@@ -87,17 +89,21 @@
             </div>
         </div>
         <!--Set CSS Grid for adding content onto website-->
+        <!--Animation box for alternating image background-->
         <div class="animbox">
+            <!--Div to hold image animation (keyframes)-->
             <div class="shell">
                 <div class="titletext">
                     <h1>Feel The Power of The Brand New iPad Pro.</h1>
                     <h2>Thinner. Lighter. Faster.</h2>
+                    <!--Button to open modal box holding video-->
                     <div class="btnjmp">
                         <a href="#iPadPro">Show Me</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Modal box-->
         <div id="iPadPro" class="popup">
             <div class="modaltext">
                 <p style="font-size: 24px; color:black; text-align: center;">The ultimate iPad experience. Now with breakthrough M1 performance, a breathtaking XDR display and fast wireless. Buckle up.</p>
@@ -111,6 +117,7 @@
             </div>
             <a href="#123" class="close">&times;</a>
         </div>
+        <!--Table for showing flagship specifications-->
         <div class="gridbox" style="background-image: url(img/backgroundipad.webp); background-size: cover;">
             <h1 style="color: black; margin-top: 10px;margin-bottom: 20px; text-align: center; font-size: 45px;">iPad Pro 2021 Specifications</h1>
             <div class="tablebox">
@@ -170,15 +177,18 @@
                 </table>
             </div>
         </div>
+        <!--Div for flipping image cards-->
         <div class="box2">
             <h1 style="color: black; text-align: center; margin: 10px; text-shadow: 1px 1px gray;">Which other iPad is right for you?</h1>
             <div class="modelbox">
                 <div class="modelcontain">
                     <div class="model">
+                        <!--Hold Image-->
                         <div class="modelimg">
                             <h1 style="font-size: 20px; text-align: center; color: black;">iPad Air 2020</h1>
                             <img src="img/ipadair.png" alt="iPad Air M1 2020">
                         </div>
+                        <!--Hold Flip Content-->
                         <div class="content" style="background: pink;">
                             <div>
                                 <h1 style="font-size: 20px; text-align: center;">iPad Air 2020</h1>
@@ -218,6 +228,7 @@
                     </div>
                 </div>
             </div>
+            <!--Button to jump to products.html-->
             <div class="btnjmp" style="margin-top: -40px; margin-bottom: 20px;">
                 <a href="products.html">Show More</a>
             </div>
@@ -270,7 +281,5 @@
         </div>
     </footer>
 </body>
-
-<script src="src/main.js"></script>
 
 </html>
