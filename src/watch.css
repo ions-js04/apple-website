@@ -4,15 +4,13 @@ html {
 
 .Watch {
     position: relative;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    height: 59vw;
+    height: 55vw;
 }
 
 .Watch img { 
     width: 40%;
     position: absolute;
-    top: 8vw;
+    top: 6vw;
     right: 5vw;
     animation: slidedown 1s ease-out;
 }

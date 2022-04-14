@@ -1,50 +1,206 @@
-main div {
+html {
     scroll-behavior: smooth;
-    border-width: 0.2vw;
-    border-style: solid;
-    border-color: lightgrey;
-    border-left: hidden;
-    border-top: hidden;
-    border-right: hidden;
 }
 
-.Airpod{
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    height: 47vw;
-}
-
-.Airpod img { 
-    width: 65%;
-    padding-left: 26vw;
+.Airpods {
     position: relative;
-    top: 5vw;
-    left: 25vw;
-    transition: opacity 0.5s;
+    color: white;
 }
 
-.Airpod header { 
+.Airpods img { 
+    width: 100%;
+    position: relative;
+}
+
+.Airpods header { 
     padding-left: 9vw;
-    font-size: 9vw;
+    font-size: 7vw;
     font-weight: 600;
-    font-style: bold;
     position: absolute;
-    top: 18vw;
+    top: 15vw;
+    animation: slidetoright 1.2s ease-out;
 }
 
-.Airpod p {
+.Airpods p {
     padding-left: 9vw;
     font-weight: 150; 
     font-size: 2.5vw;
     position: absolute;
-    top: 33vw;
+    top: 25vw;
+    animation: slidetoright 1.2s ease-out;
 }
 
-.blank {
-    position: relative;
-    top: 5vw;
-    height: 9vw;
-    background-color: white;
-    background-position: center;
-    transition: 0.1s;
+/* slide in effect */
+@keyframes slidetoright {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
 }
+
+.Info_section h1 {
+    font-size: 6vw;
+    font-weight: 600;
+}
+.Info_section p {
+    font-size: 2vw;
+    font-weight: 200;
+}
+.section {
+    height: 29.5vw;
+    color: white;
+    position: relative;
+    padding-left: 5vw;
+    transition: 0.5s;
+}
+
+/* blur and text slide out effect */
+.section { transition: 0.5s; }
+.section h1 { transition: 0.5s; }
+.section p,
+.section img { transition: 0.5s; opacity: 0;}
+.Info_section:hover .section { filter: blur(5px);}
+.section:hover h1,
+.section:hover p,
+.section:hover img { transform: translateX(-20px); opacity: 1;}
+#auto-switch:hover h1,
+#auto-switch:hover p, 
+#auto-switch:hover img { transform: translateX(20px); }
+#one-tap:hover { filter: blur(0px); }
+#auto-switch:hover { filter: blur(0px); }
+#audio-sharing:hover { filter: blur(0px); }
+
+#one-tap { background-image: linear-gradient(to left, rgb(0, 0, 0), white); }
+#one-tap h1 {
+    position: absolute;
+    top: 7vw;
+    right: 5vw;
+}
+#one-tap p {
+    padding-left: 40vw;
+    text-align: right;
+    position: absolute;
+    top: 17vw;
+    right: 5vw;
+}
+
+#auto-switch { background-image: linear-gradient(to right, rgb(0, 0, 0), white); }
+#auto-switch img {
+    position: absolute;
+    top: 9vw;
+    right: 3vw;
+}
+#auto-switch h1 {
+    position: absolute;
+    top: 7vw;
+    left: 3vw;
+}
+#auto-switch p {
+    position: absolute;
+    top: 17vw;
+    left: 3vw;
+}
+
+#audio-sharing { background-image: linear-gradient(to left, rgb(0, 0, 0), white); }
+#audio-sharing img { padding-top: 1vw;}
+#audio-sharing h1 {
+    position: absolute;
+    top: 8vw;
+    right: 5vw;
+}
+#audio-sharing p {
+    padding-left: 40vw;
+    text-align: right;
+    position: absolute;
+    top: 18vw;
+    right: 5vw;
+}
+
+.Products {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.Products h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.product_row {
+    position: relative;
+    padding-left: 1vw;
+    padding-top: 6vw;
+    display: table;
+}
+.airpods {
+    cursor: pointer;
+    transition: 0.5s;
+    display: table-cell;
+}
+.airpods h1 {
+    text-align: center;
+    font-size: 2vw;
+    font-style: italic;
+}
+#airpods-pro { padding-right: 4vw;}
+
+/* hover blur effect */
+.product_row:hover .airpods { filter: blur(5px); }
+#airpods-3rd:hover { transform: scale(1.05, 1.05); filter: blur(0px); }
+#airpods-pro:hover { transform: scale(1.05, 1.05); filter: blur(0px); }
+#airpods-max:hover { transform: scale(1.05, 1.05); filter: blur(0px); }
+
+/* show table when hover */
+.product_table {
+    padding-top: 0.1vw;
+    padding-left: 3vw;
+    border-spacing: 3vw;
+}
+.hidden_table {
+    text-align: center;
+    width: 33%;
+    display: table-cell;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 2vw;
+    opacity: 0;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: lightgrey;
+    border-radius: 15px;
+    padding: 0.5vw 1vw 2vw;
+}
+
+/* shop button */
+.end {
+    padding-top: 1vw;
+    height: 20vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
+}
+.end header {
+    padding-bottom: 2vw;
+}
+#shop {
+    margin: auto;
+    width: fit-content;
+    background-color: #0071e3;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: white;
+    border-radius: 2vw;
+    padding: 0.1vw 1vw 0.5vw;
+    transition: 0.3s;
+}
+#shop a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+#shop:hover { border-color: black; background-color: white; }
+#shop:hover a { color: black; }
+footer { background-color: white; }
