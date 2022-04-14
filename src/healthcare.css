@@ -42,7 +42,7 @@
 .box {
     height: 100%;
     padding: 0%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(136, 247, 186, 0.836);
 }
 
 
@@ -120,11 +120,19 @@
 
 /* sub intro 1 and 3 sub text part*/
 
-.sub-intro1 sub,
+.sub-intro1 sub {
+    position: relative;
+    /*applied to make the the position to parents*/
+    bottom: -5vh;
+    /* make sure it can move upward of 3vh*/
+    opacity: 0;
+    /*totally transparent*/
+}
+
 .sub-intro3 sub {
     position: relative;
     /*applied to make the the position to parents*/
-    bottom: -3vh;
+    bottom: -5vh;
     /* make sure it can move upward of 3vh*/
     opacity: 0;
     /*totally transparent*/
@@ -143,6 +151,7 @@
     font-weight: bold;
     font-style: italic;
     color: rgba(0, 0, 255, 0.74);
+    padding: 15% 15% 15% 15%;
     top: 5vh;
 }
 
@@ -161,9 +170,14 @@
 
 /*hover then the text will appear within 0.7sec*/
 
-.sub-intro1:hover sub,
+.sub-intro1:hover sub {
+    bottom: 5vh;
+    opacity: 1;
+    transition: all 0.7s linear;
+}
+
 .sub-intro3:hover sub {
-    bottom: 0vh;
+    bottom: 5vh;
     opacity: 1;
     transition: all 0.7s linear;
 }
@@ -179,12 +193,12 @@
 
 .sub-intro2 sub {
     position: relative;
-    top: -3vh;
+    top: -15vh;
     opacity: 0;
 }
 
 .sub-intro2:hover sub {
-    top: 0vh;
+    top: -5vh;
     opacity: 1;
     transition: all 0.7s linear;
 }
@@ -215,8 +229,8 @@
 }
 
 .picture-mac img {
-    width: 70%;
-    padding: 0;
+    width: 100%;
+    padding-left: 25%;
     height: 100%;
 }
 
@@ -232,7 +246,7 @@
 }
 
 .intro-mac h1 {
-    color: rgba(128, 10, 10, 0.637);
+    color: rgba(0, 121, 46, 0.637);
 }
 
 
@@ -246,7 +260,7 @@
 .sub-mac3 p {
     background-color: rgba(136, 247, 186, 0.836);
     padding: 7% 15% 7% 15%;
-    color: #d40000;
+    color: rgb(0, 121, 46);
 }
 
 .sub-mac1 {
@@ -307,14 +321,13 @@
 .glass-mac blockquote {
     font-size: 35px;
     font-weight: bolder;
-    padding: 0% 10% 5% 10%;
-    color: #4b0000;
+    color: #003d00;
 }
 
 .glass-mac cite {
     font-size: 21px;
     font-weight: 500;
-    color: #660202;
+    color: #003d00;
 }
 
 
