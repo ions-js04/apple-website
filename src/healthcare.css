@@ -294,6 +294,9 @@
     opacity: 0;
 }
 
+
+/*content appear when it hover*/
+
 .sub-mac2:hover sub {
     bottom: 0vh;
     opacity: 1;
@@ -313,16 +316,22 @@
     padding: 7% 15% 7% 15%;
     background: linear-gradient(135deg, rgb(31, 180, 98), rgb(174, 236, 202));
     max-width: 70%;
-    max-height: 85%;
+    max-height: 90%;
     border-radius: 25px;
     opacity: 0.8;
 }
+
+
+/*the content in glass*/
 
 .glass-mac blockquote {
     font-size: 35px;
     font-weight: bolder;
     color: #003d00;
 }
+
+
+/*the last part of citation*/
 
 .glass-mac cite {
     font-size: 21px;
