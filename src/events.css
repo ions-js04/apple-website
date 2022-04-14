@@ -1,0 +1,128 @@
+.main-event {grid-area: main-event;}
+.more-events {grid-area: more-events;}
+.event1 {grid-area: event1;}
+.event2 {grid-area: event2;}
+.event3 {grid-area: event3;}
+.event4 {grid-area: event4;}
+.event5 {grid-area: event5;}
+.event6 {grid-area: event6;}
+
+.grid-events{
+    display: grid;
+    grid-gap: 1.0vw;
+    grid-template-areas: 
+    'main-event main-event'
+    "more-events more-events"
+    'event1 event2'
+    'event3 event4'
+    'event5 event6';
+}
+
+.main-event{
+    background-color: rgba(0, 0, 0, 0.995);
+    position:relative;
+    
+}
+
+.main-event, h2 p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 2%;
+}
+
+.main-event img{
+    width: 100%;
+    height: 650px;
+    
+    
+}
+
+.more-events{
+    width: 100%;
+    height:100px;
+}
+
+.more-events h2{
+    text-align: center;
+    padding-top: 2.5%;
+    font-weight: 600;
+}
+
+.event1{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding-left: 30%;
+    position: relative;
+    
+}
+
+.event1 img{
+    width: 100%;
+    height: 55%;;
+}
+
+.event2{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding-right: 30%;
+    position: relative;
+    
+}
+
+.event2 img{
+    width:100%;
+    height:55%;
+}
+
+.event3{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding-left: 30%;
+    position: relative;
+    
+}
+
+.event4{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding-right: 30%;
+    position: relative;
+    
+}
+
+.event4 img{
+    width:100%;
+    height:55%;
+
+}
+
+.event5{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding-left: 30%;
+    position: relative;
+}
+
+.event5 img{
+    width:100%;
+    height:55%;
+}
+
+.event6{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    padding-right: 30%;
+    position: relative;
+    
+}
+
+
+
