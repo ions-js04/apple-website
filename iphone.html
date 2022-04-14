@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +13,8 @@
     <link rel="stylesheet" href="src/main.css" type="text/css" />
     <link rel="stylesheet" href="src/iphone.css" type="text/css" />
     <!--Script-->
-    <script type="text/JavaScript" src="src/iphone.js"></script>
-    <script type="text/JavaScript" src="src/iphoneanime.js"></script>
+    <script src="src/iphone.js"></script>
+    <script src="src/iphoneanime.js"></script>
 
 </head>
 <body>
@@ -42,6 +43,7 @@
             <li><a href="products.html" id="button-buy">Shop</a></li>
         </ul>
     </nav>
+    <!--Parallax Image Scroll-->
     <header class="wrapper">
         <div class="wrap"></div>
         <div class="text">
@@ -49,7 +51,7 @@
             <div>Your new superpower.</div>
         </div>
     </header>
-
+    <!--Text Animation with script-->
     <main>
         <div class="box1">
             <h1 style="color: white; font-size: 4vw; text-align: center; text-shadow: 1px 10px 10px black;">What makes iPhone 13 Pro special?</h1>
@@ -65,6 +67,7 @@
                 <a href="#iphonevid" style="text-decoration: none; font-size: 24px;">&#129146;Watch Video</a>
             </div>
         </div>
+        <!--Table for showing flagship specifications-->
         <div class="gridbox" style="background-image: url(img/iphonegif.gif); background-size: cover;">
             <h1 style="color: white; margin-top: 10px;margin-bottom: 20px; text-align: center; font-size: 45px;">iPhone 13 Pro Specifications</h1>
             <div class="tablebox">
@@ -121,23 +124,28 @@
                 </table>
             </div>
         </div>
+        <!--Video container-->
         <div class="gridbox">
             <div class="vidbox" id="iphonevid">
-                <video width="100%" height="100%" poster="img/placeholder.jpg" controls style="border-radius: 20px;">
+                <video poster="img/placeholder.jpg" controls style="border-radius: 20px;" id="videosize">
                     <source src="img/iphonevideo.mp4" type="video/mp4">
+                    <source src="img/iphonevideo.ogg" type="video/ogg">
                     Your browser does not support the video format. Perhaps it is time to install Safari&trade;.
                 </video>
             </div>
         </div>
+        <!--Div for flipping image cards-->
         <div class="box2">
             <h1 style="color: black; text-align: center; margin: 10px; text-shadow: 1px 1px gray;">Looking for other iPhone Models?</h1>
             <div class="modelbox">
                 <div class="modelcontain">
                     <div class="model">
+                        <!--Hold Image-->
                         <div class="modelimg">
                             <h1 style="font-size: 20px; text-align: center; color: black;">iPhone 13 Pro Max</h1>
                             <img src="img/iphonepromax.png" alt="iPhone 13 Pro Max">
                         </div>
+                        <!--Hold Flip Content-->
                         <div class="content" style="background: pink;">
                             <div>
                                 <h1 style="font-size: 20px; text-align: center;">iPhone 13 Pro Max</h1>
@@ -177,6 +185,7 @@
                     </div>
                 </div>
             </div>
+            <!--Button to jump to products.html-->
             <div class="btnjmp">
                 <a href="products.html">Show More</a>
             </div>
@@ -229,7 +238,5 @@
         </div>
     </footer>
 </body>
-
 <script src="src/main.js"></script>
-
 </html>

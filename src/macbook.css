@@ -7,6 +7,7 @@
     padding: 0;
     align-items: center;
     background-image: url(../img/backgroundmac.gif);
+    background-size: cover;
 }
 
 .animation {
@@ -153,7 +154,6 @@
     margin-right: auto;
     position: relative;
 }
-
 
 .popup {
     margin-left: 10px;
@@ -330,7 +330,7 @@ tbody:hover tr:hover td {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1000px;
+    width: 100%;
     transform-style: preserve-3d;
 }
 
@@ -398,4 +398,47 @@ tbody:hover tr:hover td {
 
 .content div {
     line-height: 35px;
+}
+
+.btnjmp {
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: auto;
+}
+
+.btnjmp a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.btnjmp a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.btnjmp:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s;
 }

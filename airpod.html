@@ -34,7 +34,7 @@
     <nav id="sticky-nav"> <!-- must not be contained in a wrapper (it'll restrict its scroll area)-->
         <p id="nav-title"></p> <!-- Nav title will be inserted based on document title -->
         <ul>
-            <li><a href="products.html">Overview</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="reviews.html">Reviews</a></li>
             <li><a href="products.html" id="button-buy">Shop</a></li>
@@ -42,14 +42,85 @@
     </nav>
 
     <main>
-        <div class="Airpod">
-            <img src="img/" alt="AirPods">
+        <div class="Airpods">
+            <img src="img/apple-airpods-pro-banner.gif" alt="AirPods">
             <div class="blank"></div>
             <header>AirPods</header>
-            <p></p>
+            <p>The new class of listening experience.</p>
         </div>
-        <div class="Info">
-            
+
+        <div class="Info_section">
+            <div id="one-tap" class="section">
+                <img src="img/one-tap-setup.jpg" alt="One Tap Setup" style="width:35%;">
+                <h1>One-tap Setup</h1>
+                <p class="hidden_text">Connect to your Apple devices immediately in just one tap.</p>
+            </div>
+            <div id="auto-switch" class="section">
+                <img src="img/auto-switch.png" alt="Automatic Switching" style="width:35%;">
+                <h1>Automatic Switching</h1>
+                <p class="hidden_text">Seamless audio switching between your Apple devices. <br> Uninterrupted music listening.</p>
+            </div>
+            <div id="audio-sharing" class="section">
+                <img src="img/audio-sharing.png" alt="Audio Sharing" style="width:25%;">
+                <h1>Audio Sharing</h1>
+                <p class="hidden_text">Listen with your friends. Listen with your family. <br> Listen between two sets of Airpods. </p>
+            </div>
+        </div>
+
+        <div class="Products">
+            <h1>Which Airpods suit you?</h1>
+            <div class="product_row">
+                <div id="airpods-3rd" class="airpods" onclick="showDiv3rd()">
+                    <img src="img/airpods-3rd.jpg" alt="Airpods 3rd" style="width:100%;">
+                    <h1>Airpods 3rd generation</h1>
+                </div>
+                <div id="airpods-pro" class="airpods" onclick="showDivPro()">
+                    <img src="img/airpods-pro.jpg" alt="Airpods Pro" style="width:100%;"> 
+                    <h1>Airpods Pro</h1>
+                    <div class="hidden_table">
+                    </div>
+                </div>
+                <div id="airpods-max" class="airpods" onclick="showDivMax()">
+                    <img src="img/airpods-max.jpg" alt="Airpods Max" style="width:100%;">
+                    <h1>Airpods Max</h1>
+                    <div class="hidden_table">
+                    </div>
+                </div>
+            </div>
+            <div class="product_table">
+                <div id="airpods-table" class="hidden_table">
+                    <p>
+                        Spatial audio with dynamic head tracking <br>
+                        <br> <b> &ndash; </b> <br>
+                        <br> Sweat and water resistant<br>
+                        <br> MagSafe, wireless and Lightning Charge <br>
+                        <br> Up to <b>6</b> hours of listening with a single charge <br>
+                    </p>
+                </div>
+                <div id="pro-table" class="hidden_table">
+                    <p>
+                        Spatial audio with dynamic head tracking <br>
+                        <br> Active Noise Cancellation <br>
+                        <br> Sweat and water resistant <br>
+                        <br> MagSafe, wireless and Lightning Charge <br>
+                        <br> Up to <b>4.5</b> hours of listening with a single charge <br>
+                    </p>
+                </div>
+                <div id="max-table" class="hidden_table">
+                    <p>
+                        Spatial audio with dynamic head tracking <br>
+                        <br> Active Noise Cancellation <br>
+                        <br> <b> &ndash; </b> <br>
+                        <br> MagSafe, wireless and Lightning Charge <br>
+                        <br> Up to <b>20</b> hours of listening with a single charge <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <header>Get Airpods now.</header>
+            <div id="shop"><a href="products.html">Shop Now</a></div>
         </div>
     </main>
 
@@ -93,10 +164,13 @@
                 <a href="contact_us.html">FAQs</a>
             </div>
         </div>
-        <p id="copyright">Copyright © 2022 Apple Inc. All rights reserved.</p>
+        <div id="copyright">
+            <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+            <p>This website is an independent publication and has not been authorized, sponsored, or otherwise approved by Apple Inc. All rights reserved to Apple Inc.</p>
+        </div>
     </footer>
 </body>
-
-<script src="src/main.js"></script>
-
+    <!--JaveScript Files-->
+    <script src="src/main.js"></script>
+    <script src="src/airpod.js"></script>
 </html>

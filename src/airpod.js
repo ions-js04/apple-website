@@ -1,11 +1,11 @@
-var x = document.getElementById("se-7-table");
-var y = document.getElementById("SE-table");
-var z = document.getElementById("se-3-table");
+var x = document.getElementById("airpods-table");
+var y = document.getElementById("pro-table");
+var z = document.getElementById("max-table");
 
-function showDivS7() {
+function showDiv3rd() {
     if (x.style.opacity == 0) {
         x.style.opacity = 1;
-        x.style.lineHeight = 1.5;
+        x.style.lineHeight = 2.5;
         x.style.height = "50vw";
     } 
     else {
@@ -16,10 +16,10 @@ function showDivS7() {
     }
   }
 
-  function showDivSE() {
+  function showDivPro() {
     if (y.style.opacity == 0) {
         y.style.opacity = 1;
-        y.style.lineHeight = 1.5;
+        y.style.lineHeight = 2.5;
         y.style.height = "50vw";
     } 
     else {
@@ -30,10 +30,10 @@ function showDivS7() {
     }
   }
 
-  function showDivS3() {
+  function showDivMax() {
     if (z.style.opacity == 0) {
         z.style.opacity = 1;
-        z.style.lineHeight = 1.5;
+        z.style.lineHeight = 2.5;
         z.style.height = "50vw";
     } 
     else {
