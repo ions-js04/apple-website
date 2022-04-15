@@ -14,9 +14,9 @@ function showDiv3rd() {
         x.style.height = 0;
         x.style.opacity = 0;
     }
-  }
+}
 
-  function showDivPro() {
+function showDivPro() {
     if (y.style.opacity == 0) {
         y.style.opacity = 1;
         y.style.lineHeight = 2.5;
@@ -28,9 +28,9 @@ function showDiv3rd() {
         y.style.height = 0;
         y.style.opacity = 0;
     }
-  }
+}
 
-  function showDivMax() {
+function showDivMax() {
     if (z.style.opacity == 0) {
         z.style.opacity = 1;
         z.style.lineHeight = 2.5;
@@ -42,4 +42,6 @@ function showDiv3rd() {
         z.style.height = 0;    
         z.style.opacity = 0;
     }
-  }
+}
+
+  
