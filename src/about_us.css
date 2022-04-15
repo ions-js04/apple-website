@@ -1,0 +1,65 @@
+.us1 {grid-area: us1;}
+.us2 {grid-area: us2;}
+.us3 {grid-area: us3;}
+.history{grid-area: history;}
+
+.grid-abtus{
+    width: 50%;
+    height: 1300px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas: 
+    'us1 history'
+    'us2 history'
+    'us3 history'
+}
+
+
+.abt.us1, .abt.us2, .abt.us3{
+    width: 100%;
+    height:33.33%;
+    padding: 25% 25% 25% 25%;
+    background-size: cover;
+    
+    
+}
+
+
+
+.abt.us1 p,.abt.us2 p,.abt.us3 p{
+    position: relative;
+    bottom: -8vh;
+    opacity: 0;
+}
+
+.abt.us1:hover h1,.abt.us2:hover h1,.abt.us3:hover h1{
+    opacity: 0;
+}
+
+.abt.us1:hover p, .abt.us2:hover p, .abt.us3:hover p {
+    bottom: 16vh;
+    opacity: 1;
+    transition: all 1.0s linear;
+}
+
+.abt.us1 p, .abt.us2 p{
+    color: black;
+}
+
+.abt.us2 p{
+    padding-top: 20%;
+}
+
+.abt.us3 h1, .abt.us2 h1, .abt.us1 h1{
+    padding-left: 25%; 
+}
+
+.abt.us3 h1, p{
+    color: aliceblue;
+}
+
+
+
+
+
+
