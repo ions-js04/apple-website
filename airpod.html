@@ -67,8 +67,34 @@
             </div>
         </div>
 
+        <div class="audio_section">
+            <h1>Listen to Your favorite Music</h1>
+            <div class="audio_box">
+                <img src="img/ed-sheeran.png" alt="Ed Sheeran Icon" style="width:15%;">
+                <p>Ed Sheeran - Shape of You</p>
+                <audio controls id="preview1">
+                    <source src="img/shape-of-you-preview.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio_box">
+                <img src="img/the-weeknd.png" alt="The Weeknd Icon" style="width:15%;">
+                <p>The Weeknd - Blinding Lights</p>
+                <audio controls id="preview2">
+                    <source src="img/blinding-light-preview.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="audio_box">
+                <img src="img/imagine-dragons.png" alt="Imagine Dragons Icon" style="width:15%;">
+                <p>Imagine Dragons x J.I.D - Enemy</p>
+                <audio controls id="preview3">
+                    <source src="img/enemy-preview.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <h1>...and more!</h1>
+        </div>
+
         <div class="Products">
-            <h1>Which Airpods suit you?</h1>
+            <h1>...So, which Airpods suit you?</h1>
             <div class="product_row">
                 <div id="airpods-3rd" class="airpods" onclick="showDiv3rd()">
                     <img src="img/airpods-3rd.jpg" alt="Airpods 3rd" style="width:100%;">
@@ -170,6 +196,15 @@
         </div>
     </footer>
 </body>
+    <!--Set Music Preview Volume-->
+    <script>
+        var audiovol1 = document.getElementById("preview1");
+        audiovol1.volume = 0.5;
+        var audiovol2 = document.getElementById("preview2");
+        audiovol2.volume = 0.5;
+        var audiovol3 = document.getElementById("preview3");
+        audiovol3.volume = 0.5;
+    </script>
     <!--JaveScript Files-->
     <script src="src/main.js"></script>
     <script src="src/airpod.js"></script>
