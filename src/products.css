@@ -8,56 +8,13 @@ main {
     padding: 1vw;
 }
 
-.modal {    
-    display: grid;
-    
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 3vw;
-    background-color: #fff173;
-    transition: all 0.5s;
-}
-
-#blur.active {
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
-
-.modal .modal-content {
-    position: relative;
-    max-width: 800px;
-}
-
-h2 {
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.modal-content img {
-    display: block;
-    max-width: 100%;
-}
-
-.modal a {
-    display: inline-block;
-    position: relative;
-    padding: 5px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #111;
-}
-
 #filter-btn-container {
     display: flex;
     justify-content: center;
     margin: 4vh 0;
 }
 
-label { /* radio buttons label */
+#filter-btn-container label { /* radio buttons label */
     cursor: pointer;
     background-color: transparent;
     border: 0.3px solid #d1d1d1;
@@ -68,15 +25,15 @@ label { /* radio buttons label */
     transition: all 0.5s;
 }
 
-label:hover { 
+#filter-btn-container label:hover { 
     background-color: #d1d1d13f;
 }
 
-input:checked  + label { /* selects the first label placed immediately after that selected input*/
+#filter-btn-container input:checked  + label { /* selects the first label placed immediately after that selected input*/
     background-color: #d1d1d1;
 }
 
-input {
+#filter-btn-container input {
     opacity: 0; /* hide radio button discs */
     z-index: 1; /* layer it above its label, to be selectable */
 }
@@ -85,33 +42,146 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product-box {
-    padding: 1.5vw;
-    margin-bottom: 2vw;
-    overflow: hidden; /* locks pseudo-element inside parent container*/
+    margin: 0 1vw 2vw;
+    padding: 1vw;
+    overflow: hidden;
     position: relative; /* common combo for overlays: relative positioning for parent + absolute positioning for child */
-    width: calc(100%/3); /* allocate a 3-col layout for each row */
+    border-radius: 1vw;
+    width: calc(100%/6); /* allocate a 3-col layout for each row */
+    height: 5%;
+    border: 0.1px solid #d1d1d1;
+
 }
 
-#popup {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    width: 600px;
-    padding: 50px;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 5px 30px rgba (0,0,0,0.3);
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
+.product-box .product-img {
+    width: 90%;
     transition: all 0.5s;
 }
 
-#popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s
+.product-box:hover .product-img {
+    transform: scale(1.1);
 }
+
+/* Modal */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        top: 5%;
+    }
+    to {
+        opacity: 1;
+        top: 8%;
+    }
+}
+
+.modal {   
+    display: none; 
+    position: fixed;
+    left: 3%;
+    right: 3%; /* centering modal */
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.7);  
+    backdrop-filter: blur(3vw);
+    border-radius: 1vw;
+    padding: 6vw 2vw 2vw;
+    z-index: 2;
+    animation: fadeIn 0.5s forwards;
+}
+
+.modal.active {
+    display: block;
+}
+
+body.scroll_disabled { /* disable scrolling when modal is opened */
+    overflow: hidden;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-areas: 
+    'modelImg  modelImg modelName modelColor modelCap '
+    'modelSpecs modelSpecs toastBox toastBox  toastBox';
+}
+
+.modelImg {grid-area: modelImg;}
+.modelName {grid-area: modelName;}
+.modelSpecs {grid-area: modelSpecs;}
+.modelColor {grid-area: modelColor;}
+.toastBox {grid-area: toastBox;}
+.modelCap {grid-area: modelCap;}
+
+.modelImg img {
+    width: 85%;
+}
+
+.modelName,
+.modelColor,
+.modelCap {
+    padding: 0 3vw;
+}
+
+.modelSpecs {
+    padding: 2vw 3vw;
+}
+
+
+.modelName, 
+.modelColor,
+.modelCap {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.3px solid #d1d1d1;
+}
+
+.modelCap {
+    border-right: none;
+}
+
+.modelName label,
+.modelColor label,
+.modelCap label { /* radio buttons label */
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.3px solid #d1d1d1;
+    border-radius: 0.5vw;
+    padding: 0.5vw 0.7vw;
+    margin: 0 0.5vw;
+    z-index: 0; /* layer it under its radio button */
+    transition: background-color 0.2s;
+}
+
+.modelName label:hover,
+.modelColor label:hover,
+.modelCap label:hover { 
+    background-color: #d5d5d5a1;
+}
+
+.modelName input:checked  + label,
+.modelColor input:checked  + label,
+.modelCap input:checked  + label { /* selects the first label placed immediately after that selected input*/
+    border: 2px solid rgb(41, 152, 255);
+    background-color: transparent;
+}
+
+.modelName input,
+.modelColor input,
+.modelCap input {
+    opacity: 0; /* hide radio button discs */
+    z-index: 1; /* layer it above its label, to be selectable */
+}
+
+li::marker { /* bullet points */
+    color: #d1d1d1;
+    font-size: 0.8em;
+
+}
+
+
+
+
+

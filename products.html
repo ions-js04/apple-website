@@ -70,28 +70,81 @@
         <div id="products-container">
 
             <div class="product-box macbook">
+                <img src="img/macbookpro-2019-16-inch.png" alt="macbook pro 16-inch (2019)" class="product-img" id="mb_pro_2019_16inch" onclick="toggleModal(this.id)"/>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modelImg">
+                            <img src="img/macbookpro-2019-16-inch.png" alt="macbook pro 16-inch (2019)"/>
+                        </div>
+                        <div class="modelName">
+                            <h2>Macbook Pro 16-inch</h2>
+                            <p>Choose model:</p>
+
+                            <input type="radio" id="name_mb_pro_2019_16inch" checked="checked" name="mbpro_16in_modelName" /> <!-- this radio btn checked by default -->
+                            <label for="name_mb_pro_2019_16inch" onclick="">Macbook Pro 16-inch (2019)</label>
                 
+                            <input type="radio" id="name_mb_pro_2021_16inch" name="mbpro_16in_modelName" />
+                            <label for="name_mb_pro_2021_16inch" onclick="">Macbook Pro 16-inch (2021)</label>          
+                        </div>
+
+                        <div class="modelSpecs">
+                            <ul id="specs_mb_pro_2019_16inch">
+                                <li>16″ Liquid Retina XDR display</li>
+                                <li>Up to Intel Core i9 processor</li>
+                                <li>Up to 8-core CPU</li>
+                                <li>Up to AMD Radeon Pro 5600M GPU</li>
+                                <li>Up to 64GB Memory</li>
+                                <li>Up to 11 hr battery life</li>
+                                <li>Touch bar and Touch ID</li>
+                            </ul>
+                            <ul id="specs_mb_pro_2021_16inch">
+                                <li>16.2″ Liquid Retina XDR display</li>
+                                <li>Apple M1 Pro chip or
+                                    Apple M1 Max chip</li>
+                                <li>10-core CPU</li>
+                                <li>Up to 32-Core GPU</li>
+                                <li>Up to 64GB unified memory</li>
+                                <li>Up to 21 hr battery life</li>
+                                <li>Touch ID</li>
+                            </ul>
+                        </div>
+
+                        <div class="modelColor">
+                            <h2>Choose finish:</h2>
+
+                            <input type="radio" id="color_mb_pro_16in_spacegrey" checked="checked" name="mbpro_16in_modelColor" /> <!-- this radio btn checked by default -->
+                            <label for="color_mb_pro_16in_spacegrey" onclick="">Space Grey</label>
+                
+                            <input type="radio" id="color_mb_pro_16in_silver" name="mbpro_16in_modelColor" />
+                            <label for="color_mb_pro_16in_silver" onclick="">Silver</label>          
+                        </div>
+
+                        <div class="modelCap">
+                            <h2>Choose capacity:</h2>
+
+                            <input type="radio" id="cap_mb_pro_16in_1tb" checked="checked" name="mbpro_16in_modelCap" /> <!-- this radio btn checked by default -->
+                            <label for="cap_mb_pro_16in_1tb" onclick="">1 TB</label>
+                
+                            <input type="radio" id="cap_mb_pro_16in_3tb" name="mbpro_16in_modelCap" /> 
+                            <label for="cap_mb_pro_16in_3tb" onclick="">3 TB</label>
+
+                            <input type="radio" id="cap_mb_pro_16in_5tb" name="mbpro_16in_modelCap" /> 
+                            <label for="cap_mb_pro_16in_5tb" onclick="">5 TB</label>
+
+                            <input type="radio" id="cap_mb_pro_16in_8tb" name="mbpro_16in_modelCap" />
+                            <label for="cap_mb_pro_16in_8tb" onclick="">8 TB</label>
+                        </div>
+
+                        <div class="toastBox">
+                            <p class="price"></p>
+                            <a href="#" onclick="closeModal()">Close</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
+        
         </div>
-
-        <div class="modal" id="blur">
-            <div class="modal-content">
-                <img src="img/airpods-3rd.jpg" onclick="toggleModal()"/>
-            </div>
-        </div>
-        <div id="popup">
-            <h2>lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quos, quasi sunt repudiandae dolorum incidunt qui inventore id ipsam quia dolor? Suscipit nesciunt ea deleniti vitae, recusandae ex deserunt! Consequatur?
-                Error modi recusandae, illo voluptate labore eum dolorum? Similique numquam cupiditate modi. Eaque exercitationem corporis illum expedita placeat suscipit, est necessitatibus deleniti, amet, atque architecto iure? At dolorum nisi consectetur!
-                Amet atque debitis quia commodi temporibus accusantium corrupti, iste, dolorum odit voluptates hic cumque ex laboriosam ab consequatur aliquid facilis tenetur consectetur veritatis libero, ratione minima est blanditiis obcaecati! Nesciunt.
-                Repellat praesentium, corporis, rem tenetur, dolores architecto quod rerum consequatur natus odio ullam quae non doloremque quidem laboriosam laborum ex cumque neque reiciendis distinctio error. Nisi temporibus labore alias tempora!
-                Voluptates fugit reprehenderit sunt iure accusamus consequuntur quaerat nihil temporibus dolor eligendi quisquam voluptate libero officia cupiditate id sapiente quod distinctio nobis fuga, quo quibusdam autem in! Repudiandae, dolor labore?
-            </p>
-            <a href="#" onclick="toggle()">Close</a>
-        </div>    
-
     </main>
 
     <footer>
