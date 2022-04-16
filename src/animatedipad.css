@@ -26,15 +26,15 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 110vh;
-    height: auto;
     font-size: 1.5em;
+    font-style: italic;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     padding: 8px;
 }
 
 .btnjmp {
-    padding: 2px;
+    padding-bottom: 3.5px;
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -47,32 +47,21 @@
     height: auto;
 }
 
-.btnjmp a:link {
+.btnjmp a {
     text-decoration: none;
     color: white;
 }
 
-.btnjmp a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-.btnjmp a:active {
-    text-decoration: none;
-    color: white;
-}
-
-.btnjmp a:hover {
+.btnjmp:hover a {
     text-decoration: none;
     color: black;
-    background-color: white;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .btnjmp:hover {
     color: black;
     background-color: white;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 /* The rotation of background image in header */
