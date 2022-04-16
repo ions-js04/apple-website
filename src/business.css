@@ -78,10 +78,16 @@
     padding: 7% 15% 7% 15%;
 }
 
-.intro p {
+.paragraph {
     padding: 7% 18% 7% 18%;
     line-height: 2em;
     font-weight: 600;
+    opacity: 0;
+    transition: all 1.5s linear;
+}
+
+.text {
+    opacity: 1;
 }
 
 
