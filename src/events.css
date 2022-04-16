@@ -2,7 +2,7 @@
 .more-events {grid-area: more-events;}
 .event1 {grid-area: event1;}
 .event2 {grid-area: event2;}
-.event3 {grid-area: event3;}
+.event3 {grid-area: event3;}    /*define all the grid area name*/
 .event4 {grid-area: event4;}
 .event5 {grid-area: event5;}
 .event6 {grid-area: event6;}
@@ -12,7 +12,7 @@
     grid-gap: 1.0vw;
     grid-template-areas: 
     'main-event main-event'
-    "more-events more-events"
+    "more-events more-events"   /*distribute area and define area position for all div*/
     'event1 event2'
     'event3 event4'
     'event5 event6';
@@ -75,7 +75,7 @@
 
 .event2 img{
     width:100%;
-    height:55%;
+    height:55%;          /*let the image perfectly fit into the div box*/
 }
 
 .event3{
@@ -98,7 +98,7 @@
 
 .event4 img{
     width:100%;
-    height:55%;
+    height:55%;         /*let the image perfectly fit into the div box*/
 
 }
 
@@ -111,7 +111,7 @@
 }
 
 .event5 img{
-    width:100%;
+    width:100%;        /*let the image perfectly fit into the div box*/
     height:55%;
 }
 
@@ -122,6 +122,10 @@
     padding-right: 30%;
     position: relative;
     
+}
+
+h4{
+    font-weight: 500;
 }
 
 
