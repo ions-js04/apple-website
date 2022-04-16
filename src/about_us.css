@@ -74,6 +74,7 @@
     padding-top: 50px;
     max-height: 1300px;
     position: absolute;
+    overflow: scroll;
     right:0;
     background-color: pink;
 }
