@@ -19,6 +19,6 @@ function setup() {
     const h1 = document.querySelectorAll('h1');
     h1.forEach(h1 => observer.observe(h1));
     
-    const paras = document.querySelectorAll('p');
+    const paras = document.querySelectorAll('.animated');
     paras.forEach(p => observer.observe(p));
 }

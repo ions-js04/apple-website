@@ -95,7 +95,7 @@
     margin: auto;
 }
 
-.container > h1, p {
+.container > h1, .animated {
     color: white;
     margin: 20px;
     margin-bottom: 50px;
