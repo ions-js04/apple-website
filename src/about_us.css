@@ -1,13 +1,14 @@
 .us1 {grid-area: us1;}
 .us2 {grid-area: us2;}
 .us3 {grid-area: us3;}
-.history{grid-area: history;}
+.history{grid-area: history;}  /*define all grid area name*/
 
+/*define position and area for all grid*/
 .grid-abtus{
     width: 50%;
     height: 1300px;
     display: grid;
-    grid-gap: 0;
+    grid-gap: 0.2vw;                      
     grid-template-areas: 
     'us1 history'
     'us2 history'
@@ -16,30 +17,32 @@
 
 
 .abt.us1, .abt.us2, .abt.us3{
-    width: 100%;
-    height:33.33%;
-    padding: 25% 25% 25% 25%;
+    width: auto;
+    height: auto;
+    padding: auto;
     background-size: cover;
     
     
 }
 
 
-
 .abt.us1 p,.abt.us2 p,.abt.us3 p{
     position: relative;
     bottom: -8vh;
     opacity: 0;
+    font-size: large;
+    font-weight: 400;
 }
 
-.abt.us1:hover h1,.abt.us2:hover h1,.abt.us3:hover h1{
+/*all h1 element will dissapear when being pointed */
+.abt.us1:hover h1,.abt.us2:hover h1,.abt.us3:hover h1{   
     opacity: 0;
 }
 
 .abt.us1:hover p, .abt.us2:hover p, .abt.us3:hover p {
-    bottom: 16vh;
+    bottom: 10vh;
     opacity: 1;
-    transition: all 1.0s linear;
+    transition: all 1.0s linear;       /*transition for element h1 to p will be 1 second*/
 }
 
 .abt.us1 p, .abt.us2 p{
@@ -47,19 +50,133 @@
 }
 
 .abt.us2 p{
-    padding-top: 20%;
+    padding-top: 8%;
+  
+}
+
+.abt.us1 p, .abt.us2 p, .abt.us3 p{
+    text-align: center;
 }
 
 .abt.us3 h1, .abt.us2 h1, .abt.us1 h1{
-    padding-left: 25%; 
+    padding-left: 35%; 
+    padding-top:25%;
 }
 
 .abt.us3 h1, p{
     color: aliceblue;
 }
 
+/*history part*/
+.history{
+    width: 50%;
+    height:1300px;
+    padding-top: 50px;
+    max-height: 1300px;
+    position: absolute;
+    right:0;
+    background-color: pink;
+}
+.history::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: rgb(0, 0, 0);       /*middle line color*/
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
 
+.container {
+    padding: 10px 40px;
+    position: relative;
+    color: inherit;
+    width: 50%;
+}
 
+.container::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    right: -20px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #000000; /*borders of the circle*/
+    top: 17px;
+    border-radius: 40%;
+    z-index: 1;  /* let the circle covers the line*/
+}
 
+.left {
+    left: 0;
+}
 
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/*let the arrow for present become same color as discription present*/
+.left.present::before{
+    border: medium solid rgb(1, 255, 192);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(1, 255, 192);
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.discription {
+    padding: 1px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+ /* to indicate the current timeline*/
+.discription.present{
+    padding: 1px 30px;
+    background-color: rgb(1, 255, 192);
+    position: relative;
+    border-radius: 15px;
+}
+
+.discription h2{
+    text-decoration: underline;
+}
+
+.discription p{
+    color: black;
+    font-weight: 450;
+    
+}
+  
+                   
 
