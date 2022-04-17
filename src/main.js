@@ -19,3 +19,31 @@ function gradientChange(event) {
     navbar.style.background = "radial-gradient(circle at " + x + "% 100%, #f0fdf7, " + colors[randomColorIndex] + ")";
 }
 
+//slideshow for featured box
+let slideIndex = 1;
+showSlides(slideIndex); //start from slide one
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);   //next slide
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);      //let the number of slide matches the actual number slide
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+
+  if (n > slides.length) {
+      slideIndex = 1
+    }    
+  if (n < 1) {
+      slideIndex = slides.length  // when user press previous slide in first slide it will proceed to last slide
+    }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";        //looping:change the slide number and picture after click the next or previous button
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+

@@ -70,10 +70,11 @@
 /*history part*/
 .history{
     width: 50%;
-    height:1300px;
+    height:auto;
     padding-top: 50px;
     max-height: 1300px;
     position: absolute;
+    overflow: scroll;
     right:0;
     background-color: pink;
 }
@@ -86,6 +87,8 @@
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    height: 2500px;  
+   
   }
 
 .container {
@@ -177,6 +180,7 @@
     font-weight: 450;
     
 }
-  
+
+
                    
 

@@ -1,6 +1,6 @@
 /*grid for entire body within main*/
 
-.grid-healthcare {
+.grid-business {
     display: grid;
     grid-template-areas: 'picture-intro picture-intro picture-intro' 'intro intro intro' 'head-intro head-intro head-intro' 'sub-intro1 sub-intro2 sub-intro3' 'head-mac head-mac head-mac' 'picture-mac picture-mac picture-mac' 'intro-mac intro-mac intro-mac' 'sub-mac1 sub-mac2 sub-mac3' 'glass-mac glass-mac glass-mac';
     grid-gap: 0vw;
@@ -10,28 +10,28 @@
 
 /* grid-edu part for all attribute*/
 
-.grid-healthcare * {
+.grid-business * {
     text-align: center;
 }
 
 
 /*grid-edu h1 size*/
 
-.grid-healthcare h1 {
+.grid-business h1 {
     font-size: 55px;
 }
 
 
 /*paragraph size*/
 
-.grid-healthcare p {
+.grid-business p {
     font-size: 25px;
 }
 
 
 /*sub size*/
 
-.grid-healthcare sub {
+.grid-business sub {
     font-size: 25px;
     font-weight: 600;
 }
