@@ -223,6 +223,22 @@ body {
     
 }
 
+.box.reviews{
+    position: relative;
+    height: 600px;
+    background-color: rgba(39, 199, 188, 0.9904);
+}
+
+.box.reviews h2{
+    color: black;
+    text-align: center;
+}
+
+.box.reviews img{
+    width: 100%;             /*let the image perfectly fit into the div box*/
+    height: 530px;
+}
+
 .box.events {
     background-color: black;
     position: relative;
