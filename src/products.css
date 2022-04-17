@@ -160,10 +160,6 @@ body.scroll_disabled { /* disable scrolling when modal is opened */
     display: block; /* only show first ul (default selected model) */
 }
 
-.box-title:last-of-type {
-    padding: 0;
-}
-
 .modelName, 
 .modelColor,
 .modelCap {
