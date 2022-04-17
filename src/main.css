@@ -108,9 +108,67 @@ body {
     height: 500px;
     background-color: rgb(182, 180, 180);
     padding: 1vw;
-   
-    
 }
+
+/* Slideshow box*/
+.box.featured {
+  position: relative;
+  height: 600px;
+  background-color: black;
+  
+}
+
+/*fit the slide into the div box*/
+.slides.fade img{
+    width:100%; 
+    height: 585px;
+}
+
+/* Next, previous button */
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;        /* prevent being highligted when double click */
+}
+
+.previous{
+    padding-left: 0;
+}
+
+/* Put next button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text */
+.number {
+  color: hsl(0, 0%, 100%);
+  font-size: 18x;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.0s;     /*fade animation time*/
+}                                  
+                                   
+@keyframes fade {
+  from {opacity: .4}       /*previous animation dissapear, next image appear*/
+  to {opacity: 1}
+}
+
+
 
 .box.phones,.box.laptops,.box.watches,.box.tablets{
     position: relative;
