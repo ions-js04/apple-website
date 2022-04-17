@@ -226,7 +226,7 @@ body {
 .box.reviews{
     position: relative;
     height: 600px;
-    background-color: rgba(39, 199, 188, 0.9904);
+    background-color: rgb(25, 199, 187);
 }
 
 .box.reviews h2{
