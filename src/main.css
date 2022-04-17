@@ -125,7 +125,7 @@ body {
 }
 
 /* Next, previous button */
-.previous, .next {
+.left, .right {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -139,12 +139,12 @@ body {
   user-select: none;        /* prevent being highligted when double click */
 }
 
-.previous{
+.left{
     padding-left: 0;
 }
 
 /* Put next button to the right */
-.next {
+.right {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
