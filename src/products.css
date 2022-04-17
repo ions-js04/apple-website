@@ -66,6 +66,10 @@ main {
     transform: scale(1.1);
 }
 
+.box-title {
+    text-align: center;
+}
+
 /* Modal */
 
 @keyframes fadeIn {
@@ -88,7 +92,7 @@ main {
     background-color: rgba(255, 255, 255, 0.7);  
     backdrop-filter: blur(3vw);
     border-radius: 1vw;
-    padding: 6vw 2vw 2vw;
+    padding: 6vw 0 2vw;
     z-index: 2;
     animation: fadeIn 0.5s forwards;
 }
@@ -104,19 +108,35 @@ body.scroll_disabled { /* disable scrolling when modal is opened */
 .modal-content {
     display: grid;
     grid-template-areas: 
-    'modelImg  modelImg modelName modelColor modelCap '
-    'modelSpecs modelSpecs toastBox toastBox  toastBox';
+    'modelImg modelTitle modelTitle modelTitle'
+    'modelImg modelName modelColor modelCap'
+    'modelSpecs price price price';
 }
 
 .modelImg {grid-area: modelImg;}
+.modelTitle {grid-area: modelTitle;}
 .modelName {grid-area: modelName;}
 .modelSpecs {grid-area: modelSpecs;}
 .modelColor {grid-area: modelColor;}
-.toastBox {grid-area: toastBox;}
+.price {grid-area: price;}
 .modelCap {grid-area: modelCap;}
 
 .modelImg img {
     width: 85%;
+}
+
+.modelTitle {
+    padding-bottom: 3vw;
+}
+
+.modelTitle a {
+    text-decoration: none;
+    margin-left: 32vw;
+    transition: all 0.3s;
+}
+
+.modelTitle a:hover {
+    color: rgb(193, 193, 193);
 }
 
 .modelName,
@@ -126,9 +146,23 @@ body.scroll_disabled { /* disable scrolling when modal is opened */
 }
 
 .modelSpecs {
-    padding: 2vw 3vw;
+    padding: 0 3vw 7vw;
 }
 
+.modelSpecs ul {
+    display: none; /* hide other specs first */
+    animation: fadeIn 1s forwards;
+    font-size: 0.8em;
+
+}
+
+.modelSpecs ul:first-of-type {
+    display: block; /* only show first ul (default selected model) */
+}
+
+.box-title:last-of-type {
+    padding: 0;
+}
 
 .modelName, 
 .modelColor,
@@ -140,6 +174,10 @@ body.scroll_disabled { /* disable scrolling when modal is opened */
 
 .modelCap {
     border-right: none;
+}
+
+.modelCap span {
+    margin-left: 3vw;
 }
 
 .modelName label,
@@ -178,10 +216,16 @@ body.scroll_disabled { /* disable scrolling when modal is opened */
 li::marker { /* bullet points */
     color: #d1d1d1;
     font-size: 0.8em;
-
 }
 
+.price {
+    padding: 3vw;
+}
 
+.price .number {
+    font-size: 4em;
+    font-weight: 700;
+}
 
 
 
