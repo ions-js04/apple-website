@@ -70,39 +70,45 @@
         <div id="products-container">
 
             <div class="product-box macbook">
-                <img src="img/macbookpro-2019-16-inch.png" alt="macbook pro 16-inch (2019)" class="product-img" id="mb_pro_2019_16inch" onclick="toggleModal(this.id)"/>
+                <img src="img/mbpro-2019-16in(spaceGray).png" alt="macbook pro 16-inch" class="product-img" id="mbpro_16in" onclick="toggleModal(this.id)"/>
+                <p class="box-title">Macbook Pro 16-inch</p>
                 <div class="modal">
                     <div class="modal-content">
                         <div class="modelImg">
-                            <img src="img/macbookpro-2019-16-inch.png" alt="macbook pro 16-inch (2019)"/>
+                            <img id="photo_mbpro_16in" src="img/mbpro-2019-16in(spaceGray).png" alt="macbook pro 16-inch"/>
                         </div>
+                        <h1 class="modelTitle">
+                            Macbook Pro 16-inch
+                            <a href="#" onclick="closeModal()">&times;</a>
+                        </h1>
                         <div class="modelName">
-                            <h2>Macbook Pro 16-inch</h2>
-                            <p>Choose model:</p>
+                            <h2>Choose model:</h2>
 
-                            <input type="radio" id="name_mb_pro_2019_16inch" checked="checked" name="mbpro_16in_modelName" /> <!-- this radio btn checked by default -->
-                            <label for="name_mb_pro_2019_16inch" onclick="">Macbook Pro 16-inch (2019)</label>
+                            <input type="radio" id="name_mbpro_2019_16in" onclick="mbpro_16in(this.id)" checked="checked" name="mbpro_16in_modelName" /> <!-- this radio btn checked by default -->
+                            <label for="name_mbpro_2019_16in" >Macbook Pro 16-inch (2019)</label>
                 
-                            <input type="radio" id="name_mb_pro_2021_16inch" name="mbpro_16in_modelName" />
-                            <label for="name_mb_pro_2021_16inch" onclick="">Macbook Pro 16-inch (2021)</label>          
+                            <input type="radio" id="name_mbpro_2021_16in" onclick="mbpro_16in(this.id)" name="mbpro_16in_modelName" />
+                            <label for="name_mbpro_2021_16in" >Macbook Pro 16-inch (2021)</label>          
                         </div>
 
                         <div class="modelSpecs">
-                            <ul id="specs_mb_pro_2019_16inch">
+                            <ul id="mbpro_2019_16in_specs">
                                 <li>16″ Liquid Retina XDR display</li>
                                 <li>Up to Intel Core i9 processor</li>
                                 <li>Up to 8-core CPU</li>
                                 <li>Up to AMD Radeon Pro 5600M GPU</li>
+                                <li>512GB SSD storage included</li>
                                 <li>Up to 64GB Memory</li>
                                 <li>Up to 11 hr battery life</li>
                                 <li>Touch bar and Touch ID</li>
                             </ul>
-                            <ul id="specs_mb_pro_2021_16inch">
+                            <ul id="mbpro_2021_16in_specs">
                                 <li>16.2″ Liquid Retina XDR display</li>
                                 <li>Apple M1 Pro chip or
                                     Apple M1 Max chip</li>
                                 <li>10-core CPU</li>
                                 <li>Up to 32-Core GPU</li>
+                                <li>512GB SSD storage included</li>
                                 <li>Up to 64GB unified memory</li>
                                 <li>Up to 21 hr battery life</li>
                                 <li>Touch ID</li>
@@ -112,38 +118,392 @@
                         <div class="modelColor">
                             <h2>Choose finish:</h2>
 
-                            <input type="radio" id="color_mb_pro_16in_spacegrey" checked="checked" name="mbpro_16in_modelColor" /> <!-- this radio btn checked by default -->
-                            <label for="color_mb_pro_16in_spacegrey" onclick="">Space Grey</label>
+                            <input type="radio" id="mbpro_16in_spacegray" onclick="mbpro_16in(this.id)" checked="checked" name="mbpro_16in_modelColor" /> <!-- this radio btn checked by default -->
+                            <label for="mbpro_16in_spacegray">Space Gray</label>
                 
-                            <input type="radio" id="color_mb_pro_16in_silver" name="mbpro_16in_modelColor" />
-                            <label for="color_mb_pro_16in_silver" onclick="">Silver</label>          
+                            <input type="radio" id="mbpro_16in_silver" onclick="mbpro_16in(this.id)" name="mbpro_16in_modelColor" />
+                            <label for="mbpro_16in_silver">Silver</label>          
                         </div>
 
                         <div class="modelCap">
                             <h2>Choose capacity:</h2>
 
-                            <input type="radio" id="cap_mb_pro_16in_1tb" checked="checked" name="mbpro_16in_modelCap" /> <!-- this radio btn checked by default -->
-                            <label for="cap_mb_pro_16in_1tb" onclick="">1 TB</label>
+                            <input type="radio" id="mbpro_16in_512gb" onclick="mbpro_16in(this.id)" checked="checked" name="mbpro_16in_modelCap" /> <!-- this radio btn checked by default (onclick must be under input in order to work)-->
+                            <label for="mbpro_16in_512gb" >512 GB <span>+ RM 0</span></label>
                 
-                            <input type="radio" id="cap_mb_pro_16in_3tb" name="mbpro_16in_modelCap" /> 
-                            <label for="cap_mb_pro_16in_3tb" onclick="">3 TB</label>
+                            <input type="radio" id="mbpro_16in_1tb" onclick="mbpro_16in(this.id)" name="mbpro_16in_modelCap" /> <!-- this radio btn checked by default -->
+                            <label for="mbpro_16in_1tb">1 TB <span>+ RM 1,600</span></label>
+                
+                            <input type="radio" id="mbpro_16in_2tb" onclick="mbpro_16in(this.id)" name="mbpro_16in_modelCap" /> 
+                            <label for="mbpro_16in_2tb">2 TB <span>+ RM 3,000</span></label>
 
-                            <input type="radio" id="cap_mb_pro_16in_5tb" name="mbpro_16in_modelCap" /> 
-                            <label for="cap_mb_pro_16in_5tb" onclick="">5 TB</label>
+                            <input type="radio" id="mbpro_16in_4tb" onclick="mbpro_16in(this.id)"name="mbpro_16in_modelCap" /> 
+                            <label for="mbpro_16in_4tb">4 TB <span>+ RM 5,000</span></label>
 
-                            <input type="radio" id="cap_mb_pro_16in_8tb" name="mbpro_16in_modelCap" />
-                            <label for="cap_mb_pro_16in_8tb" onclick="">8 TB</label>
+                            <input type="radio" id="mbpro_16in_8tb" onclick="mbpro_16in(this.id)" name="mbpro_16in_modelCap" />
+                            <label for="mbpro_16in_8tb">8 TB <span>+ RM 8,800</span></label>
                         </div>
 
-                        <div class="toastBox">
-                            <p class="price"></p>
-                            <a href="#" onclick="closeModal()">Close</a>
+                        <div class="price">
+                            <p>Estimated price:</p>
+                            <p class="number" id="mbpro_16in_price">RM 10,799</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box macbook">
+                <img src="img/mbpro-2021-14in(spaceGray).png" alt="macbook pro 14-inch" class="product-img" id="mbpro_14in" onclick="toggleModal(this.id)"/>
+                <p class="box-title">Macbook Pro 14-inch</p>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modelImg">
+                            <img id="photo_mbpro_14in" src="img/mbpro-2021-14in(spaceGray).png" alt="macbook pro 14-inch"/>
+                        </div>
+                        <h1 class="modelTitle">
+                            Macbook Pro 14-inch
+                            <a href="#" onclick="closeModal()">&times;</a>
+                        </h1>
+                        <div class="modelName">
+                            <h2>Choose model:</h2>
+
+                            <input type="radio" id="name_mbpro_2021_14in" onclick="mbpro_14in(this.id)" checked="checked" name="mbpro_14in_modelName" /> <!-- this radio btn checked by default -->
+                            <label for="name_mbpro_2019_16in" >Macbook Pro 14-inch (2021)</label>
                         </div>
 
+                        <div class="modelSpecs">
+                            <ul id="mbpro_2021_14in_specs">
+                                <li>14.2″ Liquid Retina XDR display</li>
+                                <li>Apple M1 Pro chip or
+                                    Apple M1 Max chip</li>
+                                <li>Up to 10-core CPU</li>
+                                <li>Up to 32-Core GPU</li>
+                                <li>Up to 8TB storage</li>
+                                <li>Up to 64GB unified memory</li>
+                                <li>Up to 17 hr battery life</li>
+                                <li>Touch ID</li>
+                            </ul>
+                        </div>
+
+                        <div class="modelColor">
+                            <h2>Choose finish:</h2>
+
+                            <input type="radio" id="mbpro_14in_spacegray" onclick="mbpro_14in(this.id)" checked="checked" name="mbpro_14in_modelColor" /> <!-- this radio btn checked by default -->
+                            <label for="mbpro_14in_spacegray">Space Gray</label>
+                
+                            <input type="radio" id="mbpro_14in_silver" onclick="mbpro_14in(this.id)" name="mbpro_14in_modelColor" />
+                            <label for="mbpro_14in_silver">Silver</label>          
+                        </div>
+
+                        <div class="modelCap">
+                            <h2>Choose capacity:</h2>
+
+                            <input type="radio" id="mbpro_14in_512gb" onclick="mbpro_14in(this.id)" checked="checked" name="mbpro_14in_modelCap" /> <!-- this radio btn checked by default (onclick must be under input in order to work)-->
+                            <label for="mbpro_14in_512gb" >512 GB <span>+ RM 0</span></label>
+                
+                            <input type="radio" id="mbpro_14in_1tb" onclick="mbpro_14in(this.id)" name="mbpro_14in_modelCap" /> <!-- this radio btn checked by default -->
+                            <label for="mbpro_14in_1tb">1 TB <span>+ RM 800</span></label>
+                
+                            <input type="radio" id="mbpro_14in_2tb" onclick="mbpro_14in(this.id)" name="mbpro_14in_modelCap" /> 
+                            <label for="mbpro_14in_2tb">2 TB <span>+ RM 2,400</span></label>
+
+                            <input type="radio" id="mbpro_14in_4tb" onclick="mbpro_14in(this.id)"name="mbpro_14in_modelCap" /> 
+                            <label for="mbpro_14in_4tb">4 TB <span>+ RM 4,800</span></label>
+
+                            <input type="radio" id="mbpro_14in_8tb" onclick="mbpro_14in(this.id)" name="mbpro_14in_modelCap" />
+                            <label for="mbpro_14in_8tb">8 TB <span>+ RM 9,600</span></label>
+                        </div>
+
+                        <div class="price">
+                            <p>Estimated price:</p>
+                            <p class="number" id="mbpro_14in_price">RM 8,799</p>
+                        </div>
                     </div>
                 </div>
             </div>
         
+            <div class="product-box macbook">
+                <img src="img/mbpro-2020-13in(spaceGray).png" alt="macbook pro 13-inch" class="product-img" id="mbpro_13in" onclick="toggleModal(this.id)"/>
+                <p class="box-title">Macbook Pro 13-inch</p>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modelImg">
+                            <img id="photo_mbpro_13in" src="img/mbpro-2020-13in(spaceGray).png" alt="macbook pro 13-inch"/>
+                        </div>
+                        <h1 class="modelTitle">
+                            Macbook Pro 13-inch
+                            <a href="#" onclick="closeModal()">&times;</a>
+                        </h1>
+                        <div class="modelName">
+                            <h2>Choose model:</h2>
+
+                            <input type="radio" id="name_mbpro_13in_4t(2020)" onclick="mbpro_13in(this.id)" checked="checked" name="mbpro_13in_modelName" /> <!-- this radio btn checked by default -->
+                            <label for="name_mbpro_13in_4t(2020)">Macbook Pro 13-inch Four Thunderbolt, 3 Ports (2020)</label>
+                
+                            <input type="radio" id="name_mbpro_13in_2t(2020)" onclick="mbpro_13in(this.id)" name="mbpro_13in_modelName" />
+                            <label for="name_mbpro_13in_2t(2020)">Macbook Pro 13-inch Two Thunderbolt, 3 Ports (2020)</label>
+
+                            <input type="radio" id="name_mbpro_13in_2t(2016)" onclick="mbpro_13in(this.id)" name="mbpro_13in_modelName" />
+                            <label for="name_mbpro_13in_2t(2016)">Macbook Pro 13-inch Two Thunderbolt, 3 Ports (2016)</label>
+
+                            <input type="radio" id="name_mbpro_13in_m1(2020)" onclick="mbpro_13in(this.id)" name="mbpro_13in_modelName" />
+                            <label for="name_mbpro_13in_m1(2020)">Macbook Pro 13-inch M1 (2020)</label>          
+                        </div>
+
+                        <div class="modelSpecs">
+                            <ul id="mbpro_13in_4t(2020)_specs">
+                                <li>13.3″ Retina display</li>
+                                <li>Up to Intel Core i7 processor</li>
+                                <li>4-core CPU</li>
+                                <li>Intel Iris Plus Graphics GPU</li>
+                                <li>Up to 4TB storage</li>
+                                <li>Up to 32GB Memory</li>
+                                <li>Up to 10 hr battery life</li>
+                                <li>Touch bar and Touch ID</li>
+                            </ul>
+                            <ul id="mbpro_13in_2t(2020)_specs">
+                                <li>13.3″ Retina display</li>
+                                <li>Up to Intel Core i7 processor</li>
+                                <li>4-core CPU</li>
+                                <li>Intel Iris Plus Graphics 645 GPU</li>
+                                <li>Up to 2TB storage</li>
+                                <li>Up to 16GB Memory</li>
+                                <li>Up to 10 hr battery life</li>
+                                <li>Touch bar and Touch ID</li>
+                            </ul>
+                            <ul id="mbpro_13in_2t(2016)_specs">
+                                <li>13.3″ Retina display</li>
+                                <li>Up to Intel Core i7 processor</li>
+                                <li>2-core CPU</li>
+                                <li>Intel Iris Graphics 540 GPU</li>
+                                <li>Up to 1TB storage</li>
+                                <li>Up to 16GB Memory</li>
+                                <li>Up to 10 hr battery life</li>
+                            </ul>
+                            <ul id="mbpro_13in_m1(2020)_specs">
+                                <li>13.3″ Retina display</li>
+                                <li>Apple M1 chip</li>
+                                <li>8-core CPU</li>
+                                <li>8-core GPU</li>
+                                <li>Up to 2TB storage</li>
+                                <li>Up to 16GB Memory</li>
+                                <li>Up to 20 hr battery life</li>
+                                <li>Touch bar and Touch ID</li>
+                            </ul>
+                        </div>
+
+                        <div class="modelColor">
+                            <h2>Choose finish:</h2>
+
+                            <input type="radio" id="mbpro_13in_spacegray" onclick="mbpro_13in(this.id)" checked="checked" name="mbpro_13in_modelColor" /> <!-- this radio btn checked by default -->
+                            <label for="mbpro_13in_spacegray">Space Gray</label>
+                
+                            <input type="radio" id="mbpro_13in_silver" onclick="mbpro_13in(this.id)" name="mbpro_13in_modelColor" />
+                            <label for="mbpro_13in_silver">Silver</label>          
+                        </div>
+
+                        <div class="modelCap">
+                            <h2>Choose capacity:</h2>
+
+                            <input type="radio" id="mbpro_13in_512gb" onclick="mbpro_13in(this.id)" checked="checked" name="mbpro_13in_modelCap" /> <!-- this radio btn checked by default (onclick must be under input in order to work)-->
+                            <label for="mbpro_13in_512gb" >512 GB <span>+ RM 0</span></label>
+                
+                            <input type="radio" id="mbpro_13in_1tb" onclick="mbpro_13in(this.id)" name="mbpro_13in_modelCap" /> <!-- this radio btn checked by default -->
+                            <label for="mbpro_13in_1tb">1 TB <span>+ RM 800</span></label>
+                
+                            <input type="radio" id="mbpro_13in_2tb" onclick="mbpro_13in(this.id)" name="mbpro_13in_modelCap" /> 
+                            <label for="mbpro_13in_2tb">2 TB <span>+ RM 2,400</span></label>
+                        </div>
+
+                        <div class="price">
+                            <p>Estimated price:</p>
+                            <p class="number" id="mbpro_13in_price">RM 6,399</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box macbook">
+                <img src="img/mbair-retina(spaceGray).png" alt="macbook air" class="product-img" id="mbair" onclick="toggleModal(this.id)"/>
+                <p class="box-title">Macbook Air</p>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modelImg">
+                            <img id="photo_mbair" src="img/mbair-retina(spaceGray).png" alt="macbook air"/>
+                        </div>
+                        <h1 class="modelTitle">
+                            Macbook Air
+                            <a href="#" onclick="closeModal()">&times;</a>
+                        </h1>
+                        <div class="modelName">
+                            <h2>Choose model:</h2>
+
+                            <input type="radio" id="name_mbair_retina" onclick="mbair(this.id)" checked="checked" name="mbair_modelName" /> <!-- this radio btn checked by default -->
+                            <label for="name_mbair_retina">Macbook Air, Retina (2020)</label>
+                
+                            <input type="radio" id="name_mbair_m1" onclick="mbair(this.id)" name="mbair_modelName" />
+                            <label for="name_mbair_m1">Macbook Air, M1 (2020)</label>
+                        </div>
+
+                        <div class="modelSpecs">
+                            <ul id="mbair_retina_specs">
+                                <li>13.3″ Retina display</li>
+                                <li>Up to Intel Core i7 processor</li>
+                                <li>Up to 4-core CPU</li>
+                                <li>Intel Iris Plus Graphics GPU</li>
+                                <li>Up to 2TB storage</li>
+                                <li>Up to 16GB Memory</li>
+                                <li>Up to 12 hr battery life</li>
+                                <li>Touch ID</li>
+                            </ul>
+                            <ul id="mbair_m1_specs">
+                                <li>13.3″ Retina display</li>
+                                <li>Apple M1 Chip</li>
+                                <li>8-core CPU</li>
+                                <li>Up to 8-core GPU</li>
+                                <li>Up to 2TB storage</li>
+                                <li>Up to 16GB Memory</li>
+                                <li>Up to 18 hr battery life</li>
+                                <li>Touch ID</li>
+                            </ul>
+                        </div>
+
+                        <div class="modelColor">
+                            <h2>Choose finish:</h2>
+
+                            <input type="radio" id="mbair_spacegray" onclick="mbair(this.id)" checked="checked" name="mbair_modelColor" /> <!-- this radio btn checked by default -->
+                            <label for="mbair_spacegray">Space Gray</label>
+                
+                            <input type="radio" id="mbair_silver" onclick="mbair(this.id)" name="mbair_modelColor" />
+                            <label for="mbair_silver">Silver</label>
+                            
+                            <input type="radio" id="mbair_gold" onclick="mbair(this.id)" name="mbair_modelColor" />
+                            <label for="mbair_gold">Gold</label>          
+                        </div>
+
+                        <div class="modelCap">
+                            <h2>Choose capacity:</h2>
+
+                            <input type="radio" id="mbair_512gb" onclick="mbair(this.id)" checked="checked" name="mbair_modelCap" /> <!-- this radio btn checked by default (onclick must be under input in order to work)-->
+                            <label for="mbair_512gb" >512 GB <span>+ RM 0</span></label>
+                
+                            <input type="radio" id="mbair_1tb" onclick="mbair(this.id)" name="mbair_modelCap" /> <!-- this radio btn checked by default -->
+                            <label for="mbair_1tb">1 TB <span>+ RM 800</span></label>
+                
+                            <input type="radio" id="mbair_2tb" onclick="mbair(this.id)" name="mbair_modelCap" /> 
+                            <label for="mbair_2tb">2 TB <span>+ RM 2,400</span></label>
+                        </div>
+
+                        <div class="price">
+                            <p>Estimated price:</p>
+                            <p class="number" id="mbair_price">RM 5,399</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box iphone">
+                <img src="img/i13(blue).png" alt="iphone 13" class="product-img" id="i13" onclick="toggleModal(this.id)"/>
+                <p class="box-title">Iphone 13</p>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="modelImg">
+                            <img id="photo_i13" src="img/i13(blue).png" alt="iphone 13"/>
+                        </div>
+                        <h1 class="modelTitle">
+                            Iphone 13
+                            <a href="#" onclick="closeModal()">&times;</a>
+                        </h1>
+                        <div class="modelName">
+                            <h2>Choose model:</h2>
+
+                            <input type="radio" id="name_i13" onclick="i13(this.id)" checked="checked" name="i13_modelName" /> <!-- this radio btn checked by default -->
+                            <label for="name_i13">Iphone 13</label>
+                
+                            <input type="radio" id="name_i13_pro" onclick="i13(this.id)" name="i13_modelName" />
+                            <label for="name_i13_pro">Iphone 13 Pro</label>
+
+                            <input type="radio" id="name_i13_mini" onclick="i13(this.id)" name="i13_modelName" />
+                            <label for="name_i13_mini">Iphone 13 Mini</label>
+                        </div>
+
+                        <div class="modelSpecs">
+                            <ul id="i13_specs">
+                                <li>6.1" Super Retina XDR display</li>
+                                <li>5G capable</li>
+                                <li>2x Optical Zoom Range</li>
+                                <li>A15 Bionic chip</li>
+                                <li>New 4‑core GPU</li>
+                                <li>Face ID</li>
+                                <li>Ceramic Shield front</li>
+                                <li>Water resistant to a depth of 6 metres for up to 30 minutes</li>
+                            </ul>
+                            <ul id="i13_pro_specs">
+                                <li>6.1" Super Retina XDR display with ProMotion</li>
+                                <li>5G capable</li>
+                                <li>6x Optical Zoom Range</li>
+                                <li>LiDAR Scanner for Night mode portraits, faster autofocus in low light and next-level AR experiences</li>
+                                <li>A15 Bionic chip</li>
+                                <li>New 5‑core GPU</li>
+                                <li>Face ID</li>
+                                <li>Ceramic Shield front</li>
+                                <li>Water resistant to a depth of 6 metres for up to 30 minutes</li>
+                            </ul>
+                            <ul id="i13_mini_specs">
+                                <li>5.4″ Super Retina XDR display</li>
+                                <li>5G capable</li>
+                                <li>2x Optical Zoom Range</li>
+                                <li>A15 Bionic chip</li>
+                                <li>New 4‑core GPU</li>
+                                <li>Face ID</li>
+                                <li>Ceramic Shield front</li>
+                                <li>Water resistant to a depth of 6 metres for up to 30 minutes</li>
+                            </ul>
+                        </div>
+
+                        <div class="modelColor">
+                            <h2>Choose finish:</h2>
+
+                            <input type="radio" id="i13_blue" onclick="i13(this.id)" checked="checked" name="i13_modelColor" /> <!-- this radio btn checked by default -->
+                            <label for="i13_blue">Sierra Blue</label>
+                
+                            <input type="radio" id="i13_graphite" onclick="i13(this.id)" name="i13_modelColor" />
+                            <label for="i13_graphite">Graphite</label>
+                            
+                            <input type="radio" id="i13_gold" onclick="i13(this.id)" name="i13_modelColor" />
+                            <label for="i13_gold">Gold</label>          
+
+                            <input type="radio" id="i13_silver" onclick="i13(this.id)" name="i13_modelColor" />
+                            <label for="i13_silver">Silver</label>          
+
+                            <input type="radio" id="i13_green" onclick="i13(this.id)" name="i13_modelColor" />
+                            <label for="i13_green">Alpine Green</label>          
+                        </div>
+
+                        <div class="modelCap">
+                            <h2>Choose capacity:</h2>
+
+                            <input type="radio" id="i13_128gb" onclick=" i13(this.id)" checked="checked" name="mbair_modelCap" /> <!-- this radio btn checked by default (onclick must be under input in order to work)-->
+                            <label for="i13_128gb" >128 GB <span>+ RM 0</span></label>
+                
+                            <input type="radio" id="i13_256gb" onclick=" i13(this.id)" name="mbair_modelCap" /> <!-- this radio btn checked by default -->
+                            <label for="i13_256gb">256 GB <span>+ RM 500</span></label>
+                
+                            <input type="radio" id="i13_512gb" onclick=" i13(this.id)" name="mbair_modelCap" /> 
+                            <label for="i13_512gb">512 GB <span>+ RM 1,400</span></label>
+
+                            <input type="radio" id="i13_1tb" onclick=" i13(this.id)" name="mbair_modelCap" /> 
+                            <label for="i13_1tb">1 TB <span>+ RM 2,300</span></label>
+                        </div>
+
+                        <div class="price">
+                            <p>Estimated price:</p>
+                            <p class="number" id="i13_price">RM 4,899</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
