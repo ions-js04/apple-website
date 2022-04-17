@@ -70,8 +70,8 @@
 /*history part*/
 .history{
     width: 50%;
-    height:1300px;
-    padding-top: 0px;
+    height:auto;
+    padding-top: 50px;
     max-height: 1300px;
     position: absolute;
     overflow: scroll;
@@ -86,8 +86,8 @@
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -3px;  
-    height: 2000px;
+    margin-left: -3px;
+    height: 2500px;  
    
   }
 
