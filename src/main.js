@@ -21,14 +21,14 @@ function gradientChange(event) {
 
 //slideshow for featured box
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex); //start from slide one
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex += n);   //next slide
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(slideIndex = n);      //let the number of slide matches the actual number slide
 }
 
 function showSlides(n) {
@@ -39,10 +39,10 @@ function showSlides(n) {
       slideIndex = 1
     }    
   if (n < 1) {
-      slideIndex = slides.length
+      slideIndex = slides.length  // when user press previous slide in first slide it will proceed to last slide
     }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";        //looping:change the slide number and picture after click the next or previous button
   }
   slides[slideIndex-1].style.display = "block";  
 }
