@@ -221,6 +221,9 @@ li::marker { /* bullet points */
 .price .number {
     font-size: 4em;
     font-weight: 700;
+    position: fixed;
+    top: 75vh;
+    color: black;
 }
 
 
